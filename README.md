@@ -207,6 +207,198 @@ Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de 
 
 ### Contribuições Pessoais
 
+Nesse segundo semestre realizamos um projeto de web para controle de funcionários que terceiriza seus negócios utilizando uma metodologia ágil Scrum. Optei nesse semestre por ser o Scrum Master do time e no primeiro momento como o product owner não tinha experiencia em prototipação e montagem de layout eu como scrum master alinhei com todos os integrantes para que auxiliem na montagem, já deixando montado como vai ser o menu do app e onde ficaria localizado as funções seguintes.
+
+<details>
+  <summary>Layout Base</summary>
+  <br>
+
+- Layout Base
+
+![Layout Base](./2_Semestre/layout.png)
+
+</details>
+
+<br>
+
+Apos esse protótipo estar pronto foi realizado a organização das tasks para que cada integrante realize e para um controle maior do projeto como scrum master alinhei com o time para serem feitos dailys diárias apos a faculdade para compartilharmos nossas tasks e o andamento. Foi bastante proveitoso essa ideia, pois o time conseguiu evoluir bastante não deixando de entregar resultados e sempre que algum desenvolvedor tivesse dificuldade eu e os outros da equipe tentava ajudar.
+
+Na primeira sprint apos o protótipo ser aceite e as regras e as tasks da equipe serem alinhadas o projeto começou. No primeiro momento para que o time tivesse foco na montagem do app realizei a montagem da tela base também que sera utilizado no projeto inteiro com um menu interativo e já com as margens corretas para as funções, além disso, para o projeto utilizamos o framework flask do python e enquanto o pessoal desenvolvia eu estava estudando para auxiliar os demais o que foi de bastante ajuda, pois o pessoal do back end não estava conseguindo desenvolver o api rest no flask, então montei duas rotas, uma para o controle de presença e uma para o cadastro de colaboradores para ser utilizado como exemplo.
+
+<details>
+  <summary>Rotas Utilizando Flask</summary>
+
+  <br>
+
+```
+# importando framework flask e bibliotecas para usar servicoes web
+from flask import Flask, render_template, request, redirect, url_for, flash
+
+# importando biblioteca para conectar com mysql
+from flaskext.mysql import MySQL
+
+mysql = MySQL()
+# iniciando variavel app
+app = Flask(__name__)
+app.secret_key = "flash message"
+
+# configurando conexão com banco de dados
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = ''
+app.config['MYSQL_DATABASE_DB'] = 'jetsoft'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+
+mysql.init_app(app)
+
+# rota para a página inicial
+
+
+@app.route('/')
+def index():
+    return render_template('/index.html')
+
+
+@app.route('/controle_presenca', methods=['GET', 'POST'])
+def controle():
+
+    con = mysql.connect()
+    cur = con.cursor()
+    cur.execute("SELECT * FROM controle_presenca")
+    data = cur.fetchall()
+
+    if request.method == "POST":
+        colaborador = request.form["colaborador"]
+        dia = request.form["dia"]
+        pouf = request.form["pouf"]
+        cur.execute(
+            "UPDATE `controle_presenca` SET `%s` = %s WHERE `colaborador` = %s", (
+                dia, pouf, colaborador)
+        )
+        con.commit()
+        return redirect(url_for('controle'))
+    else:
+        return render_template('/controle_presenca.html', controle=data)
+
+# rota para a página de destino (cadastro de colaboradores)
+
+
+@app.route('/cadastro_colaboradores', methods=['GET', 'POST'])
+# função para tratamento dos dados
+def cadastro():
+    # código de conectividade com banco de dados
+    con = mysql.connect()
+    cur = con.cursor()
+    if request.method == "POST":
+        flash("Dados gravados com sucesso!")
+        nome = request.form["nome"]
+        cpf = request.form["cpf"]
+        matricula = request.form["matricula"]
+        funcao = request.form["funcao"]
+        admissao = request.form["admissao"]
+        email = request.form["email"]
+        telefone = request.form["telefone"]
+        tipo_cobertura = request.form["devweb"]
+        cur.execute("INSERT INTO `colaboradores`(`nome_completo`,`cpf`,`matricula`,`funcao`,`data_admissao`,`email`,`telefone`,`tipo_cobertura`) VALUES(%s, %s, %s, %s, %s, %s, %s, %s)",
+                    (nome, cpf, matricula, funcao, admissao,
+                    email, telefone, tipo_cobertura)
+                    )
+        cur.execute(
+            "INSERT INTO `controle_presenca` (`colaborador`,`funcao`,`tipo_cobertura`) VALUES (%s, %s, %s)", (
+                nome, funcao, tipo_cobertura)
+        )
+        con.commit()
+        return redirect(url_for('cadastro'))
+    else:
+        return render_template('/cadastro_colaboradores.html')
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+</details>
+
+<br>
+
+<details>
+  <summary>Menu interativo</summary>
+
+  <br>
+
+- Menu interativo
+
+![Menu interativo](./2_Semestre/interface.gif)
+
+</details>
+
+<br>
+
+<details>
+  <summary>Burndonw 1-Sprint</summary>
+
+  <br>
+
+- Burndonw
+
+![Burndonw](./2_Semestre/burndown.png)
+
+</details>
+
+<br>
+
+Na segunda sprint após as reuniões, pude perceber haver um desenvolvedor com problemas e como scrum master fui atrás dele para poder auxiliar, para ser resolvido pedi para que compartilhasse a tela para podermos programar juntos e foi nesse momento que percebi que ele não estava se dedicando ao projeto, pois não estava entendendo como desenvolver direito e estava meio perdido, então auxiliei ele na hora para deixar o ambiente do projeto para ser desenvolvido e consegui clarear bastante as coisas para ele seguir o caminho e com isso ele conseguiu entregar sua parte nessa sprint com exito.
+
+Mesmo que exercendo um papel de scrum master para que o projeto saísse de forma correta eu sempre acabava revisando o código do grupo para corrigir alguns problemas de edentação, correção de alguns bugs telas que às vezes por falta de mão de obra acabava fincando por fazer, resumindo eu estava operando como um tech lead em alguns momentos, mas sempre ajudando e organizando o tempo e as task da equipe.
+
+<details>
+  <summary>Burndonw 2-Sprint</summary>
+
+- Burndonw
+
+![Burndonw](./2_Semestre/burndown-2.png)
+
+</details>
+
+<br>
+
+Na terceira sprint como em todos eu acabo revisando o código e facilitando o caminho da equipe os desenvolvedores tiverem bastante problema com o css, pois tinham que deixar alinhado na tela para que não ficasse sobreposto ou embaixo do menu lateral e como scrum master e já sabendo um pouco mais sobre css eu decidi ajudar a estilizar algumas telas para ficar no espaço desejado para que a equipe finalize a maioria do projeto. Não tive muitos problemas nessa sprint, após alinhar com os desenvolvedores que estavam um pouco abaixo do esperado na segunda sprint, na terceira eles melhoraram bastante e pude focar mais nessa parte do css que realmente era um problema e no gerenciamento do tempo.
+
+<details>
+  <summary>Burndonw 3-Sprint</summary>
+
+- Burndonw
+
+![Burndonw](./2_Semestre/burndown-3.png)
+
+</details>
+
+<br>
+
+Na quarta e ultima sprint após o projeto ter finalizado, como um requisito funcional era para ser realizado o deploy da aplicação, porem o grupo não estava conseguindo realizar o deploy no Heroku então para que o problema fosse resolvido procurei varias formas de fazer o deploy de uma aplicação python ate que consegui achar a plataforma 'pythonanywhere' e enquanto o pessoal arrumava os bugs e realizava a confecção do botão de PDF eu estava testando e tentando implementar esse deploy. Após muito custo consegui subir a aplicação na plataforma e entregar o projeto.
+
+Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era novo e havia bastante impedimento tanto com questão de experiência em programação quanto procrastinação de tasks. Mas no final consegui alinhar a equipe e entregamos um produto satisfatório para o cliente.
+
+<details>
+  <summary>Burndonw 4-Sprint</summary>
+
+- Burndonw
+
+![Burndonw](./2_Semestre/burndown-3.png)
+
+</details>
+
+<br>
+
+<details>
+  <summary>Projeto Finalizado</summary>
+  <br>
+
+[Video Projeto](https://www.youtube.com/watch?v=xGE51h8fBuY)
+
+</details>
+
+<br>
+
 ### Hard Skills
 
 | Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
