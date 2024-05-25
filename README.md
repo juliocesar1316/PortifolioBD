@@ -57,6 +57,99 @@ Os interessados em ajudar na causa poderão fazer inscrição para ser voluntari
 
 ### Contribuições Pessoais
 
+Nesse primeiro semestre realizamos um projeto para uma ONG escolar, onde o objetivo era desenvolver um site pata que os usuários interessados pudessem ver suas causas e suas atividades.
+Como metodologia aplicada no projeto utilizamos o scrum, porem nesse primeiro semestre não tivemos um product owner então fique encarregado de desenvolver o protótipo do projeto, onde apesar de ser a primeira experiência em prototipação e criação de layout tive alguns problemas, mas no final consegui ter um bom resultado na sprint 0.
+
+<details>
+  <summary>Layouts do Site</summary>
+  <br>
+
+- Layout Menu
+
+![Layout Home](./1_Semestre/funcionalidade_menu.gif)
+
+- Layout Home
+
+![Layout Home](./1_Semestre/funcionalidade_home.gif)
+
+- Layout Cadastro
+
+![Layout Home](./1_Semestre/funcionalidade_cadastro.gif)
+
+</details>
+
+<br>
+
+Na primeira sprint de fato apos o protótipo do site, começamos a realizar os desenvolvimento e como desenvolvedor realizei no primeiro momento a configuração do XAMPP para ser utilizado o PHP e o MYSQL local e apos configurar o grupo pode realizar o desenvolvimento. Além dessa configuração, por ser meu primeiro contato com html e php acabei tendo um pouco de dificuldade no começo para entender, mas após ajuda consegui desenvolver a tela de doação onde é realizado o cadastro do doador e o dados para a doação, a tela de participantes onde é realizado o cadastro de participantes e ajudei na tela de voluntários também onde é realizado os voluntariados da ONG. Como todos os desenvolvedores eram iniciantes todas as telas eram realizados o back end no php, o front end com html e css e o banco de dados com o mysql.
+
+<details>
+  <summary> Tela de Doação, Participante e Voluntario</summary>
+  <br>
+
+- Tela Doação
+
+![Tela Doação](./1_Semestre/doadores.gif)
+
+- Tela Participante
+
+![Tela Participante](./1_Semestre/participantes.gif)
+
+- Tela Voluntarios
+
+![Tela Voluntarios](./1_Semestre/voluntarios.gif)
+
+</details>
+
+<br>
+
+Na segunda sprint realizei a montagem das telas de contato onde é exibido o local da escola e um formulário para entrar em contato, a tela de projetos onde é exibido os projetos sociais e um formulário para solicitar um projeto e uma tela sobre a escola. Essa sprint e na anterior fiquei responsável no desenvolvimento das telas enquanto os outros desenvolvedores realizaram o desenvolvimento do captcha, da tela para que o usuário admin edite os textos do site e a tela de login.
+
+<details>
+  <summary> Tela de Contato, Projeto e Sobre</summary>
+  <br>
+
+- Tela Contato
+
+![Tela Contato](./1_Semestre/contato.gif)
+
+- Tela Projeto
+
+![Tela Projeto](./1_Semestre/projetos.gif)
+
+- Tela Sobre
+
+![Tela Sobre](./1_Semestre/sobre.gif)
+
+</details>
+
+<br>
+
+Na terceira sprint já com todas as telas prontas, decidimos realizar as funções dos administradores e o nosso site tem um método onde o administrador consegue atualizar e manter o controle do site apenas através de uma tela admin onde ele consegue atualizar os textos e imagens do site e aprova e reprova usuários. Como desenvolvedor realizei a estilização e a montagem da tela no administrador um banco de dados do site para ser visível sem utilizar o mysql.
+
+<details>
+  <summary> Tela banco de dados admin e telas editaveis</summary>
+  <br>
+
+- Tela Banco de Dados
+
+![Tela Contato](./1_Semestre/dados_bd.gif)
+
+- Tela Sobre Editavel
+
+![Tela Projeto](./1_Semestre/sobre_editavel.gif)
+
+</details>
+
+<br>
+
+Na quarta e ultima sprint fique encarregado de algumas correções de bugs.
+
+No final conseguimos entregar um bom projeto, foi um desafio bem grande por ser o primeiro contato de programação para o grupo, mas com ajuda de todos e dos professores podemos ter uma boa entrega.
+
+Video do Website institucional
+
+[Video institucional](https://www.youtube.com/watch?v=9K1p-P8zGd8)
+
 <br>
 
 ### Hard Skills
@@ -176,6 +269,8 @@ Após o contato com o cliente, foi possível a definição dos user storys e do 
 
 <details>
 <summary>User Story</summary>
+
+<br>
 
 | User Story ID |                                       Como um (ator)                                       |                                                               Eu quero (ação)                                                               |                                                                          Para que seja possível (funcionalidade)                                                                          | Prioridade |
 | :-----------: | :----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
@@ -534,7 +629,25 @@ Porém nesta api eu estava como product owner porém dois integrantes que ficara
 
 ### Hard Skills
 
+| Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
+| :----------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|    Figma     |                          Desenvolvi conhecimento na montagem de prototipos e layouts para site                          |     Intermediário     |
+|  HTML e CSS  |                     Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                     |     Intermediário     |
+|  Javascript  |           Desenvoli habilidades de criar scripts para deixar o site mais interativo e dinamico para o usuario           |     Intermediário     |
+|    MYSQL     | Desenvolvi habilidades e conheicmentos no gerencimaneto de databases e tabelas alem de monatgem de querys para consulta |     Intermediário     |
+|    Flask     |           Desenvolvi habilidades em criar api rest e a conexão do front end com o back end no mesmo framework           |     Intermediário     |
+| GIT e GITHUB |                           Aprendi a utilizar os comandos do git e seu funcionamento no github                           |     Intermediário     |
+
 ### Soft Skills
+
+|          Soft Skills          |                                                       Utilização                                                       |
+| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|          Comunicação          |                  Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo                  |
+|         Criatividade          |                                   Utilizado na hora de produzir o prototipo do site                                    |
+|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estavamos trabalhando no formato online                    |
+|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas                    |
+|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso |
+| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos |
 
 [Voltar ao inicio](#sumário)
 
