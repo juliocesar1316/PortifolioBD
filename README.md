@@ -851,13 +851,146 @@ Porém nesta api eu estava como product owner porém dois integrantes que ficara
 
 Parceiro Acadêmico: [Jaia](https://www.jaia.software/)
 
+O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
+
+A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificará a gestão de prestadores de serviço, segmentos e ordens de serviço. Como parte deste projeto, estamos desenvolvendo uma landing page intuitiva que facilitará a solicitação de novas ordens de serviço para os nossos novos clientes por meio de um simples formulário. Para os nossos clientes existentes, disponibilizaremos uma landing page personalizada, onde poderão acessar facilmente suas ordens de serviço anteriores, baixar laudos novamente e fornecer feedbacks valiosos, incluindo sugestões e reclamações. Além disso, eles também terão a opção de fazer novas solicitações de ordens de serviço.
+
 ### Etapas de Desenvolvimento
 
 ### Prévia da Solução
 
 ### Tecnologias Utilizadas
 
+[Figma:](https://www.figma.com/) Desenvolvimento do prototipo do site
+
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web
+
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e layoutar esses conteúdos
+
+[Typescript:](https://www.typescriptlang.org/) Framework do javascript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+
+[Spring Boot:](https://spring.io/projects/spring-boot) Framework Java que simplifica o desenvolvimento de aplicativos robustos e escaláveis, oferecendo configuração mínima e alto desempenho.
+
+[Oracle:](https://www.oracle.com/br/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente
+
 ### Contribuições Pessoais
+
+Esse projeto foi a minha primeira API realziada no curso de Banco de Dados na turma noturna. Por ser um grupo novo tive tive que me adaptar ao estilo de trabalho deles.
+
+O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuario pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo ja havia um desenvolvedor front-end optei por realziar o back-end pois teria mais demandas e seria um novo desafio para mim que não tinha muita familiridade com spring boot.
+
+Na sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e pretador para varias ordem de serviço foi utilizado bastante o relaiconamento de um para muitos e muitos para muitos tanto para o banco de dadso quanto para o back end em spring boot, para mim seria um dos primeiros contatos com modelgame em banco com esse relaciomaneto e trabalho com back end tartando os dados com relacionamentos.
+
+Na primeira sprint foi utilizado padrão de arquitetura MVC(module view control) no spring boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) que é responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nessa sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que eu tive mais dificuldades foi na hora de montar o serviço, que era onde ficava nossas função que reortnar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados pois o metodo é montado atraves de ação como "findByEmail" para retornar os emails, so que algumas vezes não retornava o que eu queria, porem apos algumas ajudas e videos aulas consegui entender e terminar essa parte.
+
+<details>
+<summary> Service Prestador </summary>
+
+```
+package br.com.jaia.b1naryinspec.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.jaia.b1naryinspec.dto.PrestadorDto;
+import br.com.jaia.b1naryinspec.model.PrestadorServico;
+import br.com.jaia.b1naryinspec.repository.PrestadorRepository;
+
+@Service
+public class PrestadorService implements PrestadorInterface {
+
+    @Autowired
+    private PrestadorRepository prestadorRepo;
+
+    @Override
+    public PrestadorServico novoPrestador(PrestadorDto prestadorDto) {
+        if(prestadorDto == null ||
+            prestadorDto.getEmail() == null ||
+            prestadorDto.getEmail().isBlank() ||
+            prestadorDto.getSenha() == null ||
+            prestadorDto.getSenha().isBlank()){
+                throw new IllegalArgumentException("Dados Invalidos");
+        }
+        PrestadorServico prestador = new PrestadorServico();
+        prestador.setCnpj(prestadorDto.getCnpj());
+        prestador.setEmail(prestadorDto.getEmail());
+        prestador.setSenha(prestadorDto.getSenha());
+        prestador.setPrestadorNome(prestadorDto.getPrestadorNome());
+        prestador.setPrestadorId(prestadorDto.getPrestadorId());
+        return prestadorRepo.save(prestador);
+    }
+
+    @Override
+    public List<PrestadorServico> buscarTodosPrestadores() {
+        return prestadorRepo.findAll();
+    }
+
+    @Override
+    public PrestadorServico buscarPrestadoPorCnpj(String cnpj) {
+        Optional<PrestadorServico> prestadorOp = prestadorRepo.findByCnpj(cnpj);
+        if(prestadorOp.isEmpty()){
+            throw new IllegalArgumentException("Prestador de serviço não encontrado!");
+        }
+
+        return prestadorOp.get();
+    }
+
+    @Override
+    public PrestadorServico buscarPrestadorPorEmail(String email) {
+        Optional<PrestadorServico> prestadorOp = prestadorRepo.findByEmail(email);
+        if(prestadorOp.isEmpty()){
+            throw new IllegalArgumentException("Prestador de serviço não encontrado!");
+        }
+        return prestadorOp.get();
+    }
+
+    @Override
+    public PrestadorServico buscarPrestadorPorNome(String prestadorNome){
+        Optional<PrestadorServico> prestadorOp = prestadorRepo.findByPrestadorNome(prestadorNome);
+        if(prestadorOp.isEmpty()){
+             throw new IllegalArgumentException("Prestador de serviço não encontrado!");
+        }
+        return prestadorOp.get();
+    }
+
+    @Override
+    public PrestadorServico updatePrestador(Long prestadorId, PrestadorDto prestadorDto){
+
+        Optional<PrestadorServico> prestadorOp = prestadorRepo.findById(prestadorId);
+        if(prestadorOp.isEmpty()){
+             throw new IllegalArgumentException("Prestador de serviço não encontrado!");
+        }
+        PrestadorServico prestador = prestadorOp.get();
+        prestador.setCnpj(prestadorDto.getCnpj());
+        prestador.setEmail(prestadorDto.getEmail());
+        prestador.setSenha(prestadorDto.getSenha());
+        prestador.setPrestadorNome(prestadorDto.getPrestadorNome());
+
+        return prestadorRepo.save(prestador);
+    }
+
+    @Override
+    public Optional<PrestadorServico> deletePrestador(Long prestadorId){
+        Optional<PrestadorServico> prestadorOp = prestadorRepo.findById(prestadorId);
+        if(prestadorOp.isPresent()){
+            prestadorRepo.deleteById(prestadorId);
+        }
+        return prestadorOp;
+    }
+
+}
+```
+
+</details>
+
+Após terminar o service eu finalizei o controler e minhas atividades, mas vi que um dos desenvolvedores do back end estava com dificuldades na hora de montar o relacionamento de um para muitos, pois estávamos aprendendo na aula ainda como utilizar esse método então para nos estava um pouco confuso e para ajudar peguei a task dele de montar o MVC do checkilist que é onde o prestador ou usuário valida as informações do laudo. Finalizado essa parte quase no final da sprint eles ainda estavam tentando solucionar esse caso dos relacionamentos porem seu muito sucesso.
+
+Na segunda sprint os esforços do time do back foi em entender esses relacionamentos de um para um, um para muitos e muitos para muitos e eu como desenvolvedor comecei a estudar sobre e fazer alguns desenvolvimentos e teste junto com o grupo onde podemos entender como funciona e colocar em prática no desenvolvimento do projeto. Também nessa sprint após auxiliar os desenvolvedores eu peguei a task de montar o MVC do cliente onde não tive muitos problemas, pois já tinha feito um igual e já sabia mais ou menos os erros conhecidos e o que poderia dar.
+
+Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por manda-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decide mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido seguimos para a terceira sprint
 
 ### Hard Skills
 
