@@ -867,7 +867,7 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 
 [CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e layoutar esses conteúdos
 
-[Typescript:](https://www.typescriptlang.org/) Framework do javascript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+[Vue:](https://vuejs.org/) Framework do javascript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
 
 [Spring Boot:](https://spring.io/projects/spring-boot) Framework Java que simplifica o desenvolvimento de aplicativos robustos e escaláveis, oferecendo configuração mínima e alto desempenho.
 
@@ -875,13 +875,13 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 
 ### Contribuições Pessoais
 
-Esse projeto foi a minha primeira API realziada no curso de Banco de Dados na turma noturna. Por ser um grupo novo tive tive que me adaptar ao estilo de trabalho deles.
+Esse projeto foi a minha primeira API realizada no curso de Banco de Dados na turma noturna. Por ser um grupo novo tive que me adaptar ao estilo de trabalho deles.
 
-O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuario pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo ja havia um desenvolvedor front-end optei por realziar o back-end pois teria mais demandas e seria um novo desafio para mim que não tinha muita familiridade com spring boot.
+O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuário pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo já havia um desenvolvedor front-end onde foi utilizado o Vue.js como framework, porem optei por realizar o back-end pois teria mais demandas e seria um novo desafio para mim que não tinha muita familiaridade com spring boot.
 
-Na sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e pretador para varias ordem de serviço foi utilizado bastante o relaiconamento de um para muitos e muitos para muitos tanto para o banco de dadso quanto para o back end em spring boot, para mim seria um dos primeiros contatos com modelgame em banco com esse relaciomaneto e trabalho com back end tartando os dados com relacionamentos.
+Na sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e prestador para várias ordens de serviço foi utilizado bastante o relacionamento de um para muitos e muitos para muitos tanto para o banco de dados quanto para o back end em spring boot, para mim, seria um dos primeiros contatos com modelagem em banco com esse relacionamento e trabalho com back end tratando os dados com relacionamentos.
 
-Na primeira sprint foi utilizado padrão de arquitetura MVC(module view control) no spring boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) que é responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nessa sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que eu tive mais dificuldades foi na hora de montar o serviço, que era onde ficava nossas função que reortnar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados pois o metodo é montado atraves de ação como "findByEmail" para retornar os emails, so que algumas vezes não retornava o que eu queria, porem apos algumas ajudas e videos aulas consegui entender e terminar essa parte.
+Na primeira sprint foi utilizado padrão de arquitetura MVC(module view control) no spring boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) sendo responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nessa sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que eu tive mais dificuldades foi na hora de montar o serviço, que era onde ficava nossas funções que retornar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados, pois o método é montado através de ação como "findByEmail" para retornar os emails, só que algumas vezes não retornavam o que eu queria, porem apos algumas ajudas e vídeos aulas consegui entender e terminar essa parte.
 
 <details>
 <summary> Service Prestador </summary>
@@ -986,11 +986,192 @@ public class PrestadorService implements PrestadorInterface {
 
 </details>
 
+<br>
+
 Após terminar o service eu finalizei o controler e minhas atividades, mas vi que um dos desenvolvedores do back end estava com dificuldades na hora de montar o relacionamento de um para muitos, pois estávamos aprendendo na aula ainda como utilizar esse método então para nos estava um pouco confuso e para ajudar peguei a task dele de montar o MVC do checkilist que é onde o prestador ou usuário valida as informações do laudo. Finalizado essa parte quase no final da sprint eles ainda estavam tentando solucionar esse caso dos relacionamentos porem seu muito sucesso.
 
 Na segunda sprint os esforços do time do back foi em entender esses relacionamentos de um para um, um para muitos e muitos para muitos e eu como desenvolvedor comecei a estudar sobre e fazer alguns desenvolvimentos e teste junto com o grupo onde podemos entender como funciona e colocar em prática no desenvolvimento do projeto. Também nessa sprint após auxiliar os desenvolvedores eu peguei a task de montar o MVC do cliente onde não tive muitos problemas, pois já tinha feito um igual e já sabia mais ou menos os erros conhecidos e o que poderia dar.
 
-Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por manda-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decide mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido seguimos para a terceira sprint
+Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por manda-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decedi mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido seguimos para a terceira sprint.
+
+Na terceira sprint inicialmente eu comecei a desenvolver o login tanto o layout do site quanto a parte de realizar o login na plataforma, como o back end já tinha desenvolvido a função de autenticação o que eu fiz foi ajustar uma rota para ele enviar os dados do login para o back autenticar e me retornar um token, onde eu armazenava no localstorage e coim isso a cada requisição realizada pelo front ele mandava esse token para ser validado pelo sistema, garantindo uma integridade de segurança dos dados.
+
+Apos essa tela de login decidi realizar o desenvolvimento da tela do modal onde o usuário aprova as ordens de serviço, onde o usuário teria as checklists que foram cadastradas para aquela atividade e poderia aprovar ou reprovar caso o não passe no checkilist. Em uma tela contem as ordens de serviço e o usuário que aprova as ordens vai clicar nelas e nisso ira abrir um modal com os checkilist para ser validado, após validado ele fecha esse modal.
+
+<details>
+<summary>Tela de aprovação de ordem de serviço e codigo do modal</summary>
+
+![Modal](./4_Semestre/image.png)
+
+```
+  <template>
+      <div class="modal-ordem-background">
+          <div class="modal">
+              <div class="modal-title">
+                  <h1>Ordem N° {{ id }}</h1>
+                  <!-- usando a função para trocar o estado do modal-->
+                  <button class="modal-fechar" @click="toggleModal()">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                          <path
+                              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                      </svg>
+                  </button>
+              </div>
+              <div class="modal-cons-body">
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-check"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                  <path
+                                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                              </svg>
+                              Data de Abertura:
+                          </p>
+                          <span>{{ dtaAbertura }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-x"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z" />
+                                  <path
+                                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                              </svg>
+                              Data de Fechamento:
+                          </p>
+                          <span>{{ dtaFechamento }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                              </svg>
+                              Prestador:
+                          </p>
+                          <span>{{ prestador }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-building"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
+                                  <path
+                                      d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z" />
+                              </svg>
+                              Cliente:
+                          </p>
+                          <span>{{ cliente }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                              </svg>
+                              Status:
+                          </p>
+                          <span>{{ status }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                  class="bi bi-wrench-adjustable-circle" viewBox="0 0 16 16">
+                                  <path
+                                      d="M12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                                  <path
+                                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8Zm-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                              </svg>
+                              Segmento:
+                          </p>
+                          <span>{{ segmento }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box">
+                          <p>
+                              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                  <path
+                                      d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                  <path
+                                      d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                              </svg>
+                              Checklist:
+                          </p>
+                          <span>{{ check }}</span>
+                      </div>
+                  </div>
+                  <div class="modal-box-group">
+                      <div class="modal-box-desc">
+                          <h4>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-textarea-t"
+                                  viewBox="0 0 16 16">
+                                  <path
+                                      d="M1.5 2.5A1.5 1.5 0 0 1 3 1h10a1.5 1.5 0 0 1 1.5 1.5v3.563a2 2 0 0 1 0 3.874V13.5A1.5 1.5 0 0 1 13 15H3a1.5 1.5 0 0 1-1.5-1.5V9.937a2 2 0 0 1 0-3.874V2.5zm1 3.563a2 2 0 0 1 0 3.874V13.5a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V9.937a2 2 0 0 1 0-3.874V2.5A.5.5 0 0 0 13 2H3a.5.5 0 0 0-.5.5v3.563zM2 7a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm12 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                  <path
+                                      d="M11.434 4H4.566L4.5 5.994h.386c.21-1.252.612-1.446 2.173-1.495l.343-.011v6.343c0 .537-.116.665-1.049.748V12h3.294v-.421c-.938-.083-1.054-.21-1.054-.748V4.488l.348.01c1.56.05 1.963.244 2.173 1.496h.386L11.434 4z" />
+                              </svg>
+                              Descrição:
+                          </h4>
+                          <p id="text-desc">{{ desc }}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </template>
+
+  <script setup lang="ts">
+  import '../assets/css/modal/modal.css'
+  import { ref } from 'vue';
+  //aqui importando a função para ser usada no modal
+  const props = defineProps({
+      toggleModal: {
+          type: Function,
+          required: true,
+      },
+      id: String,
+      dtaAbertura: String,
+      dtaFechamento: String,
+      prestador: String,
+      segmento: String,
+      cliente: String,
+      status: String,
+      desc: String,
+      check: []
+  });
+  //outra parte do import
+  const { toggleModal } = props;
+  </script>
+
+```
+
+</details>
+
+<br>
+
+Apos realizar o login e o modal, fiz a correção e estilização de algumas telas para ficar mais parecido com o layout do protótipo e desenvolvi mais um de edição de dados da ordem, onde através da requisição rest ele retorna os dados e faz o update. Acabei trabalhando bastante nessa sprint, pois o desenvolvedor que estava com problemas havia atrasado algumas features então nessa sprint para agilizar o projeto acabei desenvolvendo elas.
+
+Na quarta sprint como já havia adiantado bastante coisa na terceira e como eu já tinha desenvolvido as telas de modal eu resolvi corrigir alguns bugs dos modais das outras telas que não estavam retornando os dados corretamente, pois havia uma falta de dados para realizar as requisições rest que populavam esses modais. Realizei as correções, fiz algumas modificações nas telas de login para que todo e qualquer requisição que fizesse para o back ele solicitava o token.
+
+No final deu tudo certo conseguimos entregar um produto de qualidade para o cliente, que adorou o sistema. Houve bastantes conflitos internos como mencionei houve desavenças por falta de entrega de resultados, mas com comunicação e paciência foi possível desenvolver o que para mim também havia sido um grande desafio tanto pelo back end em spring boot que apesar das dificuldades consegui entregar o que havia planejado, quanto para o front pois tenho mais conhecimentos com o framework react e para esse projeto foi utilizado o framework Vue, o que para mim, foi questão mais de saber como desenvolver a função que realiza no react no Vue.
 
 ### Hard Skills
 
