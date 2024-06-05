@@ -865,9 +865,9 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 
 ### Etapas de Desenvolvimento
 
-### Prévia da Solução
-
 ![Backlog](./4_Semestre/backlog.png)
+
+### Prévia da Solução
 
 ### Tecnologias Utilizadas
 
