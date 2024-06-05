@@ -38,9 +38,13 @@ Os interessados em ajudar na causa poderão fazer inscrição para ser voluntari
 
 ### Etapas de Desenvolvimento
 
+![Backlog](./1_Semestre/backlog.png)
+
 [Protótipo do Projeto](https://marvelapp.com/prototype/144cf1c4/screen/77188628)
 
 ### Prévia da Solução
+
+
 
 ### Tecnologias Utilizadas
 
@@ -186,6 +190,8 @@ O projeto foi elaborado para produzir um website para uma empresa de softwares q
 Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorra eventos (férias, falta não justificada, licença diversas, demissão, entre outros).
 
 ### Etapas de desenvolvimento
+
+![Backlog](./2_Semestre/backlog.png)
 
 [Protótipo do Projeto](https://www.figma.com/design/0UK8InkkU5tLYeUhO8H9q4/JetSoft?m=dev&node-id=0%3A1&t=Imaw2PiYsY9z34PL-1)
 
@@ -436,6 +442,8 @@ O projeto foi elaborado para produzir um software de gerenciamento de contas par
 O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para análise
 
 ### Etapas de Desenvolvimento
+
+![Backlog](./3_Semestre/backlog.png)
 
 ### Prévia da Solução
 
@@ -858,6 +866,8 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 ### Etapas de Desenvolvimento
 
 ### Prévia da Solução
+
+![Backlog](./4_Semestre/backlog.png)
 
 ### Tecnologias Utilizadas
 
