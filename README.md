@@ -24,6 +24,8 @@
 
 <p align="center" ><img src="https://avatars.githubusercontent.com/u/49699769?s=400&u=b3668d7972d97e054e42d1695779df65794a3ce1&v=4" style="border-radius: 50%" width="25%" /></p>
 
+
+
 ## Meus projetos
 
 ### 1/2021 | [Repositório](https://github.com/juliocesar1316/Projeto-Site-Intitucional)
@@ -1185,6 +1187,23 @@ No final deu tudo certo conseguimos entregar um produto de qualidade para o clie
 
 ### Hard Skills
 
+| Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
+| :----------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|  HTML e CSS  |                     Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                     |     Intermediário     |
+|  Vue  |           Desenvoli habilidades de montagem de layouts estaticos com componentes utilizando o framework do javascript           |     Intermediário     |
+|    Oracle    | Desenvolvi habilidades e conheicmentos no gerencimaneto de databases e tabelas alem de monatgem de querys para consulta  |     Intermediário     |
+|    Spring Boot     |           Desenvolvi habilidades em criar api rest utilizando sistemas de database de one to many e many to many para criar classes e inserir no banco de dados           |     Intermediário     |
+| GIT e GITHUB |                           Aprendi a utilizar os comandos do git e seu funcionamento no github                           |     Intermediário     |
+
 ### Soft Skills
+
+|          Soft Skills          |                                                       Utilização                                                       |
+| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|          Comunicação          |                  Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo                  |
+|         Criatividade          |                                   Utilizado na hora de produzir o prototipo do site                                    |
+|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estavamos trabalhando no formato online                    |
+|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas                    |
+|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso |
+| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos |
 
 [Voltar ao inicio](#sumário)
