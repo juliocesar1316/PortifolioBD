@@ -1,6 +1,6 @@
 # Portifólio das APIs - Julio Cesar
 
-<p align="justify">Portfólio das API(Aprendizagem por Projetos Integrados), elaborados do primeiro semestre ate o sexto semestre do curso de banco de dados da Faculdade de Tecnologia Fatec </p>
+<p align="justify">Portfólio das API (Aprendizagem por Projetos Integrados), elaborados do primeiro semestre até o sexto semestre do curso de banco de dados da Faculdade de Tecnologia Fatec. </p>
 
 ## Sumário
 
@@ -22,9 +22,15 @@
 
 ## Sobre Mim
 
-<p align="center" ><img src="https://avatars.githubusercontent.com/u/49699769?s=400&u=b3668d7972d97e054e42d1695779df65794a3ce1&v=4" style="border-radius: 50%" width="25%" /></p>
+<p align="center" ><img src="https://avatars.githubusercontent.com/u/49699769?s=400&u=b3668d7972d97e054e42d1695779df65794a3ce1&v=4" style="border-radius: 50%" width="25%" />
 
+E aí, pessoal! Sou desenvolvedor full stack e estou sempre buscando evoluir como desenvolvedor. Adoro café, música e viagens de moto, e é essa mistura que me inspira a buscar desafios cada vez mais estimulantes.
 
+Minha paixão por tecnologia começou durante a graduação em Engenharia Aeronáutica, onde tive meu primeiro contato com programação em C. Esse primeiro passo foi fundamental para despertar meu interesse em lógica de programação e resolução de problemas. Em 2022, decidi me aprofundar ainda mais e iniciei o tecnólogo em Banco de Dados pela Fatec. Durante esse período, fui selecionado para um curso intensivo oferecido pelo iFood em desenvolvimento full stack, que me proporcionou um aprendizado prático e robusto em desenvolvimento web, api rest, banco de dados e versionamentos de codigo. Saí desse programa preparado para enfrentar qualquer desafio em projetos full stack, sempre com ênfase em lógica de programação, orientação a objetos e boas práticas de código.
+
+A Fatec também tem sido um ambiente de aprendizado desafiador e prático. Por meio do método API (Aprendizagem por Projetos Integrados), desenvolvemos projetos complexos com especificações reais de empresas parceiras. Todo semestre, os projetos abrangem o ciclo completo de desenvolvimento: back-end, front-end e banco de dados, com um forte foco em lógica de programação e arquitetura de sistemas.
+
+</p>
 
 ## Meus projetos
 
@@ -46,24 +52,22 @@ Os interessados em ajudar na causa poderão fazer inscrição para ser voluntari
 
 ### Prévia da Solução
 
-
-
 ### Tecnologias Utilizadas
 
-[Marvel:](https://marvelapp.com/) Desenvolvimento do protótipo do site
+[Marvel:](https://marvelapp.com/) Desenvolvimento do protótipo do site.
 
-[HTML:](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Estruturar o conteúdo de páginas web
+[HTML:](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Estruturar o conteúdo de páginas web.
 
-[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Estilizar e layoutar esses conteúdos.
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Estilizar e personalizar esses conteúdos.
 
-[MySQL:](https://www.mysql.com/) Gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente
+[MySQL:](https://www.mysql.com/) Gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
 
-[PHP:](https://www.php.net/") Desenvolver páginas web dinâmicas e interativas
+[PHP:](https://www.php.net/") Desenvolver páginas web dinâmicas e interativas.
 <br>
 
 ### Contribuições Pessoais
 
-Nesse primeiro semestre realizamos um projeto para uma ONG escolar, onde o objetivo era desenvolver um site pata que os usuários interessados pudessem ver suas causas e suas atividades.
+Nesse primeiro semestre, realizamos um projeto para uma ONG escolar, onde o objetivo era desenvolver um site para que os usuários interessados pudessem ver suas causas e suas atividades.
 Como metodologia aplicada no projeto utilizamos o scrum, porem nesse primeiro semestre não tivemos um product owner então fique encarregado de desenvolver o protótipo do projeto, onde apesar de ser a primeira experiência em prototipação e criação de layout tive alguns problemas, mas no final consegui ter um bom resultado na sprint 0.
 
 <details>
@@ -86,7 +90,7 @@ Como metodologia aplicada no projeto utilizamos o scrum, porem nesse primeiro se
 
 <br>
 
-Na primeira sprint de fato apos o protótipo do site, começamos a realizar os desenvolvimento e como desenvolvedor realizei no primeiro momento a configuração do XAMPP para ser utilizado o PHP e o MYSQL local e apos configurar o grupo pode realizar o desenvolvimento. Além dessa configuração, por ser meu primeiro contato com html e php acabei tendo um pouco de dificuldade no começo para entender, mas após ajuda consegui desenvolver a tela de doação onde é realizado o cadastro do doador e o dados para a doação, a tela de participantes onde é realizado o cadastro de participantes e ajudei na tela de voluntários também onde é realizado os voluntariados da ONG. Como todos os desenvolvedores eram iniciantes todas as telas eram realizados o back end no php, o front end com html e css e o banco de dados com o mysql.
+Na primeira sprint de fato, após o protótipo do site, começamos a realizar os desenvolvimentos e como desenvolvedor realizei no primeiro momento a configuração do XAMPP para ser utilizado o PHP e o MYSQL local e após configurar o grupo pode realizar o desenvolvimento. Além dessa configuração, por ser meu primeiro contato com HTML e PHP acabei tendo um pouco de dificuldade no começo para entender, mas após ajuda consegui desenvolver a tela de doação onde é realizado o cadastro do doador e o dados para a doação, a tela de participantes onde é realizado o cadastro de participantes e ajudei na tela de voluntários também onde é realizado os voluntariados da ONG. Como todos os desenvolvedores eram iniciantes, todas as telas eram realizadas, o back end no PHP, o front end com HTML e CSS e o banco de dados com o MySQL.
 
 <details>
   <summary> Tela de Doação, Participante e Voluntario</summary>
@@ -108,7 +112,7 @@ Na primeira sprint de fato apos o protótipo do site, começamos a realizar os d
 
 <br>
 
-Na segunda sprint realizei a montagem das telas de contato onde é exibido o local da escola e um formulário para entrar em contato, a tela de projetos onde é exibido os projetos sociais e um formulário para solicitar um projeto e uma tela sobre a escola. Essa sprint e na anterior fiquei responsável no desenvolvimento das telas enquanto os outros desenvolvedores realizaram o desenvolvimento do captcha, da tela para que o usuário admin edite os textos do site e a tela de login.
+Na segunda sprint, realizei a montagem das telas de contato, onde é exibido o local da escola e um formulário para entrar em contato, a tela de projetos, onde são exibidos os projetos sociais e um formulário para solicitar um projeto, e uma tela sobre a escola. Esse sprint e na anterior fiquei responsável pelo desenvolvimento das telas enquanto os outros desenvolvedores realizaram o desenvolvimento do captcha, da tela para que o usuário admin edite os textos do site e a tela de login.
 
 <details>
   <summary> Tela de Contato, Projeto e Sobre</summary>
@@ -130,7 +134,7 @@ Na segunda sprint realizei a montagem das telas de contato onde é exibido o loc
 
 <br>
 
-Na terceira sprint já com todas as telas prontas, decidimos realizar as funções dos administradores e o nosso site tem um método onde o administrador consegue atualizar e manter o controle do site apenas através de uma tela admin onde ele consegue atualizar os textos e imagens do site e aprova e reprova usuários. Como desenvolvedor realizei a estilização e a montagem da tela no administrador um banco de dados do site para ser visível sem utilizar o mysql.
+Na terceira sprint já com todas as telas prontas, decidimos realizar as funções dos administradores e o nosso site tem um método onde o administrador consegue atualizar e manter o controle do site apenas via uma tela admin onde ele consegue atualizar os textos e imagens do site e aprova e reprova usuários. Como desenvolvedor, realizei a estilização e a montagem da tela no administrador, um banco de dados do site para ser visível sem utilizar o MySQL.
 
 <details>
   <summary> Tela banco de dados admin e telas editaveis</summary>
@@ -148,11 +152,11 @@ Na terceira sprint já com todas as telas prontas, decidimos realizar as funçõ
 
 <br>
 
-Na quarta e ultima sprint fique encarregado de algumas correções de bugs.
+Na quarta e última sprint, fique encarregado de algumas correções de bugs.
 
-No final conseguimos entregar um bom projeto, foi um desafio bem grande por ser o primeiro contato de programação para o grupo, mas com ajuda de todos e dos professores podemos ter uma boa entrega.
+No final, conseguimos entregar um bom projeto, foi um desafio bem grande por ser o primeiro contato de programação para o grupo, mas com ajuda de todos e dos professores podemos ter uma boa entrega.
 
-Video do Website institucional
+Vídeo do site institucional.
 
 [Video institucional](https://www.youtube.com/watch?v=9K1p-P8zGd8)
 
@@ -160,22 +164,22 @@ Video do Website institucional
 
 ### Hard Skills
 
-| Hard Skills  |                                                            Utilização                                                            | Nível de proficiência |
-| :----------: | :------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-|    Marvel    |                               Desenvolvi habilidades na montagem de um prototipo dinamico de site                                |       Avançado        |
-|  HTML e CSS  |                         Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                          |     Intermediário     |
-|     PHP      |  Utilizado para montagem da interatividade e dinamica do site, realizado em conjunto com equipe, porem com atividades autonomas  |     Intermediário     |
-|    MYSQL     | Utilizado para gerenciamento e armazenamento dos dados do site, realizado em conjunto com equipe, porem com atividades autonomas |     Intermediário     |
-| GIT e GITHUB |      Utilizado controle e versionamento do projeto, realizado em conjunto com equipe, porem com utilização de facilitadores      |        Basico         |
+| Hard Skills  |                                                             Utilização                                                              | Nível de proficiência |
+| :----------: | :---------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|    Marvel    |                                Desenvolvi habilidades na montagem de um protótipo dinâmico de site.                                 |       Avançado        |
+|  HTML e CSS  |                         Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                           |     Intermediário     |
+|     PHP      |  Utilizado para montagem da interatividade e dinâmica do site, realizado em conjunto com a equipe, porém com atividades autônomas.  |     Intermediário     |
+|    MYSQL     | Utilizado para gerenciamento e armazenamento dos dados do site, realizado em conjunto com a equipe, porém com atividades autônomas. |     Intermediário     |
+| GIT e GITHUB |      Utilizado controle e versionamento do projeto, realizado em conjunto com a equipe, porém com utilização de facilitadores.      |        Basico         |
 
 ### Soft Skills
 
-|    Soft Skills     |                                      Utilização                                      |
-| :----------------: | :----------------------------------------------------------------------------------: |
-|    Comunicação     | Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo |
-|    Criatividade    |                  Utilizado na hora de produzir o prototipo do site                   |
-|   Adaptabilidade   |   Utilizado no projeto e na produção, pois estavamos trabalhando no formato online   |
-| Pensamento crítico |  Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas   |
+|    Soft Skills     |                                      Utilização                                       |
+| :----------------: | :-----------------------------------------------------------------------------------: |
+|    Comunicação     | Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo. |
+|    Criatividade    |                  Utilizado na hora de produzir o protótipo do site.                   |
+|   Adaptabilidade   |   Utilizado no projeto e na produção, pois estávamos trabalhando no formato online.   |
+| Pensamento crítico |  Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.   |
 
 [Voltar ao inicio](#sumário)
 
@@ -189,9 +193,9 @@ Parceiro Acadêmico: [JetSoft](https://jetsoft.com.br/)
 
 O projeto foi elaborado para produzir um website para uma empresa de softwares que terceiriza serviços, onde ela terá a funcionalidade de emitir relatórios mensais apresentando o quadro de presença de colaboradores em posto de trabalhos acordados em contrato que passarão por um nível de aprovação.
 
-Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorra eventos (férias, falta não justificada, licença diversas, demissão, entre outros).
+Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorram eventos (férias, falta não justificada, licença diversas, demissão, entre outros).
 
-### Etapas de desenvolvimento
+### Etapas de Desenvolvimento
 
 ![Backlog](./2_Semestre/backlog.png)
 
@@ -201,21 +205,21 @@ Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de 
 
 ### Tecnologias Utilizadas
 
-[Figma:](https://www.figma.com/) Desenvolvimento do prototipo do site
+[Figma:](https://www.figma.com/) Desenvolvimento do protótipo do site.
 
-[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web.
 
-[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e layoutar esses conteúdos
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e personalizar esses conteúdos.
 
-[Javascript:](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) Para desenvolver a dinamicidade e a interatividade do app
+[Javascript:](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) Para desenvolver a dinamicidade e a interatividade do app.
 
-[MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente
+[MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
 
-[Flask:](https://flask.palletsprojects.com/en/3.0.x/) Micro framework para Python usado para desenvolver aplicações web
+[Flask:](https://flask.palletsprojects.com/en/3.0.x/) Micro framework para Python usado para desenvolver aplicações web.
 
 ### Contribuições Pessoais
 
-Nesse segundo semestre realizamos um projeto de web para controle de funcionários que terceiriza seus negócios utilizando uma metodologia ágil Scrum. Optei nesse semestre por ser o Scrum Master do time e no primeiro momento como o product owner não tinha experiencia em prototipação e montagem de layout eu como scrum master alinhei com todos os integrantes para que auxiliem na montagem, já deixando montado como vai ser o menu do app e onde ficaria localizado as funções seguintes.
+Nesse segundo semestre, realizamos um projeto de web para controle de funcionários que terceirizam seus negócios utilizando uma metodologia ágil Scrum. Optei nesse semestre por ser o Scrum Master do time e no primeiro momento como o product owner não tinha experiencia em prototipação e montagem de layout eu como scrum master alinhei com todos os integrantes para auxiliarem na montagem, já deixando montado como vai ser o menu do aplicativo e onde ficaria localizado as funções seguintes.
 
 <details>
   <summary>Layout Base</summary>
@@ -229,9 +233,9 @@ Nesse segundo semestre realizamos um projeto de web para controle de funcionári
 
 <br>
 
-Apos esse protótipo estar pronto foi realizado a organização das tasks para que cada integrante realize e para um controle maior do projeto como scrum master alinhei com o time para serem feitos dailys diárias apos a faculdade para compartilharmos nossas tasks e o andamento. Foi bastante proveitoso essa ideia, pois o time conseguiu evoluir bastante não deixando de entregar resultados e sempre que algum desenvolvedor tivesse dificuldade eu e os outros da equipe tentava ajudar.
+Após esse protótipo estar pronto, foi realizada a organização das tasks para que cada integrante realize e, para um controle maior do projeto como scrum master, alinhei com o time para serem feitas dailys diárias após a faculdade para compartilharmos nossas tasks e o andamento. Foi bastante proveitosa essa ideia, pois o time conseguiu evoluir bastante, não deixando de entregar resultados e sempre que algum desenvolvedor tivesse dificuldade, eu e os outros da equipe tentamos ajudar.
 
-Na primeira sprint apos o protótipo ser aceite e as regras e as tasks da equipe serem alinhadas o projeto começou. No primeiro momento para que o time tivesse foco na montagem do app realizei a montagem da tela base também que sera utilizado no projeto inteiro com um menu interativo e já com as margens corretas para as funções, além disso, para o projeto utilizamos o framework flask do python e enquanto o pessoal desenvolvia eu estava estudando para auxiliar os demais o que foi de bastante ajuda, pois o pessoal do back end não estava conseguindo desenvolver o api rest no flask, então montei duas rotas, uma para o controle de presença e uma para o cadastro de colaboradores para ser utilizado como exemplo.
+Na primeira sprint, após o protótipo ser aceite e as regras e as tasks da equipe serem alinhadas, o projeto começou. No primeiro momento para que o time tivesse foco na montagem do aplicativo realizei a montagem da tela base também que será utilizado no projeto inteiro com um menu interativo e já com as margens corretas para as funções, além disso, para o projeto utilizamos o framework Flask do Python e enquanto o pessoal desenvolvia eu estava estudando para auxiliar os demais o que foi de bastante ajuda, pois o pessoal do back end não estava conseguindo desenvolver o API rest no Flask, então montei duas rotas, uma para o controle de presença e uma para o cadastro de colaboradores para ser utilizado como exemplo.
 
 <details>
   <summary>Rotas Utilizando Flask</summary>
@@ -354,7 +358,7 @@ if __name__ == "__main__":
 
 <br>
 
-Na segunda sprint após as reuniões, pude perceber haver um desenvolvedor com problemas e como scrum master fui atrás dele para poder auxiliar, para ser resolvido pedi para que compartilhasse a tela para podermos programar juntos e foi nesse momento que percebi que ele não estava se dedicando ao projeto, pois não estava entendendo como desenvolver direito e estava meio perdido, então auxiliei ele na hora para deixar o ambiente do projeto para ser desenvolvido e consegui clarear bastante as coisas para ele seguir o caminho e com isso ele conseguiu entregar sua parte nessa sprint com exito.
+Na segunda sprint após as reuniões, pude perceber haver um desenvolvedor com problemas e como scrum master fui atrás dele para poder auxiliar, para ser resolvido pedi para que compartilhasse a tela para podermos programar juntos e foi nesse momento que percebi que ele não estava se dedicando ao projeto, pois não estava entendendo como desenvolver direito e estava meio perdido, então auxiliei ele na hora para deixar o ambiente do projeto para ser desenvolvido e consegui clarear bastante as coisas para ele seguir o caminho e com isso ele conseguiu entregar sua parte nesse sprint com exito.
 
 Mesmo que exercendo um papel de scrum master para que o projeto saísse de forma correta eu sempre acabava revisando o código do grupo para corrigir alguns problemas de edentação, correção de alguns bugs telas que às vezes por falta de mão de obra acabava fincando por fazer, resumindo eu estava operando como um tech lead em alguns momentos, mas sempre ajudando e organizando o tempo e as task da equipe.
 
@@ -369,7 +373,7 @@ Mesmo que exercendo um papel de scrum master para que o projeto saísse de forma
 
 <br>
 
-Na terceira sprint como em todos eu acabo revisando o código e facilitando o caminho da equipe os desenvolvedores tiverem bastante problema com o css, pois tinham que deixar alinhado na tela para que não ficasse sobreposto ou embaixo do menu lateral e como scrum master e já sabendo um pouco mais sobre css eu decidi ajudar a estilizar algumas telas para ficar no espaço desejado para que a equipe finalize a maioria do projeto. Não tive muitos problemas nessa sprint, após alinhar com os desenvolvedores que estavam um pouco abaixo do esperado na segunda sprint, na terceira eles melhoraram bastante e pude focar mais nessa parte do css que realmente era um problema e no gerenciamento do tempo.
+Na terceira sprint como em todos eu acabo revisando o código e facilitando o caminho da equipe os desenvolvedores tiverem bastante problema com o CSS, pois tinham que deixar alinhado na tela para que não ficasse sobreposto ou embaixo do menu lateral e como scrum master e já sabendo um pouco mais sobre CSS eu decidi ajudar a estilizar algumas telas para ficar no espaço desejado para que a equipe finalize a maioria do projeto. Não tive muitos problemas nesse sprint, após alinhar com os desenvolvedores que estavam um pouco abaixo do esperado na segunda sprint, na terceira eles melhoraram bastante e pude focar mais nessa parte do CSS que realmente era um problema e no gerenciamento do tempo.
 
 <details>
   <summary>Burndonw 3-Sprint</summary>
@@ -382,9 +386,9 @@ Na terceira sprint como em todos eu acabo revisando o código e facilitando o ca
 
 <br>
 
-Na quarta e ultima sprint após o projeto ter finalizado, como um requisito funcional era para ser realizado o deploy da aplicação, porem o grupo não estava conseguindo realizar o deploy no Heroku então para que o problema fosse resolvido procurei varias formas de fazer o deploy de uma aplicação python ate que consegui achar a plataforma 'pythonanywhere' e enquanto o pessoal arrumava os bugs e realizava a confecção do botão de PDF eu estava testando e tentando implementar esse deploy. Após muito custo consegui subir a aplicação na plataforma e entregar o projeto.
+Na quarta e ultima sprint após o projeto ter finalizado, como um requisito funcional era para realizar o deploy da aplicação, porem o grupo não estava conseguindo realizar o deploy no Heroku então para que o problema fosse resolvido procurei várias formas de fazer o deploy de uma aplicação Python até que consegui achar a plataforma 'pythonanywhere' e enquanto o pessoal arrumava os bugs e realizava a confecção do botão de PDF eu estava testando e tentando implementar esse deploy. Após muito custo, consegui subir a aplicação na plataforma e entregar o projeto.
 
-Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era novo e havia bastante impedimento tanto com questão de experiência em programação quanto procrastinação de tasks. Mas no final consegui alinhar a equipe e entregamos um produto satisfatório para o cliente.
+Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era novo e havia bastante impedimento tanto com questão de experiência em programação quanto com procrastinação de tasks. Mas no final consegui alinhar a equipe e entregamos um produto satisfatório para o cliente.
 
 <details>
   <summary>Burndonw 4-Sprint</summary>
@@ -409,25 +413,25 @@ Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era
 
 ### Hard Skills
 
-| Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
-| :----------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-|    Figma     |                          Desenvolvi conhecimento na montagem de prototipos e layouts para site                          |     Intermediário     |
-|  HTML e CSS  |                     Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                     |     Intermediário     |
-|  Javascript  |           Desenvoli habilidades de criar scripts para deixar o site mais interativo e dinamico para o usuario           |     Intermediário     |
-|    MYSQL     | Desenvolvi habilidades e conheicmentos no gerencimaneto de databases e tabelas alem de monatgem de querys para consulta |     Intermediário     |
-|    Flask     |           Desenvolvi habilidades em criar api rest e a conexão do front end com o back end no mesmo framework           |     Intermediário     |
-| GIT e GITHUB |                           Aprendi a utilizar os comandos do git e seu funcionamento no github                           |     Intermediário     |
+| Hard Skills  |                                                        Utilização                                                         | Nível de proficiência |
+| :----------: | :-----------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|    Figma     |                          Desenvolvi conhecimento na montagem de protótipos e layouts para site.                           |     Intermediário     |
+|  HTML e CSS  |                    Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                      |     Intermediário     |
+|  Javascript  |           Desenvolvi habilidades de criar scripts para deixar o site mais interativo e dinâmico para o usuário.           |     Intermediário     |
+|    MYSQL     | Desenvolvi habilidades e conhecimentos no gerenciamento de databases e tabelas, além de montagem de querys para consulta. |     Intermediário     |
+|    Flask     |           Desenvolvi habilidades em criar API rest e a conexão do front end com o back end no mesmo framework.            |     Intermediário     |
+| GIT e GITHUB |                          Aprendi a utilizar os comandos do Git e seu funcionamento no GitHub.                             |     Intermediário     |
 
 ### Soft Skills
 
-|          Soft Skills          |                                                       Utilização                                                       |
-| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-|          Comunicação          |                  Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo                  |
-|         Criatividade          |                                   Utilizado na hora de produzir o prototipo do site                                    |
-|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estavamos trabalhando no formato online                    |
-|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas                    |
-|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso |
-| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos |
+|          Soft Skills          |                                                       Utilização                                                        |
+| :---------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
+|          Comunicação          |                  Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo.                  |
+|         Criatividade          |                                   Utilizado na hora de produzir o protótipo do site.                                    |
+|        Adaptabilidade         |                   Utilizado no projeto e na produção, pois estávamos trabalhando no formato online.                     |
+|      Pensamento crítico       |                  Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                     |
+|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso. |
+| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos. |
 
 [Voltar ao inicio](#sumário)
 
@@ -439,9 +443,9 @@ Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era
 
 Parceiro Acadêmico: [Tecsus](https://tecsus.com.br/)
 
-O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca por meio da tecnologia tornar o planeta mais sustentável.
+O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca, por meio da tecnologia, tornar o planeta mais sustentável.
 
-O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes através de relatórios e gráficos descomplicados para análise
+O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes por meio de relatórios e gráficos descomplicados para análise
 
 ### Etapas de Desenvolvimento
 
@@ -451,23 +455,23 @@ O sistema será desenvolvido para que o processo de cadastramento de contas, uni
 
 ### Tecnologias Utilizadas
 
-[Figma:](https://www.figma.com/) Desenvolvimento do prototipo do site
+[Figma:](https://www.figma.com/) Desenvolvimento do protótipo do site.
 
-[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web.
 
-[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e layoutar esses conteúdos
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e personalizar esses conteúdos.
 
-[React:](https://pt-br.legacy.reactjs.org/) Framework do javascript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+[React:](https://pt-br.legacy.reactjs.org/) Framework do JavaScript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
 
 [Spring Boot:](https://spring.io/projects/spring-boot) Framework Java que simplifica o desenvolvimento de aplicativos robustos e escaláveis, oferecendo configuração mínima e alto desempenho.
 
-[MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente
+[MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
 
 ### Contribuições Pessoais
 
-Neste projeto eu estava atuando como Product Owner, onde era responsável pelo contato com cliente, definição de user storys, priorização do backlog e para este projeto eu realizei o design do mockup do aplicativo.
+Neste projeto, eu estava atuando como Product Owner, onde era responsável pelo contato com o cliente, definição de User Story, priorização do backlog e para este projeto eu realizei o design do mockup do aplicativo.
 
-Após o contato com o cliente, foi possível a definição dos user storys e do mockup onde foi utilizado a ferramenta figma.
+Após o contato com o cliente, foi possível a definição do User Story e do mockup onde foi utilizada a ferramenta Figma.
 
 <details>
 <summary>User Story</summary>
@@ -618,11 +622,11 @@ Após o contato com o cliente, foi possível a definição dos user storys e do 
 
 <br>
 
-Após cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foi utilizado as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o Mysql. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
+Após o cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foram utilizadas as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o MySQL. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
 
-Apesar de esta operando como Product Owner, possuo algumas experiencias com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolvimento do front-end.
+Apesar de estar operando como Product Owner, possuo algumas experiências com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolvimento do front-end.
 
-De começo para auxiliar na programação das telas foi utilizado a biblioteca MaterialUi onde foi utilizado campos de input, botões e estilos. Como o react trabalha com componentes no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para que seja feito o controle do estado das variáveis.
+De começo, para auxiliar na programação das telas, foi utilizada a biblioteca Material Ui onde foram utilizados campos de input, botões e estilos. Como o React trabalha com componentes, no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para ser feito o controle do estado das variáveis.
 
 <details>
   <summary>Modal de editar a concessionaria</summary>
@@ -692,13 +696,13 @@ De começo para auxiliar na programação das telas foi utilizado a biblioteca M
 
 <br>
 
-O componente que foi criado acima é um Modal que aonde retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executado após apertar o botão de enviar onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
+O componente criado acima é um Modal que retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executada após apertar o botão de enviar, onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
 
-Esse é um exemplo de um componente de dados que retorna os dados da concessionaria para editar e assim como esse outros foram montados como inserir, editar e excluir dados do app.
+Esse é um exemplo de um componente de dados que retorna os dados da concessionária para editar e, assim como esse, outros foram montados como inserir, editar e excluir dados do aplicativo.
 
-Para última sprint foi acordado com o cliente que era para ser inserido uma página de relatório com gráficos relacionados a contas de água e contas de energia inseridos.
+Para o último sprint, foi acordado com o cliente que era para inserir uma página de relatório com gráficos relacionados a contas de água e contas de energia inseridas.
 
-Para o gráfico optei por utilizar a biblioteca recharts para react onde ele consegue gerar um gráfico com os dados das contas.
+Para o gráfico, optei por utilizar a biblioteca recharts para React onde ele consegue gerar um gráfico com os dados das contas.
 
 <details>
   <summary>Componente de grafico da agua usado na pagina de relatorios</summary>
@@ -812,7 +816,7 @@ Para o gráfico optei por utilizar a biblioteca recharts para react onde ele con
 
 <br>
 
-O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra de acordo com os valor total mensal e consumo mensal.
+O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra conforme os valores total mensal e consumo mensal.
 
 <details>
   <summary>Gif do grafico e filtros</summary>
@@ -825,31 +829,31 @@ O código acima monta o gráfico através dos dados recebidos no JSON do back-en
 
 <br>
 
-E com isso é finalizado a api, colocamos o back-end no heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto, o cliente ficou satisfeito com o resultado.
+E com isso é finalizado a API, colocamos o back-end no Heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto. O cliente ficou satisfeito com o resultado.
 
-Porém nesta api eu estava como product owner porém dois integrantes que ficaram na parte do front não acabaram ajudando muito, então acabei que fiquei mais empenhado como desenvolvedor, mas nunca deixando minhas tarefas como product owner de lado.
+Porém, nesta API eu estava como product owner, porém dois integrantes que ficaram na parte do front não acabaram ajudando muito, então acabei que fiquei mais empenhado como desenvolvedor, mas nunca deixando minhas tarefas como product owner de lado.
 
 ### Hard Skills
 
-| Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
-| :----------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-|    Figma     |                          Desenvolvi conhecimento na montagem de prototipos e layouts para site                          |     Intermediário     |
-|  HTML e CSS  |                     Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                     |     Intermediário     |
-|  Javascript  |           Desenvoli habilidades de criar scripts para deixar o site mais interativo e dinamico para o usuario           |     Intermediário     |
-|    MYSQL     | Desenvolvi habilidades e conheicmentos no gerencimaneto de databases e tabelas alem de monatgem de querys para consulta |     Intermediário     |
-|    Flask     |           Desenvolvi habilidades em criar api rest e a conexão do front end com o back end no mesmo framework           |     Intermediário     |
-| GIT e GITHUB |                           Aprendi a utilizar os comandos do git e seu funcionamento no github                           |     Intermediário     |
+| Hard Skills  |                                                         Utilização                                                         | Nível de proficiência |
+| :----------: | :------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|    Figma     |                           Desenvolvi conhecimento na montagem de protótipos e layouts para site.                           |     Intermediário     |
+|  HTML e CSS  |                    Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                       |     Intermediário     |
+|  Javascript  |           Desenvolvi habilidades de criar scripts para deixar o site mais interativo e dinâmico para o usuário.            |     Intermediário     |
+|    MYSQL     | Desenvolvi habilidades e conhecimentos no gerenciamento de databases e tabelas, além de modelagem de querys para consulta. |     Intermediário     |
+|    Flask     |            Desenvolvi habilidades em criar API rest e a conexão do front end com o back end no mesmo framework.            |     Intermediário     |
+| GIT e GITHUB |                           Aprendi a utilizar os comandos do Git e seu funcionamento no GitHub.                             |     Intermediário     |
 
 ### Soft Skills
 
-|          Soft Skills          |                                                       Utilização                                                       |
-| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-|          Comunicação          |                  Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo                  |
-|         Criatividade          |                                   Utilizado na hora de produzir o prototipo do site                                    |
-|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estavamos trabalhando no formato online                    |
-|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas                    |
-|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso |
-| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos |
+|          Soft Skills          |                                                       Utilização                                                        |
+| :---------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
+|          Comunicação          |                  Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo.                  |
+|         Criatividade          |                                  Utilizado na hora de produzir o protótipo do site.                                     |
+|        Adaptabilidade         |                   Utilizado no projeto e na produção, pois estávamos trabalhando no formato online.                     |
+|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                    |
+|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso. |
+| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos. |
 
 [Voltar ao inicio](#sumário)
 
@@ -861,9 +865,9 @@ Porém nesta api eu estava como product owner porém dois integrantes que ficara
 
 Parceiro Acadêmico: [Jaia](https://www.jaia.software/)
 
-O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
+O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e a eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
 
-A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificará a gestão de prestadores de serviço, segmentos e ordens de serviço. Como parte deste projeto, estamos desenvolvendo uma landing page intuitiva que facilitará a solicitação de novas ordens de serviço para os nossos novos clientes por meio de um simples formulário. Para os nossos clientes existentes, disponibilizaremos uma landing page personalizada, onde poderão acessar facilmente suas ordens de serviço anteriores, baixar laudos novamente e fornecer feedbacks valiosos, incluindo sugestões e reclamações. Além disso, eles também terão a opção de fazer novas solicitações de ordens de serviço.
+A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificará a gestão de prestadores de serviço, segmentos e ordens de serviço. Como parte deste projeto, estamos desenvolvendo uma landing page intuitiva que facilitará a solicitação de novas ordens de serviço para os nossos novos clientes por meio de um simples formulário. Para os nossos clientes existentes, disponibilizaremos uma landing page personalizada, onde poderão acessar facilmente suas ordens de serviço anteriores, baixar laudos novamente e dar feedbacks valiosos, incluindo sugestões e reclamações. Além disso, eles também terão a opção de fazer novas solicitações de ordens de serviço.
 
 ### Etapas de Desenvolvimento
 
@@ -873,27 +877,27 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 
 ### Tecnologias Utilizadas
 
-[Figma:](https://www.figma.com/) Desenvolvimento do prototipo do site
+[Figma:](https://www.figma.com/) Desenvolvimento do protótipo do site.
 
-[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web.
 
-[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e layoutar esses conteúdos
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e personalizar esses conteúdos.
 
-[Vue:](https://vuejs.org/) Framework do javascript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+[Vue:](https://vuejs.org/) Framework do JavaScript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
 
 [Spring Boot:](https://spring.io/projects/spring-boot) Framework Java que simplifica o desenvolvimento de aplicativos robustos e escaláveis, oferecendo configuração mínima e alto desempenho.
 
-[Oracle:](https://www.oracle.com/br/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente
+[Oracle:](https://www.oracle.com/br/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
 
 ### Contribuições Pessoais
 
-Esse projeto foi a minha primeira API realizada no curso de Banco de Dados na turma noturna. Por ser um grupo novo tive que me adaptar ao estilo de trabalho deles.
+Esse projeto foi a minha primeira API realizada no curso de Banco de Dados na turma noturna. Por ser um grupo novo, tive que me adaptar ao estilo de trabalho deles.
 
-O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuário pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo já havia um desenvolvedor front-end onde foi utilizado o Vue.js como framework, porem optei por realizar o back-end pois teria mais demandas e seria um novo desafio para mim que não tinha muita familiaridade com spring boot.
+O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuário pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo já havia um desenvolvedor front-end onde foi utilizado o Vue.js como framework, porém optei por realizar o back-end, pois teria mais demandas e seria um novo desafio para mim, que não tinha muita familiaridade com Spring Boot.
 
-Na sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e prestador para várias ordens de serviço foi utilizado bastante o relacionamento de um para muitos e muitos para muitos tanto para o banco de dados quanto para o back end em spring boot, para mim, seria um dos primeiros contatos com modelagem em banco com esse relacionamento e trabalho com back end tratando os dados com relacionamentos.
+No sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e prestador para várias ordens de serviço foi utilizado bastante o relacionamento de um para muitos e muitos para muitos tanto para o banco de dados quanto para o back end em spring boot, para mim, seria um dos primeiros contatos com modelagem em banco com esse relacionamento e trabalho com back end tratando os dados com relacionamentos.
 
-Na primeira sprint foi utilizado padrão de arquitetura MVC(module view control) no spring boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) sendo responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nessa sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que eu tive mais dificuldades foi na hora de montar o serviço, que era onde ficava nossas funções que retornar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados, pois o método é montado através de ação como "findByEmail" para retornar os emails, só que algumas vezes não retornavam o que eu queria, porem apos algumas ajudas e vídeos aulas consegui entender e terminar essa parte.
+Na primeira sprint, foi utilizado padrão de arquitetura MVC (module view control) no Spring Boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) sendo responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nesse sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que tive mais dificuldades foi na hora de montar o serviço, que era onde ficavam nossas funções que retornar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados, pois o método é montado por meio de ação como "findByEmail" para retornar os emails, só que algumas vezes não retornavam o que eu queria, porem após algumas ajudas e vídeos aulas consegui entender e terminar essa parte.
 
 <details>
 <summary> Service Prestador </summary>
@@ -1000,15 +1004,15 @@ public class PrestadorService implements PrestadorInterface {
 
 <br>
 
-Após terminar o service eu finalizei o controler e minhas atividades, mas vi que um dos desenvolvedores do back end estava com dificuldades na hora de montar o relacionamento de um para muitos, pois estávamos aprendendo na aula ainda como utilizar esse método então para nos estava um pouco confuso e para ajudar peguei a task dele de montar o MVC do checkilist que é onde o prestador ou usuário valida as informações do laudo. Finalizado essa parte quase no final da sprint eles ainda estavam tentando solucionar esse caso dos relacionamentos porem seu muito sucesso.
+Após terminar o service eu finalizei o controler e minhas atividades, mas vi que um dos desenvolvedores do back end estava com dificuldades na hora de montar o relacionamento de um para muitos, pois estávamos aprendendo na aula ainda como utilizar esse método então para nos estava um pouco confuso e para ajudar peguei a task dele de montar o MVC do checkilist que é onde o prestador ou usuário valida as informações do laudo. Finalizada essa parte, quase no final do sprint, eles ainda estavam tentando solucionar esse caso dos relacionamentos, porém sem muito sucesso.
 
-Na segunda sprint os esforços do time do back foi em entender esses relacionamentos de um para um, um para muitos e muitos para muitos e eu como desenvolvedor comecei a estudar sobre e fazer alguns desenvolvimentos e teste junto com o grupo onde podemos entender como funciona e colocar em prática no desenvolvimento do projeto. Também nessa sprint após auxiliar os desenvolvedores eu peguei a task de montar o MVC do cliente onde não tive muitos problemas, pois já tinha feito um igual e já sabia mais ou menos os erros conhecidos e o que poderia dar.
+Na segunda sprint os esforços do time do back foi em entender esses relacionamentos de um para um, um para muitos e muitos para muitos e eu como desenvolvedor comecei a estudar sobre e fazer alguns desenvolvimentos e teste com o grupo onde podemos entender como funciona e colocar em prática no desenvolvimento do projeto. Também nesse sprint, após auxiliar os desenvolvedores, eu peguei a task de montar o MVC do cliente, onde não tive muitos problemas, pois já tinha feito um igual e já sabia mais ou menos os erros conhecidos e o que poderia dar.
 
-Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por manda-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decedi mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido seguimos para a terceira sprint.
+Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por mandá-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decidi mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido, seguimos para a terceira sprint.
 
-Na terceira sprint inicialmente eu comecei a desenvolver o login tanto o layout do site quanto a parte de realizar o login na plataforma, como o back end já tinha desenvolvido a função de autenticação o que eu fiz foi ajustar uma rota para ele enviar os dados do login para o back autenticar e me retornar um token, onde eu armazenava no localstorage e coim isso a cada requisição realizada pelo front ele mandava esse token para ser validado pelo sistema, garantindo uma integridade de segurança dos dados.
+Na terceira sprint inicialmente eu comecei a desenvolver o login tanto o layout do site quanto a parte de realizar o login na plataforma, como o back end já tinha desenvolvido a função de autenticação o que fiz foi ajustar uma rota para ele enviar os dados do login para o back autenticar e me retornar um token, onde eu armazenava no localstorage e coim isso a cada requisição realizada pelo front ele mandava esse token para ser validado pelo sistema, garantindo uma integridade de segurança dos dados.
 
-Apos essa tela de login decidi realizar o desenvolvimento da tela do modal onde o usuário aprova as ordens de serviço, onde o usuário teria as checklists que foram cadastradas para aquela atividade e poderia aprovar ou reprovar caso o não passe no checkilist. Em uma tela contem as ordens de serviço e o usuário que aprova as ordens vai clicar nelas e nisso ira abrir um modal com os checkilist para ser validado, após validado ele fecha esse modal.
+Após essa tela de login, decidi realizar o desenvolvimento da tela do modal onde o usuário aprova as ordens de serviço, onde o usuário teria os checklists cadastrados para aquela atividade e poderia aprovar ou reprovar caso o não passe no Checklist. Em uma tela, estão as ordens de serviço e o usuário que aprova as ordens vai clicar nelas e nisso irá abrir um modal com os checklists para ser validado. Após validado, ele fecha esse modal.
 
 <details>
 <summary>Tela de aprovação de ordem de serviço e codigo do modal</summary>
@@ -1179,31 +1183,31 @@ Apos essa tela de login decidi realizar o desenvolvimento da tela do modal onde 
 
 <br>
 
-Apos realizar o login e o modal, fiz a correção e estilização de algumas telas para ficar mais parecido com o layout do protótipo e desenvolvi mais um de edição de dados da ordem, onde através da requisição rest ele retorna os dados e faz o update. Acabei trabalhando bastante nessa sprint, pois o desenvolvedor que estava com problemas havia atrasado algumas features então nessa sprint para agilizar o projeto acabei desenvolvendo elas.
+Após realizar o login e o modal, fiz a correção e estilização de algumas telas para ficar mais parecido com o layout do protótipo e desenvolvi mais um de edição de dados da ordem, onde através da requisição rest ele retorna os dados e faz o update. Acabei trabalhando bastante nesse sprint, pois o desenvolvedor que estava com problemas havia atrasado algumas features então nesse sprint, para agilizar o projeto, acabei desenvolvendo elas.
 
-Na quarta sprint como já havia adiantado bastante coisa na terceira e como eu já tinha desenvolvido as telas de modal eu resolvi corrigir alguns bugs dos modais das outras telas que não estavam retornando os dados corretamente, pois havia uma falta de dados para realizar as requisições rest que populavam esses modais. Realizei as correções, fiz algumas modificações nas telas de login para que todo e qualquer requisição que fizesse para o back ele solicitava o token.
+Na quarta sprint como já havia adiantado bastante coisa na terceira e como eu já tinha desenvolvido as telas de modal eu resolvi corrigir alguns bugs dos modais das outras telas que não estavam retornando os dados corretamente, pois havia uma falta de dados para realizar as requisições rest que populavam esses modais. Realizei as correções, fiz algumas modificações nas telas de login para que toda e qualquer requisição que fizesse para o back ele solicitasse o token.
 
-No final deu tudo certo conseguimos entregar um produto de qualidade para o cliente, que adorou o sistema. Houve bastantes conflitos internos como mencionei houve desavenças por falta de entrega de resultados, mas com comunicação e paciência foi possível desenvolver o que para mim também havia sido um grande desafio tanto pelo back end em spring boot que apesar das dificuldades consegui entregar o que havia planejado, quanto para o front pois tenho mais conhecimentos com o framework react e para esse projeto foi utilizado o framework Vue, o que para mim, foi questão mais de saber como desenvolver a função que realiza no react no Vue.
+No final, deu tudo certo, conseguimos entregar um produto de qualidade para o cliente, que adorou o sistema. Houve bastantes conflitos internos como mencionei houve desavenças por falta de entrega de resultados, mas com comunicação e paciência foi possível desenvolver o que para mim também havia sido um grande desafio tanto pelo back end em spring boot que apesar das dificuldades consegui entregar o que havia planejado, quanto para o front, pois tenho mais conhecimentos com o framework React e para esse projeto foi utilizado o framework Vue, o que para mim, foi questão mais de saber como desenvolver a função que realiza no React no Vue.
 
 ### Hard Skills
 
-| Hard Skills  |                                                       Utilização                                                        | Nível de proficiência |
-| :----------: | :---------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-|  HTML e CSS  |                     Desenvolvi habilidades na montagem de uma estrutura e estilização de pagina web                     |     Intermediário     |
-|  Vue  |           Desenvoli habilidades de montagem de layouts estaticos com componentes utilizando o framework do javascript           |     Intermediário     |
-|    Oracle    | Desenvolvi habilidades e conheicmentos no gerencimaneto de databases e tabelas alem de monatgem de querys para consulta  |     Intermediário     |
-|    Spring Boot     |           Desenvolvi habilidades em criar api rest utilizando sistemas de database de one to many e many to many para criar classes e inserir no banco de dados           |     Intermediário     |
-| GIT e GITHUB |                           Aprendi a utilizar os comandos do git e seu funcionamento no github                           |     Intermediário     |
+| Hard Skills  |                                                                       Utilização                                                                       | Nível de proficiência |
+| :----------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+|  HTML e CSS  |                                   Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                                    |     Intermediário     |
+|     Vue      |                      Desenvolvi habilidades de montagem de layouts estáticos com componentes utilizando o framework do JavaScript                      |     Intermediário     |
+|    Oracle    |                Desenvolvi habilidades e conhecimentos no gerenciamento de databases e tabelas, além de montagem de querys para consulta.               |     Intermediário     |
+| Spring Boot  | Desenvolvi habilidades em criar API rest utilizando sistemas de Database de one to many e many to many para criar classes e inserir no banco de dados. |     Intermediário     |
+| GIT e GITHUB |                                          Aprendi a utilizar os comandos do Git e seu funcionamento no GitHub.                                          |     Intermediário     |
 
 ### Soft Skills
 
-|          Soft Skills          |                                                       Utilização                                                       |
-| :---------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
-|          Comunicação          |                  Utilziado para viabilizar reunioes com o time e a comunicação de atividades em grupo                  |
-|         Criatividade          |                                   Utilizado na hora de produzir o prototipo do site                                    |
-|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estavamos trabalhando no formato online                    |
-|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas                    |
-|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso |
-| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos |
+|          Soft Skills          |                                                       Utilização                                                        |
+| :---------------------------: | :---------------------------------------------------------------------------------------------------------------------: |
+|          Comunicação          |                  Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo.                  |
+|         Criatividade          |                                   Utilizado na hora de produzir o protótipo do site.                                    |
+|        Adaptabilidade         |                    Utilizado no projeto e na produção, pois estávamos trabalhando no formato online.                    |
+|      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                    |
+|    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso. |
+| Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos. |
 
 [Voltar ao inicio](#sumário)
