@@ -16,9 +16,9 @@
 
   - [4º Semestre 2/2023 - Jaia](#4º-semestre---jaia)
 
-- <a href="#sem5">5º Semestre 1/2024 - Tecsus</a>
+  - [5º Semestre 1/2024 - Tecsus](#5º-semestre---tecsus)
 
-- <a href="#sem6">6º Semestre 2/2024 - </a>
+  - [6º Semestre 2/2024 - Tecsus](#6º-semestre---SPC)
 
 ## Sobre Mim
 
@@ -859,7 +859,7 @@ Porém, nesta API eu estava como product owner, porém dois integrantes que fica
 
 <br>
 
-### 2/2023 | [Repositório](https://github.com/B1nary-Devs/JAIA-SOFTWARE)
+### 2/2023 | [Repositório](https://github.com/juliocesar1316/JAIA-SOFTWARE)
 
 ### 4º Semestre - Jaia
 
@@ -1209,5 +1209,50 @@ No final, deu tudo certo, conseguimos entregar um produto de qualidade para o cl
 |      Pensamento crítico       |                   Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                    |
 |    Resolução de Conflitos     | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso. |
 | Organização e Gestão do Tempo | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos. |
+
+[Voltar ao inicio](#sumário)
+
+
+### 1/2024 | [Repositório](https://github.com/juliocesar1316/5Semestre_Tecsus)
+
+### 5º Semestre - Tecsus
+
+Parceiro Acadêmico: [Tecsus](https://tecsus.com.br/)
+
+A TecSUS realiza a coleta e processamento de contas de energia, água e gás para diversas empresas dos setores do atacado e varejo. Possuem uma base de dados de unidades, contratos, contas e concessionárias desestruturada em arquivo texto, a empresa tem interesse em aplicar técnicas de ETL e utilizar ferramentas de visualização de dados do mercado.
+
+O desafio consiste em realizar uma análise abrangente e eficiente dos dados provenientes das faturas de energia, água e gás. Isso envolve lidar com uma grande quantidade de informações complexas e variadas, desde os valores de consumo até os detalhes contratuais e os padrões de utilização ao longo do tempo. A exibição desses dados também é parte essencial do desafio, pois é preciso apresentar as informações de forma clara, intuitiva e relevante para os usuários finais. Isso implica criar visualizações que permitam uma compreensão rápida e aprofundada dos padrões de consumo, tendências ao longo do tempo e comparações entre diferentes períodos, contratos e tipos de serviços (energia, água e gás). Portanto, o desafio abrange desde a coleta e processamento dos dados até a apresentação visual e análise interpretativa, visando fornecer insights valiosos para a tomada de decisões estratégicas e operacionais.
+
+### Etapas de Desenvolvimento
+
+
+![Backlog](./5_Semestre/image.png)
+
+### Prévia da Solução
+
+### Tecnologias Utilizadas
+
+[Figma:](https://www.figma.com/) Desenvolvimento do protótipo do site.
+
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web.
+
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e personalizar esses conteúdos.
+
+[React:](https://pt-br.legacy.reactjs.org/) Framework do JavaScript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+
+[MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
+
+[Python:]
+[Fast_Api:]
+[Power_Bi:]
+[SonarCloud:]
+[GitHub:]
+[Jira:]
+
+### Contribuições Pessoais
+
+### Hard Skills
+
+### Soft Skills
 
 [Voltar ao inicio](#sumário)
