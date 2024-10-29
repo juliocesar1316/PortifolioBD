@@ -1212,7 +1212,6 @@ No final, deu tudo certo, conseguimos entregar um produto de qualidade para o cl
 
 [Voltar ao inicio](#sumário)
 
-
 ### 1/2024 | [Repositório](https://github.com/juliocesar1316/5Semestre_Tecsus)
 
 ### 5º Semestre - Tecsus
@@ -1224,7 +1223,6 @@ A TecSUS realiza a coleta e processamento de contas de energia, água e gás par
 O desafio consiste em realizar uma análise abrangente e eficiente dos dados provenientes das faturas de energia, água e gás. Isso envolve lidar com uma grande quantidade de informações complexas e variadas, desde os valores de consumo até os detalhes contratuais e os padrões de utilização ao longo do tempo. A exibição desses dados também é parte essencial do desafio, pois é preciso apresentar as informações de forma clara, intuitiva e relevante para os usuários finais. Isso implica criar visualizações que permitam uma compreensão rápida e aprofundada dos padrões de consumo, tendências ao longo do tempo e comparações entre diferentes períodos, contratos e tipos de serviços (energia, água e gás). Portanto, o desafio abrange desde a coleta e processamento dos dados até a apresentação visual e análise interpretativa, visando fornecer insights valiosos para a tomada de decisões estratégicas e operacionais.
 
 ### Etapas de Desenvolvimento
-
 
 ![Backlog](./5_Semestre/image.png)
 
@@ -1242,14 +1240,106 @@ O desafio consiste em realizar uma análise abrangente e eficiente dos dados pro
 
 [MySQL:](https://www.mysql.com/) Para gerenciamento de banco de dados relacional usado para armazenar e recuperar dados de forma eficiente.
 
-[Python:]
-[Fast_Api:]
-[Power_Bi:]
-[SonarCloud:]
-[GitHub:]
-[Jira:]
+[Python:](https://www.python.org/) Utilizado para tratamentos de dados com ETL
+
+[Fast_Api:](https://fastapi.tiangolo.com/) Framework python utilizado para montagem da api da aplicação
+
+[Power_Bi:](https://www.microsoft.com/pt-br/power-platform/products/power-bi) Aplicação windows utilizado para análise de negócios e analise de dados
+
+[SonarCloud:](https://www.sonarsource.com/products/sonarcloud/) Ferramenta SonarCube para solução Clean Code
+
+[GitHub:](https://github.com/juliocesar1316/5Semestre_Tecsus/wiki) Ferramenta de verisonamento utilziado para DEVOPS do projeto e versionamento de codigo
+
+[Jira:](https://www.atlassian.com/br/software/jira) A ferramenta de gerenciamento de projetos utilizado para gerenciar task do projetos
 
 ### Contribuições Pessoais
+
+Neste projeto eu estava atuando primeiramente como desenvolvedor, como era um projeto que demandava conhecimento em python eu decidi ficar na parte do back end e deixar o front com outro aluno. O projeto era para desenvolver um app para analise de dados de contas de agua e energia, onde o cliente iria nos enviar um csv com dados diversos e teriamos que extrair eles, realizar o tratamento dos dados e carregar em uma plataforma de analise.
+
+Para esse projeto nosso grupo deicidiu contratar um aluno novo para nos ajudar nas demandas, pois alem do projeto teriamos que realziar o devops completo para da aplicação.
+
+Na primeira sprint foi disponibilizado um csv com contratos de agua, contratos de energia, contas de agua e contas de energia e como estava no back end fiquei encarregado de fazer a limpeza dos dados do csv. A primeiro momento realizamos algumas reunioes para saber o que cada campo do arquivo correspia e qual seria sua utilização para essa sprint.
+
+Apos realziado as reunioes e alinhado com o cliente decidimos realizar o tratamento dos dados das contas de agua.
+
+try:
+#Colocando na variavel df o arquivo recebido para tratamento
+df = self.dataframe
+
+            # renomeia a coluna
+            df.rename(columns={
+                'Nome do Contrato': 'Nome_do_Contrato',
+                'Campo Extra 1': 'Nome_Cliente',
+                'Forma de Pagamento': 'Forma_de_Pagamento',
+                'Tipo de Acesso a Distribuidora': 'Tipo_de_Acesso',
+                'Vigência Inicial':'Vigencia_Inicial',
+                'Vigência Final':'Vigencia_Final',
+                'Observação': 'Observacao',
+                'Número Cliente': 'Numero_Cliente',
+                'Campo Extra 3':'cnpj',
+                'Tipo de Consumidor':'Tipo_de_Consumidor',
+                'Modelo de Faturamento':'Modelo_de_Faturamento',
+                'Código de Ligação (RGI)':'Codigo_de_Ligacao_RGI',
+                'Endereço de Instalação':'Endereco_de_Instalacao',
+                'Número Medidor': 'Numero_Medidor',
+                'Hidrômetro': 'Hidrometro'
+            }, inplace=True)
+
+            #Tratamento de datas
+
+
+            df['Vigencia_Inicial'] = pd.to_datetime(df['Vigencia_Inicial'], errors='coerce')
+            df['Vigencia_Inicial'] = df['Vigencia_Inicial'].replace({'NaT', np.nan}, regex=True)
+
+            # df['Vigencia_Final'] = df['Vigencia_Final'].where(df['Vigencia_Final'].notnull(), None)
+            df['Vigencia_Final'] = pd.to_datetime(df['Vigencia_Final'], errors='coerce')
+
+
+            #Tirando espaços em branco entre strings e retirando caracterres especiais
+            columnsFill = ['Nome_do_Contrato', 'Nome_Cliente','Fornecedor','Forma_de_Pagamento','Tipo_de_Acesso','Observacao','Tipo_de_Consumidor','Modelo_de_Faturamento','Hidrometro','Endereco_de_Instalacao','Codigo_de_Ligacao_RGI', 'Modaliade']
+            for i in columnsFill:
+                df[i].str.strip()
+                df[i] = df[i].apply(lambda x: re.sub(r'"', '', x))
+                df[i] = df[i].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')  # Remover acentos e caracteres especiais
+                df[i] = df[i].replace({[np.nan, 'NaT'], ''}, regex=True)
+
+
+            #Formatando cnpj para somente numeros
+            df['cnpj'] = df['cnpj'].replace({'[./-]': ''}, regex=True)
+            df['cnpj'] = df['cnpj'].fillna(0)
+            df['cnpj'] = df['cnpj'].apply(int)
+
+            # Colunas selecionadas para o arquivo
+            columnsSelect = [
+                'Nome_do_Contrato',
+                'Nome_Cliente',
+                'Fornecedor',
+                'Forma_de_Pagamento',
+                'Tipo_de_Acesso',
+                'Vigencia_Inicial',
+                'Vigencia_Final',
+                'Observacao',
+                'Modalidade'
+                'cnpj',
+                'Tipo_de_Consumidor',
+                'Modelo_de_Faturamento',
+                'Codigo_de_Ligacao_RGI',
+                'Endereco_de_Instalacao',
+                'Hidrometro'
+            ]
+            # print(df[columnsSelect].info())
+
+            # #Gerar o arquivo csv
+            # dfSelect = df[columnsSelect]
+            # dfSelect.to_csv('test2', index=False)
+
+        except Exception as e:
+            print(f'Erro ao ler o arquivo {self.dataframe}: {e}')
+
+        try:
+            self.inserir_banco()
+        except Exception as e:
+            print(f'Erro ao salvar arquivos no banco de dados: {e}')
 
 ### Hard Skills
 
