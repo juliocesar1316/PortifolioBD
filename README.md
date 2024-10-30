@@ -1254,15 +1254,15 @@ O desafio consiste em realizar uma análise abrangente e eficiente dos dados pro
 
 ### Contribuições Pessoais
 
-Neste projeto eu estava atuando primeiramente como desenvolvedor, como era um projeto que demandava conhecimento em python eu decidi ficar na parte do back end e deixar o front com outro aluno. O projeto era para desenvolver um app para analise de dados de contas de agua e energia, onde o cliente iria nos enviar um csv com dados diversos e teriamos que extrair eles, realizar o tratamento dos dados e carregar em uma plataforma de analise.
+Neste projeto, inicialmente atuei como desenvolvedor. Como ele exigia conhecimento em Python, decidi focar no back-end e deixar o front-end para outro colega. O projeto consistia no desenvolvimento de um aplicativo para análise de dados de contas de água e energia. O cliente nos enviaria um arquivo CSV com diversos dados, e nossa tarefa era extrair, tratar esses dados e carregá-los em uma plataforma de análise.
 
-Para esse projeto nosso grupo deicidiu contratar um aluno novo para nos ajudar nas demandas, pois alem do projeto teriamos que realziar o devops completo para da aplicação.
+Para esse projeto, nosso grupo decidiu contratar um novo aluno para ajudar nas demandas, pois, além do projeto, precisaríamos cuidar de toda a parte de DevOps da aplicação.
 
-Na primeira sprint foi disponibilizado um csv com contratos de agua, contratos de energia, contas de agua e contas de energia e como estava no back end fiquei encarregado de fazer a limpeza dos dados do csv. A primeiro momento realizamos algumas reunioes para saber o que cada campo do arquivo correspia e qual seria sua utilização para essa sprint.
+Na primeira sprint, recebemos um CSV contendo contratos e contas de água e energia. Como estava responsável pelo back-end, fiquei encarregado da limpeza dos dados do CSV. Realizamos algumas reuniões para entender o que cada campo do arquivo representava e como seriam utilizados na sprint.
 
-Apos realziado as reunioes e alinhado com o cliente, decidimos realizar o tratamento dos dados das contas de agua. Como se trata de um prpjeto ara analise de dados optamos por inserir os dados tratados em um banco de dados mysql e para isso foi desenvolvido uma modelo estrela para que se tenha um controle melhor dos dados.
+Após essas reuniões e alinhamento com o cliente, decidimos focar no tratamento dos dados das contas de água. Por se tratar de um projeto de análise de dados, optamos por inserir os dados tratados em um banco de dados MySQL e, para isso, desenvolvemos um modelo estrela que facilitaria o controle e a análise dos dados.
 
-O tratamento de dados foi realziado de forma corrigir os nomes dos campos das colunas para facilitar a inserção automatica, retirada de campos em brancos, caracteres especiais e valores nulos alem da correção dos campos para o formato ideal como cmapos de data para formato em data e campos de cpf, cnpj para somente valores sem traços e barras e trasnformação do dado para numero.
+O tratamento de dados incluiu ajustes nos nomes das colunas para facilitar a inserção automática, remoção de campos em branco, caracteres especiais e valores nulos, além da correção de tipos de dados, como campos de data e CPF/CNPJ formatados corretamente.
 
 ```
 try:
@@ -1337,27 +1337,21 @@ except Exception as e:
     print(f'Erro ao salvar arquivos no banco de dados: {e}')
 ```
 
-O tartamento dos dados a principio estava de acordo, porem nosso grupo estava com alguns problemas no banco de dados, pois o aluno que contratamos acabou que não estava ajudando muito na entrega e não estava comprindo com seu papel de Master.
+O tratamento inicial dos dados estava adequado, mas enfrentamos problemas com o banco de dados. O aluno recém-contratado não estava cumprindo seu papel de Scrum Master de forma eficiente, o que atrasou o projeto. Eu e Marcelo, outro desenvolvedor, decidimos assumir a configuração do banco. Eventualmente, o grupo optou por dispensar o novo aluno, e eu me ofereci para ajudar na coordenação como Scrum Master.
 
-Optamos por montar o banco de dados eu e oMarcelo outro desenvolvedor, porem devido a alguns probelmas de entrega e problemas interno, o grupo decidiu demitir o aluno novo e como não ia ter mais o Master eu me ofereci para ajudar o grupo.
+Essa transição ocorreu na semana de entrega da primeira sprint, e precisamos agilizar o tratamento e inserção dos dados no Power BI para uma entrega significativa. Como Scrum Master, apoiei tanto o back-end, que já havia concluído o tratamento de dados mas estava com dificuldades para inserir os dados no banco, quanto na estruturação do banco de dados.
 
-Na semana da entrega da primeira sprint que isso aconteceu então tivemos que correr com o tratamento e a inserção dos dados no power bi para uma entrega de valor. Como master eu dei uma ajuda tanto para o back end que ja estava com os dados tartados, porem não estava inserindo os dados no banco de dados, quanto no banco de dados mesmo para corrigir a estrtura dos dados das colunas e tbelas.
-
-No dia da entrega o nosso desenvolvedor conseguiu corrigir o back end e consegui ajudar na construção do banco de dados.
-
-Nessa primeira sprint foi bem corrido essa troca de posiçoes no grupo fez com que eu deixasse um pouco o back end que ja estava sobre comando do desenvolvedor, e focasse mais na organizaçao do grupo, pois estava bem confuso e faltando tasks o que influenciou no burndown.
+Durante a primeira sprint, a troca de funções foi intensa e exigiu que eu focasse na organização do grupo, pois havia confusão nas tarefas e no burndown.
 
 ![alt text](./5_Semestre/burndown.png)
 
-Apesar desse problema nosso grupo conseguiu contornar e entregar um produto inicial com valor e conseguimos resolver um problema intenro que acabou gerando um certo atraso nas entregas futuras.
-
-Na segunda sprint como mencionado acima foi preciso a gente correr com algumas funcçoes que eram para ser feitas na priemira sprint e foram deixadas para a segunda, como alguns graficos e os dados da conta agua não estavam corretos na modelgaem estrela e para isso foi preciso inserir a correçao para esa sprint.
+Apesar desses desafios, conseguimos entregar um produto inicial de valor. Na segunda sprint, focamos em algumas funções que deveriam ter sido concluídas na primeira, como gráficos e correção dos dados das contas de água na modelagem estrela.
 
 ![alt text](./5_Semestre/backlog2.png)
 
-Como Master optei por deixar as tarefas de forma que o desenvolvimento comecasse pela correção, para que o projeto ja tenha um modelo ja pronto para ser utilizado e com isso ja ter uma base mais solida para a construção das contas e contratos. 
+Como Scrum Master, organizei as tarefas para que começássemos pelas correções, garantindo uma base sólida para a construção dos módulos de contas e contratos.
 
-Nosos desenvolvedor estava com um pouco de problemas no back e no bacno de dados, pois houve mudanças em sua estrutura e para que tivessemos andamento sem pedras no caminho acompanhei seu desenvolvimento e fiz algumas correçoes na conexão com o banco de dados atraves do docker, alem da montagem do sql do modelo estrela para contas e contratos de agua.
+Nosso desenvolvedor teve alguns problemas com o banco de dados devido a mudanças na estrutura, e para manter o progresso, acompanhei o desenvolvimento e fiz correções na conexão com o banco via Docker, além de ajustar o SQL para o modelo estrela das contas e contratos de água.
 
 modelo estrela agua
 ```
@@ -1469,22 +1463,19 @@ volumes:
     driver: local
 ```
 
-Apos esses ajustes o projeto deu andamento e apesar de apresnetar bastante task conseguimos entregar um produto para analise tanto para conta e contrato de agua, quanto para conta e contrato de energia, so deixando para proxima sprint os assuntos relacionados a devops que não era uma entrega de alto valor para o cliente.
+Após esses ajustes, conseguimos avançar e entregar um produto de análise completo. Na terceira sprint, nosso foco foi no DevOps. Cada membro ficou com uma responsabilidade específica, dividindo as tarefas em:
 
-Na terceira sprint focamos mais na devops e para isso cada um ficou com uma parte, o devops foi divido em:
 - Branch e rastreabilidade
 - Testes unitarios
 - Teste de Integração
 - Deploy
 - CI (Integração Continua)
 
-A branch ficou com nosso product owner, os testes e o deploy ficarma com os nossos desenvolvedores e como eu estava ja mexendo no github do grupo eu fiquei com o CI.
+Com as tarefas já organizadas, decidi começar pela criação da integração contínua. Ao analisar como realizar essa integração, identifiquei uma maior afinidade com a ferramenta GitHub Actions, pois já trabalhava diretamente com o GitHub, e a funcionalidade dessa integração é mais fácil de entender e utilizar.
 
-Com as tasks ja organizadas decidi começar na criação da integração contoinua. Analisando como realizar essa integração encontrei mais afinidade com a ferramneta github actions, pois ja trabalhava direto com o github e era mais funcional sua utilização por ser  ais facil a compreensão e utilização.
+Inicialmente, foi bem complicado desenvolver essa integração, pois a estrutura do nosso projeto estava dividida em diferentes branches: a branch feature, utilizada para inserir novos desenvolvimentos; a branch dev, nossa base sólida de desenvolvimento, onde só é possível inserir mudanças via pull requests de feature; e a branch main, destinada à produção, na qual só entram dados testados e prontos para uso.
 
-De primeiro momento foi bem complicado desenvolver pois a estrura do nosso projeto estava dividio em Branch feature onde foi utilizado para inserir novos desenvolvimentos, a Branch Dev que foi utilziado como nossa base solida de desenvolvimento onde so pode ser inserido atraves de pull request da feature e o nossa Branch Main que seria nossa branch de produção so entra dados testados e prontos para utlização.
-
-Nessa sprint eu montei a organização de como ficaria a ordem e como seria a execução do CI.
+Nesta sprint, montei a organização de como seria a ordem e execução do CI para cada branch:
 
 Integração continua Branch Feature
 ![alt text](./5_Semestre/ciFeature.png)
@@ -1495,15 +1486,15 @@ Integração continua Branch Dev
 Integração continua Branch Main
 ![alt text](./5_Semestre/ciMain.png)
 
-Apos o desenvolvimento da arquitetura do CI o professor validou a estrtura e liberou para que fosse desenvolvido na pratica.
+AApós o desenvolvimento da arquitetura do CI, o professor validou a estrutura e liberou para que fosse desenvolvida na prática.
 
-Nessa sprint tres focamos mais no devops, todos conseguimos entregar e validar a arquitetura do devops e entregamos o projeto ja com os updates de base como um entrega de valor.
+Nesta sprint três, focamos mais na parte de DevOps. Todos conseguimos entregar e validar a arquitetura DevOps e concluímos o projeto com os updates de base, como uma entrega de valor.
 
-Para a ultima sprint o cliente cancelou a entrega das contas de gas, por falta de dados então ficamos somente com a validação do desenvolvimento do devops e a criação dos alertas de consumos acima e abaixo da media de agua e energia.
+Para a última sprint, o cliente cancelou a entrega das contas de gás devido à falta de dados. Então, nos concentramos apenas na validação do DevOps e na criação de alertas de consumo para valores acima e abaixo da média de água e energia.
 
-Apos ser validado a arquitetura comecei implementando o ci para as branchs feature e utilizando o github actions cheguei nesse desenvolvimento, por ser mais basico as trativas do documento.
+Após a validação da arquitetura, comecei implementando o CI para as branches feature e dev, utilizando GitHub Actions. Esse desenvolvimento foi mais básico, focado nas tratativas iniciais da documentação.
 
-A ação que deve ser realizada pelo github actions para Branch feature é a seguinte:
+As ações para o GitHub Actions na branch feature são as seguintes:
 
 - Ao fazer commit dispara a pipeline do CI, ele realiza o build da aplicação junto com o teste unitario
 
@@ -1514,7 +1505,7 @@ A ação que deve ser realizada pelo github actions para Branch feature é a seg
 Estrutura do codigo:
 ![alt text](./5_Semestre/ci_feature_dev.png)
 
-- A ação que deve ser realizada pelo github actions para Branch Dev é a seguinte:
+Para a branch dev, a ação no GitHub Actions é configurada da seguinte maneira:
 
 - Após a solicitação de pull request os revisores analisam o código e os resultados da pipeline inicial.
 
@@ -1530,9 +1521,9 @@ Estrutura do codigo:
 Estrutura do codigo:
 ![alt text](./5_Semestre/ci_dev_dev.png)
 
-Por ultimo a ação que deve ser realizada pelo github actions para Branch Main:
+Por fim, para a branch main, a ação no GitHub Actions é a seguinte:
 
-Após a branch dev estiver tudo certo e todas as features desejadas forem inseridas é feito a solicitação de pull request para a branch main, os revisores analisam o código e os resultados da pipeline inicial. Aprovado o PR é acionado a pipeline para realizar o build, caso passe ele realiza o merge automaticamente na branch dev
+Após a confirmação de que a branch dev está correta e com todas as features desejadas, é feita uma solicitação de pull request para a branch main. Os revisores analisam o código e os resultados da pipeline inicial. Com o PR aprovado, a pipeline realiza o build; se o processo for bem-sucedido, o merge é feito automaticamente na branch main.
 
 - Caso der erro no build ele tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
 
@@ -1540,9 +1531,9 @@ Após a branch dev estiver tudo certo e todas as features desejadas forem inseri
 
 ![alt text](./5_Semestre/ci_main_dev.png)
 
-Apos a validação da arquitetura e o desenvolvimento foi aprovado, o github action teve as açoes da forma que deveria e foi desenvolvido, garantindo uma entrega de qualidade para o professor e para o cliente que viu que a utilização do devops agilizava bem o projeto.
+Após a validação e aprovação do desenvolvimento da arquitetura, o GitHub Actions foi implementado conforme planejado, garantindo uma entrega de qualidade para o professor e para o cliente, que pôde ver que a utilização do DevOps agilizou significativamente o projeto.
 
-Na entrega da ultima sprint todos conseguimos entregar sua parte de devops conseguimos entregar os alertas de consumo finalizando assim o projeto para a tecsus. O cliente adorou o resultado, pois ficou muito boa os formatos de analise que podem ser feitos agora e a agilidade na entrega e no desenvolvimento coma utilizaçao do devops.
+Na entrega da última sprint, todos nós concluímos nossa parte de DevOps, entregando também os alertas de consumo, finalizando o projeto para a Tecsus. O cliente ficou muito satisfeito com o resultado, especialmente pela facilidade nas análises que agora podem ser feitas e pela agilidade proporcionada no desenvolvimento e entrega usando DevOps.
 
 
 ### Hard Skills
