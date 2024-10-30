@@ -1224,7 +1224,7 @@ O desafio consiste em realizar uma análise abrangente e eficiente dos dados pro
 
 ### Etapas de Desenvolvimento
 
-![Backlog](./5_Semestre/image.png)
+![Backlog](./5_Semestre/backlog.png)
 
 ### Prévia da Solução
 
@@ -1260,86 +1260,290 @@ Para esse projeto nosso grupo deicidiu contratar um aluno novo para nos ajudar n
 
 Na primeira sprint foi disponibilizado um csv com contratos de agua, contratos de energia, contas de agua e contas de energia e como estava no back end fiquei encarregado de fazer a limpeza dos dados do csv. A primeiro momento realizamos algumas reunioes para saber o que cada campo do arquivo correspia e qual seria sua utilização para essa sprint.
 
-Apos realziado as reunioes e alinhado com o cliente decidimos realizar o tratamento dos dados das contas de agua.
+Apos realziado as reunioes e alinhado com o cliente, decidimos realizar o tratamento dos dados das contas de agua. Como se trata de um prpjeto ara analise de dados optamos por inserir os dados tratados em um banco de dados mysql e para isso foi desenvolvido uma modelo estrela para que se tenha um controle melhor dos dados.
+
+O tratamento de dados foi realziado de forma corrigir os nomes dos campos das colunas para facilitar a inserção automatica, retirada de campos em brancos, caracteres especiais e valores nulos alem da correção dos campos para o formato ideal como cmapos de data para formato em data e campos de cpf, cnpj para somente valores sem traços e barras e trasnformação do dado para numero.
+
+```
+try:
+  #Colocando na variavel df o arquivo recebido para tratamento
+  df = self.dataframe
+
+  # renomeia a coluna
+  df.rename(columns={
+      'Nome do Contrato': 'Nome_do_Contrato',
+      'Campo Extra 1': 'Nome_Cliente',
+      'Forma de Pagamento': 'Forma_de_Pagamento',
+      'Tipo de Acesso a Distribuidora': 'Tipo_de_Acesso',
+      'Vigência Inicial':'Vigencia_Inicial',
+      'Vigência Final':'Vigencia_Final',
+      'Observação': 'Observacao',
+      'Número Cliente': 'Numero_Cliente',
+      'Campo Extra 3':'cnpj',
+      'Tipo de Consumidor':'Tipo_de_Consumidor',
+      'Modelo de Faturamento':'Modelo_de_Faturamento',
+      'Código de Ligação (RGI)':'Codigo_de_Ligacao_RGI',
+      'Endereço de Instalação':'Endereco_de_Instalacao',
+      'Número Medidor': 'Numero_Medidor',
+      'Hidrômetro': 'Hidrometro'
+  }, inplace=True)
+
+  #Tratamento de datas
+
+  df['Vigencia_Inicial'] = pd.to_datetime(df['Vigencia_Inicial'], errors='coerce')
+  df['Vigencia_Inicial'] = df['Vigencia_Inicial'].replace({'NaT', np.nan}, regex=True)
+
+  # df['Vigencia_Final'] = df['Vigencia_Final'].where(df['Vigencia_Final'].notnull(), None)
+  df['Vigencia_Final'] = pd.to_datetime(df['Vigencia_Final'], errors='coerce')
+
+  #Tirando espaços em branco entre strings e retirando caracterres especiais
+  columnsFill = ['Nome_do_Contrato', 'Nome_Cliente','Fornecedor','Forma_de_Pagamento','Tipo_de_Acesso','Observacao','Tipo_de_Consumidor','Modelo_de_Faturamento','Hidrometro','Endereco_de_Instalacao','Codigo_de_Ligacao_RGI', 'Modaliade']
+  for i in columnsFill:
+      df[i].str.strip()
+      df[i] = df[i].apply(lambda x: re.sub(r'"', '', x))
+      df[i] = df[i].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')  # Remover acentos e caracteres especiais
+      df[i] = df[i].replace({[np.nan, 'NaT'], ''}, regex=True)
+
+  #Formatando cnpj para somente numeros
+  df['cnpj'] = df['cnpj'].replace({'[./-]': ''}, regex=True)
+  df['cnpj'] = df['cnpj'].fillna(0)
+  df['cnpj'] = df['cnpj'].apply(int)
+
+  # Colunas selecionadas para o arquivo
+  columnsSelect = [
+    'Nome_do_Contrato',
+    'Nome_Cliente',
+    'Fornecedor',
+    'Forma_de_Pagamento',
+    'Tipo_de_Acesso',
+    'Vigencia_Inicial',
+    'Vigencia_Final',
+    'Observacao',
+    'Modalidade'
+    'cnpj',
+    'Tipo_de_Consumidor',
+    'Modelo_de_Faturamento',
+    'Codigo_de_Ligacao_RGI',
+    'Endereco_de_Instalacao',
+    'Hidrometro'
+  ]
+
+except Exception as e:
+  print(f'Erro ao ler o arquivo {self.dataframe}: {e}')
 
 try:
-#Colocando na variavel df o arquivo recebido para tratamento
-df = self.dataframe
+    self.inserir_banco()
+except Exception as e:
+    print(f'Erro ao salvar arquivos no banco de dados: {e}')
+```
 
-            # renomeia a coluna
-            df.rename(columns={
-                'Nome do Contrato': 'Nome_do_Contrato',
-                'Campo Extra 1': 'Nome_Cliente',
-                'Forma de Pagamento': 'Forma_de_Pagamento',
-                'Tipo de Acesso a Distribuidora': 'Tipo_de_Acesso',
-                'Vigência Inicial':'Vigencia_Inicial',
-                'Vigência Final':'Vigencia_Final',
-                'Observação': 'Observacao',
-                'Número Cliente': 'Numero_Cliente',
-                'Campo Extra 3':'cnpj',
-                'Tipo de Consumidor':'Tipo_de_Consumidor',
-                'Modelo de Faturamento':'Modelo_de_Faturamento',
-                'Código de Ligação (RGI)':'Codigo_de_Ligacao_RGI',
-                'Endereço de Instalação':'Endereco_de_Instalacao',
-                'Número Medidor': 'Numero_Medidor',
-                'Hidrômetro': 'Hidrometro'
-            }, inplace=True)
+O tartamento dos dados a principio estava de acordo, porem nosso grupo estava com alguns problemas no banco de dados, pois o aluno que contratamos acabou que não estava ajudando muito na entrega e não estava comprindo com seu papel de Master.
 
-            #Tratamento de datas
+Optamos por montar o banco de dados eu e oMarcelo outro desenvolvedor, porem devido a alguns probelmas de entrega e problemas interno, o grupo decidiu demitir o aluno novo e como não ia ter mais o Master eu me ofereci para ajudar o grupo.
 
+Na semana da entrega da primeira sprint que isso aconteceu então tivemos que correr com o tratamento e a inserção dos dados no power bi para uma entrega de valor. Como master eu dei uma ajuda tanto para o back end que ja estava com os dados tartados, porem não estava inserindo os dados no banco de dados, quanto no banco de dados mesmo para corrigir a estrtura dos dados das colunas e tbelas.
 
-            df['Vigencia_Inicial'] = pd.to_datetime(df['Vigencia_Inicial'], errors='coerce')
-            df['Vigencia_Inicial'] = df['Vigencia_Inicial'].replace({'NaT', np.nan}, regex=True)
+No dia da entrega o nosso desenvolvedor conseguiu corrigir o back end e consegui ajudar na construção do banco de dados.
 
-            # df['Vigencia_Final'] = df['Vigencia_Final'].where(df['Vigencia_Final'].notnull(), None)
-            df['Vigencia_Final'] = pd.to_datetime(df['Vigencia_Final'], errors='coerce')
+Nessa primeira sprint foi bem corrido essa troca de posiçoes no grupo fez com que eu deixasse um pouco o back end que ja estava sobre comando do desenvolvedor, e focasse mais na organizaçao do grupo, pois estava bem confuso e faltando tasks o que influenciou no burndown.
 
+![alt text](./5_Semestre/burndown.png)
 
-            #Tirando espaços em branco entre strings e retirando caracterres especiais
-            columnsFill = ['Nome_do_Contrato', 'Nome_Cliente','Fornecedor','Forma_de_Pagamento','Tipo_de_Acesso','Observacao','Tipo_de_Consumidor','Modelo_de_Faturamento','Hidrometro','Endereco_de_Instalacao','Codigo_de_Ligacao_RGI', 'Modaliade']
-            for i in columnsFill:
-                df[i].str.strip()
-                df[i] = df[i].apply(lambda x: re.sub(r'"', '', x))
-                df[i] = df[i].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')  # Remover acentos e caracteres especiais
-                df[i] = df[i].replace({[np.nan, 'NaT'], ''}, regex=True)
+Apesar desse problema nosso grupo conseguiu contornar e entregar um produto inicial com valor e conseguimos resolver um problema intenro que acabou gerando um certo atraso nas entregas futuras.
 
+Na segunda sprint como mencionado acima foi preciso a gente correr com algumas funcçoes que eram para ser feitas na priemira sprint e foram deixadas para a segunda, como alguns graficos e os dados da conta agua não estavam corretos na modelgaem estrela e para isso foi preciso inserir a correçao para esa sprint.
 
-            #Formatando cnpj para somente numeros
-            df['cnpj'] = df['cnpj'].replace({'[./-]': ''}, regex=True)
-            df['cnpj'] = df['cnpj'].fillna(0)
-            df['cnpj'] = df['cnpj'].apply(int)
+![alt text](./5_Semestre/backlog2.png)
 
-            # Colunas selecionadas para o arquivo
-            columnsSelect = [
-                'Nome_do_Contrato',
-                'Nome_Cliente',
-                'Fornecedor',
-                'Forma_de_Pagamento',
-                'Tipo_de_Acesso',
-                'Vigencia_Inicial',
-                'Vigencia_Final',
-                'Observacao',
-                'Modalidade'
-                'cnpj',
-                'Tipo_de_Consumidor',
-                'Modelo_de_Faturamento',
-                'Codigo_de_Ligacao_RGI',
-                'Endereco_de_Instalacao',
-                'Hidrometro'
-            ]
-            # print(df[columnsSelect].info())
+Como Master optei por deixar as tarefas de forma que o desenvolvimento comecasse pela correção, para que o projeto ja tenha um modelo ja pronto para ser utilizado e com isso ja ter uma base mais solida para a construção das contas e contratos. 
 
-            # #Gerar o arquivo csv
-            # dfSelect = df[columnsSelect]
-            # dfSelect.to_csv('test2', index=False)
+Nosos desenvolvedor estava com um pouco de problemas no back e no bacno de dados, pois houve mudanças em sua estrutura e para que tivessemos andamento sem pedras no caminho acompanhei seu desenvolvimento e fiz algumas correçoes na conexão com o banco de dados atraves do docker, alem da montagem do sql do modelo estrela para contas e contratos de agua.
 
-        except Exception as e:
-            print(f'Erro ao ler o arquivo {self.dataframe}: {e}')
+modelo estrela agua
+```
+update mysql.user set host='%' where user='root';
+FLUSH PRIVILEGES;
 
-        try:
-            self.inserir_banco()
-        except Exception as e:
-            print(f'Erro ao salvar arquivos no banco de dados: {e}')
+-- dimensão tempo
+create table dim_tempo (
+    data_id int primary key,
+    data_full date,
+    dia int,
+    mes int,
+    ano int,
+    trimestre int,
+    semestre int,
+    dia_da_semana varchar(10),
+    mes_nome varchar(15)
+);
+-- dimensão contrato
+create table dim_agua_contrato (
+    numero_contrato varchar(100) primary key, --
+    nome_do_contrato varchar(255), --
+    fornecedor varchar(255), --
+    forma_de_pagamento varchar(50), --
+    tipo_de_acesso varchar(50), --
+    vigencia_inicial_id int, --
+    vigencia_final_id int, --
+    ativado BOOLEAN,
+    foreign key (vigencia_inicial_id) references dim_tempo(data_id),
+	foreign key (vigencia_final_id) references dim_tempo(data_id)
+);
+-- dimensão cliente
+create table dim_agua_cliente (
+    numero_cliente varchar(100) primary key, --
+    numero_contrato varchar(100), --
+    nome_cliente varchar(255),  --
+    cnpj varchar(14), --
+    tipo_de_consumidor varchar(50), -- 
+    modelo_de_faturamento varchar(255),
+    foreign key (numero_contrato) references dim_agua_contrato(numero_contrato)
+);
+-- dimensão medidor
+create table dim_agua_medidor (
+    numero_medidor varchar(100) primary key, -- 
+    hidrometro varchar(255), --
+    codigo_de_ligacao_rgi varchar(50), --
+    numero_contrato varchar(255), --
+	endereco_de_instalacao text, --
+    numero_cliente varchar(100),
+    foreign key (numero_cliente) references dim_agua_cliente(numero_cliente),
+    foreign key (numero_contrato) references dim_agua_contrato(numero_contrato)
+);
+-- fato consumo
+create table fato_agua_consumo (
+	fato_agua_id int auto_increment primary key,
+	planta varchar(255),
+	conta_do_mes varchar(255),
+	serie_da_nota_fiscal varchar(50),
+	numero_nota_fiscal varchar(255),
+	codigo_de_barras varchar(255),
+	chave_de_acesso varchar(255),
+	consumo_de_agua_m3 int,
+	consumo_de_esgoto_m3 int,
+	valor_agua float,
+	valor_esgoto float,
+	total_r float,
+	nivel_de_informacoes_da_fatura varchar(255),
+	multa_ref_vcto float,
+	juros_de_mora_ref_vcto float,
+	atualizacao_monetaria_ref_vcto float,
+	numero_cliente varchar(100),
+	numero_medidor varchar(100),
+	numero_contrato varchar(100),
+	vencimento_id int,
+	emissao_id int,
+	leitura_anterior_id int,
+	leitura_atual_id int,
+	foreign key (vencimento_id) references dim_tempo(data_id),
+	foreign key (emissao_id) references dim_tempo(data_id),
+	foreign key (leitura_anterior_id) references dim_tempo(data_id),
+	foreign key (leitura_atual_id) references dim_tempo(data_id),
+	foreign key (numero_cliente) references dim_agua_cliente(numero_cliente),
+	foreign key (numero_medidor) references dim_agua_medidor(numero_medidor),
+	foreign key (numero_contrato) references dim_agua_contrato(numero_contrato));
+```
+
+Modelo do docker compose
+```
+version: "3.8"
+services:
+  db:
+    image: mysql/mysql-server:latest
+    container_name: mysql_db
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=tecsusDB
+      - MYSQL_ROOT_PASSWORD=tecsus
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./sql/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    networks:
+      - mynet
+networks:
+  mynet:
+    driver: bridge
+volumes:
+  mysql_data:
+    driver: local
+```
+
+Apos esses ajustes o projeto deu andamento e apesar de apresnetar bastante task conseguimos entregar um produto para analise tanto para conta e contrato de agua, quanto para conta e contrato de energia, so deixando para proxima sprint os assuntos relacionados a devops que não era uma entrega de alto valor para o cliente.
+
+Na terceira sprint focamos mais na devops e para isso cada um ficou com uma parte, o devops foi divido em:
+- Branch e rastreabilidade
+- Testes unitarios
+- Teste de Integração
+- Deploy
+- CI (Integração Continua)
+
+A branch ficou com nosso product owner, os testes e o deploy ficarma com os nossos desenvolvedores e como eu estava ja mexendo no github do grupo eu fiquei com o CI.
+
+Com as tasks ja organizadas decidi começar na criação da integração contoinua. Analisando como realizar essa integração encontrei mais afinidade com a ferramneta github actions, pois ja trabalhava direto com o github e era mais funcional sua utilização por ser  ais facil a compreensão e utilização.
+
+De primeiro momento foi bem complicado desenvolver pois a estrura do nosso projeto estava dividio em Branch feature onde foi utilizado para inserir novos desenvolvimentos, a Branch Dev que foi utilziado como nossa base solida de desenvolvimento onde so pode ser inserido atraves de pull request da feature e o nossa Branch Main que seria nossa branch de produção so entra dados testados e prontos para utlização.
+
+Nessa sprint eu montei a organização de como ficaria a ordem e como seria a execução do CI.
+
+Integração continua Branch Feature
+![alt text](./5_Semestre/ciFeature.png)
+
+Integração continua Branch Dev
+![alt text](./5_Semestre/ciDev.png)
+
+Integração continua Branch Main
+![alt text](./5_Semestre/ciMain.png)
+
+Apos o desenvolvimento da arquitetura do CI o professor validou a estrtura e liberou para que fosse desenvolvido na pratica.
+
+Nessa sprint tres focamos mais no devops, todos conseguimos entregar e validar a arquitetura do devops e entregamos o projeto ja com os updates de base como um entrega de valor.
+
+Para a ultima sprint o cliente cancelou a entrega das contas de gas, por falta de dados então ficamos somente com a validação do desenvolvimento do devops e a criação dos alertas de consumos acima e abaixo da media de agua e energia.
+
+Apos ser validado a arquitetura comecei implementando o ci para as branchs feature e utilizando o github actions cheguei nesse desenvolvimento, por ser mais basico as trativas do documento.
+
+A ação que deve ser realizada pelo github actions para Branch feature é a seguinte:
+
+- Ao fazer commit dispara a pipeline do CI, ele realiza o build da aplicação junto com o teste unitario
+
+- Caso der erro no build ele retorna com o erro visivel na aba actions e tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
+
+- Caso der erro nos teste ele retorna com o erro visivel na aba actions e tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
+
+Estrutura do codigo:
+![alt text](./5_Semestre/ci_feature_dev.png)
+
+- A ação que deve ser realizada pelo github actions para Branch Dev é a seguinte:
+
+- Após a solicitação de pull request os revisores analisam o código e os resultados da pipeline inicial.
+
+- Aprovado o PR é acionado a pipeline para realizar o buld da aplicação, junto com os testes de integração. caso passe ele faz o merge automaticamente na branch dev.
+
+- Caso der erro no build ele tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
+
+- Caso der erro no teste de integração ele tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas Quando um PR for recusado, deve ser retornado ao responsável pelo desenvolvimento, isso porquê:
+
+  1- O responsável pelo desenvolvimento possui mais afinidade com as regras daquela atividade, bem como a forma como foi realizado
+  2- O responsável sabe que, se não fizer a primeira vez bem feito, corre o risco de voltar a atividade e ele ter que refazer novamente
+
+Estrutura do codigo:
+![alt text](./5_Semestre/ci_dev_dev.png)
+
+Por ultimo a ação que deve ser realizada pelo github actions para Branch Main:
+
+Após a branch dev estiver tudo certo e todas as features desejadas forem inseridas é feito a solicitação de pull request para a branch main, os revisores analisam o código e os resultados da pipeline inicial. Aprovado o PR é acionado a pipeline para realizar o build, caso passe ele realiza o merge automaticamente na branch dev
+
+- Caso der erro no build ele tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
+
+- Caso der erro de build ou o pull request não for validado o Pr tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
+
+![alt text](./5_Semestre/ci_main_dev.png)
+
+Apos a validação da arquitetura e o desenvolvimento foi aprovado, o github action teve as açoes da forma que deveria e foi desenvolvido, garantindo uma entrega de qualidade para o professor e para o cliente que viu que a utilização do devops agilizava bem o projeto.
+
+Na entrega da ultima sprint todos conseguimos entregar sua parte de devops conseguimos entregar os alertas de consumo finalizando assim o projeto para a tecsus. O cliente adorou o resultado, pois ficou muito boa os formatos de analise que podem ser feitos agora e a agilidade na entrega e no desenvolvimento coma utilizaçao do devops.
+
 
 ### Hard Skills
 
