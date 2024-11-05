@@ -1250,6 +1250,8 @@ O desafio consiste em realizar uma análise abrangente e eficiente dos dados pro
 
 [GitHub:](https://github.com/juliocesar1316/5Semestre_Tecsus/wiki) Ferramenta de verisonamento utilziado para DEVOPS do projeto e versionamento de codigo
 
+[Docker:](https://www.docker.com/) Ferramenta para criar, implantar e executar aplicações em contêineres, isolando suas dependências e ambientes de execução.
+
 [Jira:](https://www.atlassian.com/br/software/jira) A ferramenta de gerenciamento de projetos utilizado para gerenciar task do projetos
 
 ### Contribuições Pessoais
@@ -1538,6 +1540,28 @@ Na entrega da última sprint, todos nós concluímos nossa parte de DevOps, entr
 
 ### Hard Skills
 
+| Hard Skills       |                                                         Utilização                                                         | Nível de Proficiência |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| GitHub Actions     | Implementação de pipelines de DevOps entre branches e automação de testes e deploy em GitHub Pages.                       | Intermediário         |
+| Docker             | Utilização de contêineres para aplicação e gerenciamento de ambientes de desenvolvimento e produção.                     | Intermediário         |
+| Jira               | Organização de tarefas como Scrum Master, planejamento de sprints e acompanhamento de progresso.                         | Iniciante         |
+| MySQL              | Desenvolvimento de habilidades e conhecimentos no gerenciamento de databases e tabelas, além de montagem de queries para consulta. | Intermediário         |
+| Python             | Desenvolvimento de habilidades em ETL com Pandas, criação de APIs REST e conexão do front-end com o back-end no mesmo framework. | Intermediário         |
+| GIT e GITHUB      | Aprendizado dos comandos do Git e funcionamento do GitHub para controle de versão e colaboração em projetos.             | Intermediário         |
+
 ### Soft Skills
+
+|          Soft Skills          |                                                       Utilização                                                        |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Comunicação                    | Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo.                                   |
+| Pensamento Crítico             | Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                                       |
+| Resolução de Conflitos         | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso.  |
+| Organização e Gestão do Tempo  | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos.  |
+| Resolução de Problemas         | Habilidade para identificar problemas rapidamente e implementar soluções eficazes, especialmente após a demissão de um aluno. |
+| Entrega de Resultados          | Comprometido com a entrega de resultados de qualidade dentro dos prazos, assegurando a satisfação do cliente e do time. |
+| Funções de Scrum Master        | Responsável por facilitar reuniões, organizar tarefas e apoiar a equipe no alcance de metas.                             |
+| Organização do Grupo           | Capacidade de coordenar atividades da equipe, garantindo que todos estejam alinhados e focados em seus objetivos.        |
+| Relatório de Desenvolvimento    | Habilidade para documentar e relatar o progresso do projeto, fornecendo informações claras e atualizadas aos stakeholders.|
+
 
 [Voltar ao inicio](#sumário)
