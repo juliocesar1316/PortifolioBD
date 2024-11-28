@@ -1572,16 +1572,15 @@ Na entrega da última sprint, todos nós concluímos nossa parte de DevOps, entr
 
 Parceiro Acadêmico: [SPC](https://www.spcbrasil.org.br/)
 
-
-### Etapas de Desenvolvimento
-
-![Backlog](./6_Semestre/backlog.png)
-
 O desafio consistiu em explorar um banco de dados financeiro complexo, aplicando técnicas de aprendizado de máquina para identificar padrões e criar produtos financeiros inovadores que agreguem valor à empresa e seus clientes. O objetivo incluiu prever tendências, identificar riscos e qualificar ativos financeiros, apresentando uma prova de conceito com justificativas técnicas e avaliação de desempenho.
 
 A solução desenvolvida foi um sistema robusto com controle de acesso diferenciado, permitindo a gestão de perfis de usuário. Entre as funcionalidades principais estão operações CRUD para Cedentes e Sacados e a visualização de faturas por diferentes perfis (futuras, vencidas e concluídas).
 
 Além disso, o sistema fornece relatórios mensais de reconciliação enriquecidos com previsões baseadas em dados históricos, otimizando a gestão financeira e o monitoramento. A solução comprova a viabilidade e a eficácia do uso de machine learning em operações financeiras, agregando valor estratégico à empresa.
+
+### Etapas de Desenvolvimento
+
+![Backlog](./6_Semestre/backlog.png)
 
 ### Prévia da Solução
 
