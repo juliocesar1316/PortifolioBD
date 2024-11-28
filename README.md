@@ -18,7 +18,7 @@
 
   - [5º Semestre 1/2024 - Tecsus](#5º-semestre---tecsus)
 
-  - [6º Semestre 2/2024 - Tecsus](#6º-semestre---SPC)
+  - [6º Semestre 2/2024 - SPC](#6º-semestre---spc)
 
 ## Sobre Mim
 
@@ -1561,6 +1561,332 @@ Na entrega da última sprint, todos nós concluímos nossa parte de DevOps, entr
 | Entrega de Resultados          | Comprometido com a entrega de resultados de qualidade dentro dos prazos, assegurando a satisfação do cliente e do time. |
 | Funções de Scrum Master        | Responsável por facilitar reuniões, organizar tarefas e apoiar a equipe no alcance de metas.                             |
 | Organização do Grupo           | Capacidade de coordenar atividades da equipe, garantindo que todos estejam alinhados e focados em seus objetivos.        |
+| Relatório de Desenvolvimento    | Habilidade para documentar e relatar o progresso do projeto, fornecendo informações claras e atualizadas aos stakeholders.|
+
+
+[Voltar ao inicio](#sumário)
+
+### 2/2024 | [Repositório](https://github.com/juliocesar1316/SPC-Grafeno)
+
+### 6º Semestre - SPC
+
+Parceiro Acadêmico: [SPC](https://www.spcbrasil.org.br/)
+
+
+### Etapas de Desenvolvimento
+
+![Backlog](./6_Semestre/backlog.png)
+
+O desafio consistiu em explorar um banco de dados financeiro complexo, aplicando técnicas de aprendizado de máquina para identificar padrões e criar produtos financeiros inovadores que agreguem valor à empresa e seus clientes. O objetivo incluiu prever tendências, identificar riscos e qualificar ativos financeiros, apresentando uma prova de conceito com justificativas técnicas e avaliação de desempenho.
+
+A solução desenvolvida foi um sistema robusto com controle de acesso diferenciado, permitindo a gestão de perfis de usuário. Entre as funcionalidades principais estão operações CRUD para Cedentes e Sacados e a visualização de faturas por diferentes perfis (futuras, vencidas e concluídas).
+
+Além disso, o sistema fornece relatórios mensais de reconciliação enriquecidos com previsões baseadas em dados históricos, otimizando a gestão financeira e o monitoramento. A solução comprova a viabilidade e a eficácia do uso de machine learning em operações financeiras, agregando valor estratégico à empresa.
+
+### Prévia da Solução
+
+### Tecnologias Utilizadas
+
+[Figma:](https://www.figma.com/) Desenvolvimento do protótipo do site.
+
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) Para estruturar o conteúdo de páginas web.
+
+[CSS:](https://developer.mozilla.org/pt-BR/docs/Web/CSS) Para estilizar e personalizar esses conteúdos.
+
+[React:](https://pt-br.legacy.reactjs.org/) Framework do JavaScript utilizado na construção de interfaces de usuário interativas e dinâmicas em aplicações web.
+
+[MongoDb:](https://www.mongodb.com/pt-br) Para gerenciamento de banco de dados não relacional usado para armazenar e recuperar dados de forma eficiente.
+
+[Python:](https://www.python.org/) Utilizado para tratamentos de dados com ETL e machine learning
+
+[Flask:](https://fastapi.tiangolo.com/) Framework python utilizado para montagem da api rest da aplicação junto com mongo DB
+
+[GitHub:](https://github.com/juliocesar1316/5Semestre_Tecsus/wiki) Ferramenta de verisonamento utilziado para DEVOPS do projeto e versionamento de codigo
+
+[Docker:](https://www.docker.com/) Ferramenta para criar, implantar e executar aplicações em contêineres, isolando suas dependências e ambientes de execução.
+
+[Jira:](https://www.atlassian.com/br/software/jira) A ferramenta de gerenciamento de projetos utilizado para gerenciar task do projetos
+
+### Contribuições Pessoais
+
+O desafio proposto no 6º semestre envolveu uma parceria com a empresa SPC para desenvolver uma solução de machine learning utilizando um dataset relacionado a duplicatas de pagadores, endossantes e vendedores.
+
+Na primeira sprint, a equipe foi organizada com um Product Owner, um Scrum Master, dois desenvolvedores e um especialista em machine learning. Minha responsabilidade foi atuar como fullstack developer, trabalhando no front-end com React.js e no back-end com Flask e MongoDB, em conjunto com outro desenvolvedor focado na modelagem do banco de dados.
+
+Optei por atuar como fullstack devido à minha experiência nessa área. Para a primeira sprint, acordamos com o cliente a entrega de três funcionalidades principais:
+1.	Termos e condições de uso.
+2.	Tela de login e aceite dos termos.
+3.	Modelo de machine learning para predição de fraudes em duplicatas.
+
+No back-end, escolhi Flask devido à integração direta com o modelo de machine learning, desenvolvido em Python, e à compatibilidade com MongoDB. Embora já tivesse experiência com Flask para APIs REST, trabalhar com bancos de dados não-relacionais era algo novo, tornando essa etapa desafiadora.
+
+Para padronizar o ambiente de desenvolvimento e evitar problemas de compatibilidade entre máquinas, configurei os repositórios para rodar via Docker, criando containers separados para o front-end e o back-end.
+
+O foco inicial no back-end foi implementar funcionalidades essenciais para o gerenciamento de usuários e termos de uso:
+
+Rotas de Usuários
+  - Cadastro de usuários: Valida campos obrigatórios, garante o aceite de termos obrigatórios e armazena os itens aceitos com suas datas correspondentes.
+  - Listagem de usuários: Retorna todos os usuários cadastrados, incluindo histórico de aceites (log dos termos).
+  - Consulta de usuário específico: Exibe informações detalhadas de um usuário e o termo aceito.
+
+Rotas de Termos de Uso
+  - Criação de termos: Cadastra novos termos com validação de campos obrigatórios, suporte a versões e itens associados. Termos existentes têm suas versões atualizadas automaticamente.
+  - Listagem de termos: Retorna todos os termos cadastrados, com filtros opcionais por nome e versão.
+  - Consulta da última versão: Usa agregações no MongoDB para exibir apenas as versões mais recentes.
+
+Rotas Combinadas
+  - Criação de usuários (/createUser - POST): Cria novos usuários, valida o aceite de termos obrigatórios, armazena dados como CPF/CNPJ e senha com hash e registra o log de aceites.
+  - Listagem de usuários (/usersList - GET): Retorna informações detalhadas de usuários, incluindo histórico e termos aceitos.
+
+Estrutura do MongoDB
+Cada termo foi estruturado para incluir:
+- Nome, descrição, versão e data de cadastro.
+- Lista de itens associados ao termo.
+
+Para o usuário 
+- O administrador possui informações básicas como nome, email, senha (em texto simples), CPF/CNPJ e endereço.
+- Também inclui os termos aceitos pelo administrador, com um campo para o termo atual e um log vazio para histórico.
+
+```
+ termo = [
+            {          
+                'nome_termo': 'termo de uso',
+                'descricao': "Ao aceitar estes termos, você autoriza a coleta, uso e compartilhamento de seus dados pessoais com terceiros para fins relacionados à prestação de nossos serviços. Isso pode incluir, mas não se limita a, empresas de análise de dados, plataformas de publicidade e parceiros comerciais. \n\n**Finalidade do Compartilhamento:** Os dados coletados serão compartilhados com terceiros apenas quando necessário para: \n- Melhorar a qualidade dos serviços prestados; \n- Personalizar as ofertas e experiências para o usuário; \n- Atender às exigências legais e regulatórias aplicáveis; \n- Facilitar a execução de contratos e acordos. \n\n**Proteção de Dados:** Nos comprometemos a garantir que todos os terceiros com quem compartilhamos seus dados possuam políticas de privacidade adequadas e utilizem os dados compartilhados em conformidade com a legislação vigente. \n\n**Revogação de Consentimento:** Você tem o direito de revogar seu consentimento para o compartilhamento de dados a qualquer momento, solicitando a exclusão dos seus dados pessoais. No entanto, a revogação poderá impactar a prestação de determinados serviços. \n\n**Direitos do Usuário:** Você pode solicitar, a qualquer momento: \n- Acesso aos seus dados; \n- Correção de informações erradas ou incompletas; \n- Eliminação de dados que não forem mais necessários para a prestação dos serviços. \n\n**Alterações no Termo de Uso:** Nos reservamos o direito de atualizar este Termo de Uso a qualquer momento. As alterações entrarão em vigor a partir da data de publicação.",     
+                'prioridade': 1,                             
+                'data_cadastro': datetime.now().strftime('%d/%m/%Y %H:%M:%S'),               
+                'versao': versionTerm,                               
+                'termo_item': [
+                    {
+                        'termo_item_nome': 'recebimento de email',  
+                        'termo_item_descricao': 'Ao aceitar este termo, você concorda em receber comunicações por email, incluindo newsletters, atualizações, informações promocionais e convites para eventos. As comunicações serão enviadas periodicamente, conforme suas preferências.',       
+                        'termo_item_data_cadastro': datetime.now().strftime('%d/%m/%Y %H:%M:%S'),        
+                        'termo_item_prioridade': 2,                    
+                        'termo_item_versao': versionTerm 
+                    },
+                    {
+                        'termo_item_nome': 'conteudo', 
+                        'termo_item_descricao': 'As comunicações podem incluir: notícias e atualizações sobre produtos e serviços; ofertas especiais e promoções; e informações relevantes sobre o setor ou tópicos de interesse. Você pode optar por não receber mais emails promocionais a qualquer momento, clicando no link "Cancelar Inscrição" nos emails. Essa ação não afetará comunicações importantes relacionadas ao uso de nossos serviços.',       
+                        'termo_item_data_cadastro': datetime.now().strftime('%d/%m/%Y %H:%M:%S'),        
+                        'termo_item_prioridade': 2,                    
+                        'termo_item_versao': versionTerm 
+                    },
+                    {
+                        'termo_item_nome': 'protecao de dados',  
+                        'termo_item_descricao': 'Seu endereço de email será tratado com confidencialidade e não será compartilhado com terceiros sem o seu consentimento, exceto quando exigido por lei ou para a operação dos serviços solicitados.',       
+                        'termo_item_data_cadastro': datetime.now().strftime('%d/%m/%Y %H:%M:%S'),        
+                        'termo_item_prioridade': 2,                    
+                        'termo_item_versao': versionTerm 
+                    },
+                    {
+                    
+                        'termo_item_nome': 'frequencia',  
+                        'termo_item_descricao': 'Nós limitamos o número de emails enviados para garantir que as comunicações sejam relevantes. No entanto, a frequência pode variar conforme promoções ou atualizações importantes.',       
+                        'termo_item_data_cadastro': datetime.now().strftime('%d/%m/%Y %H:%M:%S'),        
+                        'termo_item_prioridade': 2,                    
+                        'termo_item_versao': versionTerm 
+                    }
+                ]
+            }
+        ]
+```
+
+```
+user = {        
+            "nome": "Administrador",            
+            "email": "administrador@admin.com",
+            "senha": "admin",
+            "perfil": 'Admin', 
+            "cpf_cnpj": "0",   
+            "telefone": "00000000",    
+            "celular": "00000000",
+            "cep": 00000000,
+            "endereco": "Rua Exemplo, 123",     
+            "termo_atual": {                
+                "termo_nome": "termo de uso",  
+                "termo_aceite": True,
+                "termo_versao": versionTerm,
+                "termo_item": [
+                    {
+                        "termo_item_nome": "recebimento de email",
+                        "termo_item_aceite": True
+                    },
+                    {
+                        "termo_item_nome": "conteudo",
+                        "termo_item_aceite": False
+                    },
+                    {
+                        "termo_item_nome": "protecao de dados",
+                        "termo_item_aceite": True
+                    },
+                    {
+                        "termo_item_nome": "frequencia",
+                        "termo_item_aceite": True
+                    }
+                ]                
+            },
+            "termo_log": []
+        }
+```
+
+Após finalizar o desenvolvimento das rotas e banco de dados, iniciei a construção do front-end. O objetivo da primeira sprint era permitir o cadastro de usuários, exibindo um modal com os termos de uso, que deveriam ser aceitos antes de liberar o acesso à tela inicial com o menu lateral.
+
+Utilizando React, integrei as telas com o back-end, permitindo o cadastro de usuários e a exibição dos termos. Com o back-end, front-end e modelo de machine learning funcionando, finalizamos a primeira sprint.
+
+A API foi dividida em três sprints, com uma sprint review entre elas. Durante a revisão, enfrentamos problemas de comunicação e, após consenso, decidimos substituir o Product Owner (PO), que não tinha experiência suficiente, pelo desenvolvedor de machine learning, que já possuía esse conhecimento. Eu, então, optei por migrar para o desenvolvimento de machine learning, enquanto o PO antigo passou a trabalhar no front-end e o desenvolvedor de banco de dados assumiu a parte de banco e back-end.
+
+A segunda sprint foi desafiadora, pois nunca havia trabalhado com machine learning. As aulas eram muito teóricas e a prática se mostrou diferente. Fiquei encarregado de desenvolver um modelo de predição de score para usuários dos tipos endossante, credor e pagador.
+
+O objetivo era criar um algoritmo que previsse pontuações baseadas em registros financeiros extraídos de faturas comerciais. Comecei processando dados de arquivos CSV, como "asset_trade_bills", "asset_parts", "participants" e "asset_registers", que foram integrados em uma base de dados única.
+
+Realizei a limpeza e pré-processamento dos dados, removendo colunas irrelevantes, ajustando IDs e corrigindo formatos de data. Isso preparou os dados para a criação de uma tabela consolidada, com totais e valores somados de faturas canceladas, ativas e finalizadas, organizados por tipo de usuário.
+
+```
+# Agrupamento por payer_id
+df_payer = df.groupby('document_number_x').agg(
+    total_canceladas_payer=('state_x', lambda x: (x == 'canceled').sum()),
+    total_ativas_payer=('state_x', lambda x: (x == 'active').sum()),
+    total_finalizadas_payer=('state_x', lambda x: (x == 'finished').sum()),
+    total_valor_payer=('value', 'sum')
+).reset_index()
+
+# Agrupar por endorser_original_id
+df_endorser = df.groupby('document_number_y').agg(
+    total_canceladas_endorser=('state_x', lambda x: (x == 'canceled').sum()),
+    total_ativas_endorser=('state_x', lambda x: (x == 'active').sum()),
+    total_finalizadas_endorser=('state_x', lambda x: (x == 'finished').sum()),
+    total_valor_endorser=('value', 'sum')
+).reset_index()
+
+# Agrupar por participant_id_x
+df_participant = df.groupby('document_number').agg(
+    total_canceladas_participant=('state_x', lambda x: (x == 'canceled').sum()),
+    total_ativas_participant=('state_x', lambda x: (x == 'active').sum()),
+    total_finalizadas_participant=('state_x', lambda x: (x == 'finished').sum()),
+    total_valor_participant=('value', 'sum')
+).reset_index()
+```
+
+![alt text](./6_Semestre/tabela_score.png)
+
+Criei um modelo inicial que associava valores monetários a pontuações específicas, mas ele mostrou limitações em precisão. Testei uma abordagem utilizando normalização Z-Score, que trouxe algumas melhorias, mas ainda apresentou desafios com dados fora da média.
+
+Em seguida, apliquei uma escala logarítmica aos valores monetários para reduzir a amplitude de valores elevados, o que ajudou a equilibrar os cálculos. A partir de ajustes contínuos nos pesos e variáveis de entrada, melhorei o desempenho do modelo, medido por Erro Quadrático Médio (MSE) e R².
+
+Refinei o modelo para equilibrar melhor os totais de faturas e seus valores, e o modelo final demonstrou desempenho robusto, embora ainda haja espaço para otimizações nos pesos e na análise dos resultados.
+
+```
+# Criar e treinar o modelo de Random Forest
+rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_model.fit(X_train, y_train)
+
+# Fazer previsões com o conjunto de teste
+y_pred_rf = rf_model.predict(X_test)
+
+# Avaliar o modelo
+mse_rf = mean_squared_error(y_test, y_pred_rf)
+r2_rf = r2_score(y_test, y_pred_rf)
+
+print(f'Random Forest - Mean Squared Error: {mse_rf}')
+print(f'Random Forest - R² Score: {r2_rf}')
+```
+Erro Quadrático Médio: 1,0670484742780475
+Pontuação R²: 0,8668070138106397
+
+![alt text](./6_Semestre/importancia.png)
+
+Apesar das dificuldades, conseguimos obter um bom resultado com a machine learning para o projeto, o que nos permitiu finalizar a segunda sprint. 
+
+Após a última Sprint Review, iniciamos a terceira sprint do projeto. Essa etapa foi mais tranquila, pois consegui consolidar muitos aprendizados obtidos na sprint anterior, especialmente relacionados à inteligência artificial desenvolvida. O objetivo definido em conjunto com o cliente foi criar um sistema capaz de prever o total de duplicatas por mês, utilizando dados históricos para basear as estimativas.
+
+O desenvolvimento foi dividido em etapas fundamentais, começando pelo processamento dos dados históricos e, em seguida, aplicando o modelo ARIMA para realizar as previsões de maneira eficiente.
+
+Para iniciar, foi necessário organizar os dados das duplicatas, considerando todos os status possíveis (cancelado, ativo ou finalizado). O objetivo principal era somar todas as duplicatas para facilitar tanto a reconciliação quanto a comparação com os valores previstos. Para isso, os dados precisavam estar devidamente estruturados.
+
+O primeiro passo envolveu a conversão da coluna que indicava as datas de criação das duplicatas para o formato adequado, utilizando a função pd.to_datetime(). Essa etapa foi essencial para extrair informações como o mês e o ano de criação de cada duplicata. Com essas informações em mãos, os dados puderam ser agrupados de forma mais precisa. Assim, para cada combinação de mês e ano, calculei a soma do número de duplicatas registradas nesse período, criando uma visão consolidada que seria utilizada para alimentar o modelo de previsão.
+
+```
+df['created_at'] = pd.to_datetime(df['created_at'])
+
+# Extrai o mês da coluna de datas
+df['mes_referencia'] = df['created_at'].dt.month
+# Extrai o ano da coluna de datas
+df['ano_referencia'] = df['created_at'].dt.year
+
+# Agora podemos agrupar por mês e período (antes ou após o dia 15) e contar os registros (total_registros)
+df_mensal = df.groupby(['mes_referencia', 'ano_referencia']).agg(
+    total_registros=('id_x', 'size')
+).reset_index()
+
+df_anual = df_mensal[df_mensal['ano_referencia'] == 2024]
+
+display(df_anual) 
+```
+![alt text](./6_Semestre/agrupamento_predicao.png)
+
+Com os dados devidamente processados e organizados, o próximo passo foi aplicar o modelo ARIMA, que foi escolhido pela sua eficiência em lidar com séries temporais e pela capacidade de fornecer previsões mesmo em conjuntos de dados menores. Inicialmente, utilizei a função auto_arima para determinar os melhores valores para os parâmetros p, d e q, que definem o comportamento do modelo. Com os parâmetros ajustados, obtive um modelo inicial configurado como ARIMA(1,2,1).
+
+```
+# Ajustando o modelo ARIMA com auto_arima
+model = auto_arima(df_mensal['total_registros'], 
+                   start_p=0, start_q=0, 
+                   max_p=10, max_q=10, max_order=10, 
+                   test='adf', 
+                   stepwise=True, 
+                   trace=True, 
+                   seasonal=False)
+
+# Resumo do modelo ajustado
+print(model.summary())
+```
+![alt text](./6_Semestre/auto_arima.png)
+
+As primeiras previsões realizadas com esse modelo apresentaram valores mais altos do que o esperado. Diante disso, realizei uma análise mais detalhada, ajustando o conjunto de dados de entrada. Excluí os 2 meses finais, para fins de testes e refiz as previsões. Apesar das melhorias, percebi que o modelo inicial ainda não estava produzindo resultados satisfatórios, o que me levou a explorar outras combinações de parâmetros.
+
+![alt text](./6_Semestre/previsao_errada.png)
+
+Após diversas tentativas, encontrei no modelo ARIMA(1,1,0) uma solução que se mostrou muito mais adequada à realidade dos dados. Esse modelo gerou previsões mais próximas dos valores esperados e alinhadas com os padrões observados nos dados históricos. As novas previsões foram validadas, e os valores previstos para os próximos meses apresentaram uma precisão aceitável para o objetivo do projeto.
+
+```
+modelo = ARIMA(df_anual['total_registros'], order=(1,1,0))
+model_fit = modelo.fit()
+
+#Previsão do proximo mes
+forecast = model_fit.forecast(steps=2)
+
+forecast_df = pd.DataFrame({'predicted': forecast})
+
+
+forecast_df = forecast_df.astype(int)
+```
+![alt text](./6_Semestre/modelo_certo.png)
+
+Com o modelo ajustado e validado, integrei a funcionalidade de previsão ao sistema. Isso envolveu ajustes no back-end para garantir que os dados fossem processados corretamente e que as previsões pudessem ser acessadas em tempo real. Após a finalização dessa etapa, o sistema foi apresentado ao cliente e aos professores, recebendo feedbacks muito positivos.
+
+O desenvolvimento dessa funcionalidade foi importante no projeto, pois demonstrou a aplicação prática de conceitos de inteligência artificial e ciência de dados para resolver um problema real. A API foi concluída com sucesso, alcançando os objetivos definidos e encerrando de forma muito satisfatória o trabalho desenvolvido ao longo do sexto semestre.
+
+
+
+### Hard Skills
+
+| Hard Skills        |                                                         Utilização                                                         | Nível de Proficiência |
+|------------------- |----------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| Flask              | Montagem do API REST com mongo DB                                                                                          | Intermediário         |
+| Docker             | Utilização de contêineres para aplicação e gerenciamento de ambientes de desenvolvimento e produção.                       | Intermediário         |
+| MongoDB            | Desenvolvimento de habilidades e conhecimentos no gerenciamento de databases e tabelas, além de montagem de queries para consulta. | Intermediário         |
+| Python             | Desenvolvimento de habilidades em ETL com Pandas, Machine learning com ARIMA, Random Forest, Classificaçao e analise de dados | Intermediário         |
+| React             | Desenvolvimento de telas e modal com para termos de condição de uso                                                          | Intermediário         |
+| GIT e GITHUB      | Aprendizado dos comandos do Git e funcionamento do GitHub para controle de versão e colaboração em projetos.             | Intermediário         |
+
+### Soft Skills
+
+|          Soft Skills          |                                                       Utilização                                                        |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Comunicação                    | Utilizado para viabilizar reuniões com o time e a comunicação de atividades em grupo.                                   |
+| Pensamento Crítico             | Capacidade de analisar informações de forma lógica e tomar decisões fundamentadas.                                       |
+| Resolução de Conflitos         | Habilidade para mediar conflitos dentro da equipe de maneira construtiva e promover um ambiente de trabalho harmonioso.  |
+| Organização e Gestão do Tempo  | Competência para manter a equipe organizada e garantir que as tarefas sejam concluídas dentro dos prazos estabelecidos.  |
+| Resolução de Problemas         | Habilidade para identificar problemas rapidamente e implementar soluções eficazes, especialmente após a demissão de um aluno. |
+| Entrega de Resultados          | Comprometido com a entrega de resultados de qualidade dentro dos prazos, assegurando a satisfação do cliente e do time. |
 | Relatório de Desenvolvimento    | Habilidade para documentar e relatar o progresso do projeto, fornecendo informações claras e atualizadas aos stakeholders.|
 
 
