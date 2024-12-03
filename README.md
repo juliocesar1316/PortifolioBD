@@ -24,9 +24,11 @@
 
 <p align="center" ><img src="https://avatars.githubusercontent.com/u/49699769?s=400&u=b3668d7972d97e054e42d1695779df65794a3ce1&v=4" style="border-radius: 50%" width="25%" />
 
-E aí, pessoal! Sou desenvolvedor full stack e estou sempre buscando evoluir como desenvolvedor. Adoro café, música e viagens de moto, e é essa mistura que me inspira a buscar desafios cada vez mais estimulantes.
+E aí, pessoal! Sou desenvolvedor Full Stack e estou sempre buscando evoluir como desenvolvedor. Adoro café, música e viagens de moto, e busco desafios cada vez mais estimulantes.
 
-Minha paixão por tecnologia começou durante a graduação em Engenharia Aeronáutica, onde tive meu primeiro contato com programação em C. Esse primeiro passo foi fundamental para despertar meu interesse em lógica de programação e resolução de problemas. Em 2022, decidi me aprofundar ainda mais e iniciei o tecnólogo em Banco de Dados pela Fatec. Durante esse período, fui selecionado para um curso intensivo oferecido pelo iFood em desenvolvimento full stack, que me proporcionou um aprendizado prático e robusto em desenvolvimento web, api rest, banco de dados e versionamentos de codigo. Saí desse programa preparado para enfrentar qualquer desafio em projetos full stack, sempre com ênfase em lógica de programação, orientação a objetos e boas práticas de código.
+Minha paixão por tecnologia começou durante a graduação em Engenharia Aeronáutica, onde tive meu primeiro contato com programação em C. Esse momento inicial despertou meu interesse por lógica de programação e resolução de problemas. Em 2021, decidi me aprofundar na área e iniciei o tecnólogo em Análise e Desenvolvimento de Sistemas pela Fatec. Nesse período, fui selecionado para participar de um curso intensivo de desenvolvimento Full Stack oferecido pelo iFood, que me proporcionou uma base sólida e prática em Desenvolvimento Web, APIs REST, Banco de Dados e versionamento de código.
+
+Concluí o programa com habilidades para enfrentar desafios em projetos Full Stack, com foco em programação, orientação a objetos e boas práticas de desenvolvimento. No segundo semestre de 2022, optei por migrar para o curso de Banco de Dados, uma área com a qual me identifiquei e que também se encaixava melhor na minha rotina, sendo oferecida no período noturno. Essa decisão reforçou meu aprendizado e expandiu ainda mais meu leque de conhecimentos na área de tecnologia.
 
 A Fatec também tem sido um ambiente de aprendizado desafiador e prático. Por meio do método API (Aprendizagem por Projetos Integrados), desenvolvemos projetos complexos com especificações reais de empresas parceiras. Todo semestre, os projetos abrangem o ciclo completo de desenvolvimento: back-end, front-end e banco de dados, com um forte foco em lógica de programação e arquitetura de sistemas.
 
@@ -40,9 +42,9 @@ A Fatec também tem sido um ambiente de aprendizado desafiador e prático. Por m
 
 Parceiro Acadêmico: [Faculdade de Tecnologia de São José dos Campos](https://fatecsjc-prd.azurewebsites.net/)
 
-A proposta do projeto foi a elaboração de um website institucional visando a melhoria da visibilidade do centro de convivência infantil vó Maria Felix para o público de modo geral, onde o usuário poderá facilmente ter o acesso à informação sobre a ONG como: sua criação, história, funcionamento e os projetos em andamento.
+O projeto teve como proposta a criação de um website institucional para o Centro de Convivência Infantil Vó Maria Felix, com o objetivo de melhorar sua visibilidade para o público em geral. Por meio do site, os usuários podem acessar informações sobre a ONG, incluindo sua criação, história, funcionamento e projetos em andamento.
 
-Os interessados em ajudar na causa poderão fazer inscrição para ser voluntariado, doações, projetos / parcerias e podem ajudar compartilhando a ONG através do site.
+Além disso, o site oferece a possibilidade de inscrição para os interessados em se voluntariar e contribuir com a causa, facilitando o engajamento e a participação de novos apoiadores.
 
 ### Etapas de Desenvolvimento
 
@@ -67,8 +69,9 @@ Os interessados em ajudar na causa poderão fazer inscrição para ser voluntari
 
 ### Contribuições Pessoais
 
-Nesse primeiro semestre, realizamos um projeto para uma ONG escolar, onde o objetivo era desenvolver um site para que os usuários interessados pudessem ver suas causas e suas atividades.
-Como metodologia aplicada no projeto utilizamos o scrum, porem nesse primeiro semestre não tivemos um product owner então fique encarregado de desenvolver o protótipo do projeto, onde apesar de ser a primeira experiência em prototipação e criação de layout tive alguns problemas, mas no final consegui ter um bom resultado na sprint 0.
+Nesse primeiro semestre, desenvolvemos um projeto para uma ONG escolar com o objetivo de criar um site que permitisse aos usuários conhecerem suas causas e atividades.
+
+Como metodologia, utilizamos o Scrum, embora, neste período, não tivéssemos um Product Owner definido. Por isso, fiquei encarregado de desenvolver o protótipo do projeto. Apesar de ser minha primeira experiência em prototipação e criação de layouts, enfrentei alguns desafios durante o processo. No entanto, ao final da Sprint 0, consegui alcançar um bom resultado, contribuindo para a definição inicial do projeto.
 
 <details>
   <summary>Layouts do Site</summary>
@@ -90,7 +93,11 @@ Como metodologia aplicada no projeto utilizamos o scrum, porem nesse primeiro se
 
 <br>
 
-Na primeira sprint de fato, após o protótipo do site, começamos a realizar os desenvolvimentos e como desenvolvedor realizei no primeiro momento a configuração do XAMPP para ser utilizado o PHP e o MYSQL local e após configurar o grupo pode realizar o desenvolvimento. Além dessa configuração, por ser meu primeiro contato com HTML e PHP acabei tendo um pouco de dificuldade no começo para entender, mas após ajuda consegui desenvolver a tela de doação onde é realizado o cadastro do doador e o dados para a doação, a tela de participantes onde é realizado o cadastro de participantes e ajudei na tela de voluntários também onde é realizado os voluntariados da ONG. Como todos os desenvolvedores eram iniciantes, todas as telas eram realizadas, o back end no PHP, o front end com HTML e CSS e o banco de dados com o MySQL.
+Na primeira sprint, após a conclusão do protótipo do site, iniciamos o desenvolvimento. Minha primeira tarefa foi configurar o XAMPP para permitir o uso do PHP e do MySQL localmente. Com o ambiente configurado, o grupo pôde dar início ao desenvolvimento do projeto.
+
+Esse foi meu primeiro contato com HTML e PHP, e, embora tenha encontrado algumas dificuldades iniciais, consegui superá-las com a ajuda dos colegas. Como resultado, desenvolvi a tela de doação, onde é realizado o cadastro do doador e dos dados para a doação, além da tela de participantes, destinada ao cadastro de participantes. Também colaborei no desenvolvimento da tela de voluntários, onde são registrados os voluntariados da ONG.
+
+Como todos os desenvolvedores do grupo eram iniciantes, seguimos uma abordagem simples: o back-end foi implementado em PHP, o front-end com HTML e CSS, e o banco de dados foi estruturado no MySQL.
 
 <details>
   <summary> Tela de Doação, Participante e Voluntario</summary>
@@ -112,7 +119,9 @@ Na primeira sprint de fato, após o protótipo do site, começamos a realizar os
 
 <br>
 
-Na segunda sprint, realizei a montagem das telas de contato, onde é exibido o local da escola e um formulário para entrar em contato, a tela de projetos, onde são exibidos os projetos sociais e um formulário para solicitar um projeto, e uma tela sobre a escola. Esse sprint e na anterior fiquei responsável pelo desenvolvimento das telas enquanto os outros desenvolvedores realizaram o desenvolvimento do captcha, da tela para que o usuário admin edite os textos do site e a tela de login.
+Na segunda sprint, fui responsável pela criação das telas de contato, onde é exibido o endereço da escola junto a um formulário para contato; da tela de projetos, que apresenta os projetos sociais da instituição e inclui um formulário para solicitar novos projetos; e da tela sobre a escola, que traz informações detalhadas sobre a instituição.
+
+Nesta sprint, assim como na anterior, fiquei encarregado do desenvolvimento das telas, enquanto os demais desenvolvedores trabalharam na implementação do captcha, na criação da tela para o administrador editar os textos do site e na tela de login.
 
 <details>
   <summary> Tela de Contato, Projeto e Sobre</summary>
@@ -134,7 +143,9 @@ Na segunda sprint, realizei a montagem das telas de contato, onde é exibido o l
 
 <br>
 
-Na terceira sprint já com todas as telas prontas, decidimos realizar as funções dos administradores e o nosso site tem um método onde o administrador consegue atualizar e manter o controle do site apenas via uma tela admin onde ele consegue atualizar os textos e imagens do site e aprova e reprova usuários. Como desenvolvedor, realizei a estilização e a montagem da tela no administrador, um banco de dados do site para ser visível sem utilizar o MySQL.
+Na terceira sprint, com todas as telas já concluídas, decidimos implementar as funcionalidades destinadas aos administradores. O site passou a contar com um método que permite ao administrador gerenciar o conteúdo exclusivamente por meio de uma tela específica. Nessa tela, o administrador pode atualizar textos e imagens do site, além de aprovar ou reprovar usuários.
+
+Como desenvolvedor, fui responsável pela estilização e pela criação da interface da tela do administrador, bem como pela configuração de um banco de dados alternativo ao MySQL para exibição das informações do site.
 
 <details>
   <summary> Tela banco de dados admin e telas editaveis</summary>
@@ -152,9 +163,9 @@ Na terceira sprint já com todas as telas prontas, decidimos realizar as funçõ
 
 <br>
 
-Na quarta e última sprint, fique encarregado de algumas correções de bugs.
+Na quarta e última sprint, fiquei encarregado de corrigir alguns bugs.
 
-No final, conseguimos entregar um bom projeto, foi um desafio bem grande por ser o primeiro contato de programação para o grupo, mas com ajuda de todos e dos professores podemos ter uma boa entrega.
+No final, conseguimos entregar um projeto de qualidade. Foi um grande desafio, pois era o primeiro contato com programação para o grupo, mas com a ajuda de todos e o suporte dos professores, conseguimos realizar uma boa entrega.
 
 Vídeo do site institucional.
 
@@ -166,10 +177,10 @@ Vídeo do site institucional.
 
 | Hard Skills  |                                                             Utilização                                                              | Nível de proficiência |
 | :----------: | :---------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-|    Marvel    |                                Desenvolvi habilidades na montagem de um protótipo dinâmico de site.                                 |       Avançado        |
-|  HTML e CSS  |                         Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                           |     Intermediário     |
-|     PHP      |  Utilizado para montagem da interatividade e dinâmica do site, realizado em conjunto com a equipe, porém com atividades autônomas.  |     Intermediário     |
-|    MYSQL     | Utilizado para gerenciamento e armazenamento dos dados do site, realizado em conjunto com a equipe, porém com atividades autônomas. |     Intermediário     |
+|    Marvel    |                                Desenvolvi habilidades na montagem de um protótipo dinâmico de site.                                 |       Intermediario        |
+|  HTML e CSS  |                         Desenvolvi habilidades na montagem de uma estrutura e estilização de páginas web.                           |     Basico     |
+|     PHP      |  Utilizado para montagem da interatividade e dinâmica do site, realizado em conjunto com a equipe, porém com atividades autônomas.  |     Basico     |
+|    MYSQL     | Utilizado para gerenciamento e armazenamento dos dados do site, realizado em conjunto com a equipe, porém com atividades autônomas. |     Basico     |
 | GIT e GITHUB |      Utilizado controle e versionamento do projeto, realizado em conjunto com a equipe, porém com utilização de facilitadores.      |        Basico         |
 
 ### Soft Skills
@@ -191,9 +202,9 @@ Vídeo do site institucional.
 
 Parceiro Acadêmico: [JetSoft](https://jetsoft.com.br/)
 
-O projeto foi elaborado para produzir um website para uma empresa de softwares que terceiriza serviços, onde ela terá a funcionalidade de emitir relatórios mensais apresentando o quadro de presença de colaboradores em posto de trabalhos acordados em contrato que passarão por um nível de aprovação.
+O projeto foi desenvolvido para criar um website para uma empresa de software que terceiriza serviços. O site terá a funcionalidade de emitir relatórios mensais, apresentando o quadro de presença dos colaboradores nos postos de trabalho acordados em contrato, os quais passarão por um processo de aprovação.
 
-Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de postos de trabalho em abertos, o mesmo paga multa de 35% do valor total do contrato e para que isso seja evitado outra funcionalidade do projeto e o quadro de colaboradores que possuirá alocações fixas e flutuantes parra caso ocorram eventos (férias, falta não justificada, licença diversas, demissão, entre outros).
+Considerando o problema da falta de colaboradores, caso a empresa tenha mais de 20% de postos de trabalho abertos, será aplicada uma multa de 35% do valor total do contrato. Para evitar essa situação, o projeto inclui uma funcionalidade de quadro de colaboradores, que terá alocações fixas e flutuantes. Isso permitirá ajustes caso ocorram eventos como férias, faltas não justificadas, licenças diversas, demissões, entre outros.
 
 ### Etapas de Desenvolvimento
 
@@ -219,7 +230,7 @@ Devido ao problema de falta de colaboradores se a empresa tiver acima de 20% de 
 
 ### Contribuições Pessoais
 
-Nesse segundo semestre, realizamos um projeto de web para controle de funcionários que terceirizam seus negócios utilizando uma metodologia ágil Scrum. Optei nesse semestre por ser o Scrum Master do time e no primeiro momento como o product owner não tinha experiencia em prototipação e montagem de layout eu como scrum master alinhei com todos os integrantes para auxiliarem na montagem, já deixando montado como vai ser o menu do aplicativo e onde ficaria localizado as funções seguintes.
+Neste segundo semestre, realizamos um projeto web para o controle de funcionários que terceirizam seus serviços, utilizando a metodologia ágil Scrum. Optei por assumir o papel de Scrum Master do time. No início, como o Product Owner não tinha experiência em prototipação e criação de layouts, alinhei com todos os integrantes da equipe para que pudessem ajudar na montagem do projeto. Juntos, definimos e estruturamos o layout, garantindo que o menu do aplicativo fosse organizado e as funções subsequentes fossem posicionadas de forma clara e acessível.
 
 <details>
   <summary>Layout Base</summary>
@@ -233,9 +244,9 @@ Nesse segundo semestre, realizamos um projeto de web para controle de funcionár
 
 <br>
 
-Após esse protótipo estar pronto, foi realizada a organização das tasks para que cada integrante realize e, para um controle maior do projeto como scrum master, alinhei com o time para serem feitas dailys diárias após a faculdade para compartilharmos nossas tasks e o andamento. Foi bastante proveitosa essa ideia, pois o time conseguiu evoluir bastante, não deixando de entregar resultados e sempre que algum desenvolvedor tivesse dificuldade, eu e os outros da equipe tentamos ajudar.
+Após o protótipo ser finalizado, organizamos as tarefas para que cada integrante do time assumisse responsabilidades específicas. Para garantir um controle mais eficaz do projeto, como Scrum Master, alinhei com o time a realização de reuniões diárias (dailys) após a faculdade, para compartilharmos o progresso das tarefas e o andamento geral do projeto. Essa abordagem foi muito proveitosa, pois o time conseguiu avançar consideravelmente, entregando resultados de forma consistente. Sempre que algum desenvolvedor enfrentava dificuldades, eu e os outros membros da equipe nos uníamos para oferecer ajuda.
 
-Na primeira sprint, após o protótipo ser aceite e as regras e as tasks da equipe serem alinhadas, o projeto começou. No primeiro momento para que o time tivesse foco na montagem do aplicativo realizei a montagem da tela base também que será utilizado no projeto inteiro com um menu interativo e já com as margens corretas para as funções, além disso, para o projeto utilizamos o framework Flask do Python e enquanto o pessoal desenvolvia eu estava estudando para auxiliar os demais o que foi de bastante ajuda, pois o pessoal do back end não estava conseguindo desenvolver o API rest no Flask, então montei duas rotas, uma para o controle de presença e uma para o cadastro de colaboradores para ser utilizado como exemplo.
+Na primeira sprint, após a aceitação do protótipo e o alinhamento das regras e tarefas, o projeto foi iniciado. Para garantir que o time tivesse foco na construção do aplicativo, comecei desenvolvendo a tela base, que seria utilizada em todo o projeto. Ela incluía um menu interativo e as margens corretamente ajustadas para as funções. Além disso, para o desenvolvimento do projeto, utilizamos o framework Flask do Python. Enquanto a equipe avançava no desenvolvimento, aproveitei para estudar e me aprofundar para poder auxiliar os demais. Isso se mostrou útil, pois o pessoal do back-end estava encontrando dificuldades para desenvolver a API REST no Flask. Para ajudar, criei duas rotas: uma para o controle de presença e outra para o cadastro de colaboradores, que serviram como exemplos para o time.
 
 <details>
   <summary>Rotas Utilizando Flask</summary>
@@ -358,9 +369,9 @@ if __name__ == "__main__":
 
 <br>
 
-Na segunda sprint após as reuniões, pude perceber haver um desenvolvedor com problemas e como scrum master fui atrás dele para poder auxiliar, para ser resolvido pedi para que compartilhasse a tela para podermos programar juntos e foi nesse momento que percebi que ele não estava se dedicando ao projeto, pois não estava entendendo como desenvolver direito e estava meio perdido, então auxiliei ele na hora para deixar o ambiente do projeto para ser desenvolvido e consegui clarear bastante as coisas para ele seguir o caminho e com isso ele conseguiu entregar sua parte nesse sprint com exito.
+Na segunda sprint, após as reuniões, percebi que um dos desenvolvedores estava enfrentando dificuldades. Como Scrum Master, fui atrás dele para oferecer ajuda. Solicitei que ele compartilhasse a tela para que pudéssemos programar juntos, e foi nesse momento que percebi que ele não estava se dedicando o suficiente ao projeto. Ele não estava conseguindo entender como desenvolver corretamente e parecia um pouco perdido. Então, auxiliei-o a organizar o ambiente de desenvolvimento do projeto e, ao esclarecer alguns pontos, consegui ajudá-lo a seguir o caminho certo. Como resultado, ele conseguiu entregar sua parte com êxito nessa sprint.
 
-Mesmo que exercendo um papel de scrum master para que o projeto saísse de forma correta eu sempre acabava revisando o código do grupo para corrigir alguns problemas de edentação, correção de alguns bugs telas que às vezes por falta de mão de obra acabava fincando por fazer, resumindo eu estava operando como um tech lead em alguns momentos, mas sempre ajudando e organizando o tempo e as task da equipe.
+Apesar de estar exercendo o papel de Scrum Master, para garantir que o projeto fosse executado corretamente, acabei revisando o código do grupo para corrigir problemas de indentação e solucionar alguns bugs nas telas. Muitas vezes, por falta de mão de obra, essas tarefas acabavam ficando sob minha responsabilidade. Em resumo, em alguns momentos, atuei como Tech Lead, mas meu foco sempre foi ajudar e organizar o tempo e as tarefas da equipe para que o projeto seguisse conforme o planejado.
 
 <details>
   <summary>Burndonw 2-Sprint</summary>
@@ -373,7 +384,7 @@ Mesmo que exercendo um papel de scrum master para que o projeto saísse de forma
 
 <br>
 
-Na terceira sprint como em todos eu acabo revisando o código e facilitando o caminho da equipe os desenvolvedores tiverem bastante problema com o CSS, pois tinham que deixar alinhado na tela para que não ficasse sobreposto ou embaixo do menu lateral e como scrum master e já sabendo um pouco mais sobre CSS eu decidi ajudar a estilizar algumas telas para ficar no espaço desejado para que a equipe finalize a maioria do projeto. Não tive muitos problemas nesse sprint, após alinhar com os desenvolvedores que estavam um pouco abaixo do esperado na segunda sprint, na terceira eles melhoraram bastante e pude focar mais nessa parte do CSS que realmente era um problema e no gerenciamento do tempo.
+Na terceira sprint, assim como em todas as anteriores, acabei revisando o código e facilitando o caminho para a equipe. Os desenvolvedores enfrentaram dificuldades com o CSS, pois precisavam alinhar corretamente os elementos nas telas para evitar sobreposição ou que ficassem embaixo do menu lateral. Como Scrum Master e já tendo mais familiaridade com CSS, decidi ajudar a estilizar algumas telas para que os elementos ficassem no espaço desejado, permitindo que a equipe avançasse e finalizasse a maior parte do projeto. Não enfrentei muitos problemas nessa sprint. Após alinhar com os desenvolvedores, que estavam um pouco abaixo do esperado na segunda sprint, percebi uma melhoria significativa na terceira. Isso me permitiu focar mais no CSS, que realmente era um desafio, e no gerenciamento do tempo da equipe.
 
 <details>
   <summary>Burndonw 3-Sprint</summary>
@@ -386,9 +397,9 @@ Na terceira sprint como em todos eu acabo revisando o código e facilitando o ca
 
 <br>
 
-Na quarta e ultima sprint após o projeto ter finalizado, como um requisito funcional era para realizar o deploy da aplicação, porem o grupo não estava conseguindo realizar o deploy no Heroku então para que o problema fosse resolvido procurei várias formas de fazer o deploy de uma aplicação Python até que consegui achar a plataforma 'pythonanywhere' e enquanto o pessoal arrumava os bugs e realizava a confecção do botão de PDF eu estava testando e tentando implementar esse deploy. Após muito custo, consegui subir a aplicação na plataforma e entregar o projeto.
+Na quarta e última sprint, após o projeto ser finalizado, um dos requisitos funcionais era realizar o deploy da aplicação. No entanto, o grupo estava tendo dificuldades para realizar o deploy no Heroku. Para resolver esse problema, busquei diversas alternativas para fazer o deploy de uma aplicação Python até que encontrei a plataforma "PythonAnywhere". Enquanto a equipe se concentrava em corrigir bugs e na criação do botão de PDF, eu me dediquei a testar e implementar o deploy. Após bastante esforço, consegui subir a aplicação na plataforma e entregar o projeto.
 
-Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era novo e havia bastante impedimento tanto com questão de experiência em programação quanto com procrastinação de tasks. Mas no final consegui alinhar a equipe e entregamos um produto satisfatório para o cliente.
+Foi uma experiência muito gratificante e desafiadora, pois o grupo era iniciante e enfrentamos muitos obstáculos, tanto pela falta de experiência em programação quanto pela procrastinação das tasks. No final, consegui alinhar a equipe e entregamos um produto satisfatório para o cliente.
 
 <details>
   <summary>Burndonw 4-Sprint</summary>
@@ -420,7 +431,7 @@ Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era
 |  Javascript  |           Desenvolvi habilidades de criar scripts para deixar o site mais interativo e dinâmico para o usuário.           |     Intermediário     |
 |    MYSQL     | Desenvolvi habilidades e conhecimentos no gerenciamento de databases e tabelas, além de montagem de querys para consulta. |     Intermediário     |
 |    Flask     |           Desenvolvi habilidades em criar API rest e a conexão do front end com o back end no mesmo framework.            |     Intermediário     |
-| GIT e GITHUB |                          Aprendi a utilizar os comandos do Git e seu funcionamento no GitHub.                             |     Intermediário     |
+| GIT e GITHUB |                          Aprendi a utilizar os comandos do Git e seu funcionamento no GitHub.                             |     Basico     |
 
 ### Soft Skills
 
@@ -443,9 +454,7 @@ Foi uma experiência muito gratificante e bastante desafiadora, pois o grupo era
 
 Parceiro Acadêmico: [Tecsus](https://tecsus.com.br/)
 
-O projeto foi elaborado para produzir um software de gerenciamento de contas para uma startup que busca, por meio da tecnologia, tornar o planeta mais sustentável.
-
-O sistema será desenvolvido para que o processo de cadastramento de contas, unidade, concessionarias e contratos possa ser simples e intuitivo, além de proporcionar ao usuário uma experiência mais dinâmica ao exibir as informações relevantes por meio de relatórios e gráficos descomplicados para análise
+O projeto foi desenvolvido para criar um software de gerenciamento de contas para uma startup que busca, por meio da tecnologia, contribuir para a sustentabilidade do planeta. O sistema foi projetado para tornar o processo de cadastramento de contas, unidades, concessionárias e contratos simples e intuitivo, visando facilitar a gestão de contas de energia, agua e gas. Além disso, o sistema proporciona ao usuário uma experiência dinâmica ao exibir informações relevantes por meio de relatórios e gráficos claros e de fácil interpretação, auxiliando na análise e tomada de decisões.
 
 ### Etapas de Desenvolvimento
 
@@ -469,9 +478,7 @@ O sistema será desenvolvido para que o processo de cadastramento de contas, uni
 
 ### Contribuições Pessoais
 
-Neste projeto, eu estava atuando como Product Owner, onde era responsável pelo contato com o cliente, definição de User Story, priorização do backlog e para este projeto eu realizei o design do mockup do aplicativo.
-
-Após o contato com o cliente, foi possível a definição do User Story e do mockup onde foi utilizada a ferramenta Figma.
+Neste projeto, atuei como Product Owner, sendo responsável pelo contato com o cliente, definição de User Stories, priorização do backlog e, para este projeto específico, também pela criação do design do mockup do aplicativo. Após o contato com o cliente, conseguimos definir as User Stories e elaborar o mockup utilizando a ferramenta Figma, garantindo que as necessidades e expectativas do cliente fossem atendidas de forma clara e eficiente no design da interface.
 
 <details>
 <summary>User Story</summary>
@@ -622,11 +629,11 @@ Após o contato com o cliente, foi possível a definição do User Story e do mo
 
 <br>
 
-Após o cliente aprovar o mockup e a priorização de backlog, podemos começar a organizar os grupos de back-end e front-end. Para este projeto foram utilizadas as linguagens React para front-end, Spring Boot para back-end e para o banco de dados foi utilizado o MySQL. As linguagens foram utilizadas por serem requisitos e pela preferência do grupo.
+Após a aprovação do mockup e da priorização do backlog pelo cliente, começamos a organizar as equipes de back-end e front-end. Para este projeto, optamos por utilizar React para o front-end, Spring Boot para o back-end e MySQL para o banco de dados, atendendo tanto aos requisitos quanto às preferências do grupo.
 
-Apesar de estar operando como Product Owner, possuo algumas experiências com React e como meu grupo não tinha pessoas para o front eu decidi conciliar o PO com o desenvolvimento do front-end.
+Embora estivesse atuando como Product Owner, como possuo experiência com React e o grupo não tinha membros para o front-end, decidi conciliar as funções de PO com o desenvolvimento do front-end.
 
-De começo, para auxiliar na programação das telas, foi utilizada a biblioteca Material Ui onde foram utilizados campos de input, botões e estilos. Como o React trabalha com componentes, no nosso projeto não foi diferente, para cada parte das páginas foi criado um componente para facilitar na programação e userStates para ser feito o controle do estado das variáveis.
+Para facilitar a programação das telas, utilizamos a biblioteca Material UI, que forneceu componentes como campos de input, botões e estilos prontos. Como o React trabalha com componentes, adotamos essa abordagem no projeto. Para cada parte das páginas, criamos um componente, o que facilitou a programação e a manutenção. Além disso, usamos o useState para controlar o estado das variáveis e gerenciar a interação do usuário de forma eficiente.
 
 <details>
   <summary>Modal de editar a concessionaria</summary>
@@ -696,13 +703,12 @@ De começo, para auxiliar na programação das telas, foi utilizada a biblioteca
 
 <br>
 
-O componente criado acima é um Modal que retorna os dados que foram salvos e edita as informações. Usando o useState é possível guardar o dado salvo e editá-lo como segundo estado da variável. A função handleUpdate é executada após apertar o botão de enviar, onde ele pega todas as alterações e atualiza os dados. No returno desse componente tem os inputs e as label que serão mostradas nesse modal.
 
-Esse é um exemplo de um componente de dados que retorna os dados da concessionária para editar e, assim como esse, outros foram montados como inserir, editar e excluir dados do aplicativo.
+O componente descrito acima é um Modal que permite tanto visualizar os dados salvos quanto editá-los. Usando o useState, é possível armazenar o dado salvo e, posteriormente, editá-lo, gerenciando o estado da variável. A função handleUpdate é acionada quando o usuário clica no botão de envio, pegando as alterações feitas e atualizando os dados. No retorno deste componente, estão presentes os inputs e as labels, que são exibidos no modal para interação do usuário.
 
-Para o último sprint, foi acordado com o cliente que era para inserir uma página de relatório com gráficos relacionados a contas de água e contas de energia inseridas.
+Esse é apenas um exemplo de componente responsável pela exibição e edição de dados, como no caso das informações da concessionária. Além dele, outros componentes foram criados com funções de inserção, edição e exclusão de dados dentro do aplicativo.
 
-Para o gráfico, optei por utilizar a biblioteca recharts para React onde ele consegue gerar um gráfico com os dados das contas.
+Para o último sprint, o cliente solicitou a adição de uma página de relatório contendo gráficos relacionados às contas de água e energia inseridas. Para gerar os gráficos, optei por utilizar a biblioteca Recharts, que facilita a criação de gráficos interativos em React. A biblioteca permite gerar gráficos dinâmicos e personalizados com base nos dados das contas, proporcionando uma visualização clara e eficiente para o usuário.
 
 <details>
   <summary>Componente de grafico da agua usado na pagina de relatorios</summary>
@@ -816,7 +822,7 @@ Para o gráfico, optei por utilizar a biblioteca recharts para React onde ele co
 
 <br>
 
-O código acima monta o gráfico através dos dados recebidos no JSON do back-end e filtra conforme os valores total mensal e consumo mensal.
+O código acima monta o gráfico com base nos dados recebidos no JSON do back-end, filtrando as informações conforme os valores de "total mensal" e "consumo mensal".
 
 <details>
   <summary>Gif do grafico e filtros</summary>
@@ -829,9 +835,9 @@ O código acima monta o gráfico através dos dados recebidos no JSON do back-en
 
 <br>
 
-E com isso é finalizado a API, colocamos o back-end no Heroku para facilitar na requisição de dados do front-end e conseguimos entregar um bom projeto. O cliente ficou satisfeito com o resultado.
+Com isso, a API foi finalizada, e o back-end foi hospedado no Heroku, facilitando as requisições de dados do front-end. O projeto foi entregue com sucesso e o cliente ficou satisfeito com o resultado.
 
-Porém, nesta API eu estava como product owner, porém dois integrantes que ficaram na parte do front não acabaram ajudando muito, então acabei que fiquei mais empenhado como desenvolvedor, mas nunca deixando minhas tarefas como product owner de lado.
+Apesar de eu estar atuando como Product Owner, dois integrantes da equipe, responsáveis pelo front-end, não contribuíram tanto quanto o esperado. Como resultado, acabei me dedicando mais à parte de desenvolvimento, mas sem negligenciar minhas responsabilidades como Product Owner. Mantive o foco na priorização das tarefas, definição das User Stories e comunicação com o cliente, garantindo que as entregas fossem realizadas dentro do cronograma e com qualidade.
 
 ### Hard Skills
 
@@ -865,9 +871,9 @@ Porém, nesta API eu estava como product owner, porém dois integrantes que fica
 
 Parceiro Acadêmico: [Jaia](https://www.jaia.software/)
 
-O desafio consiste em desenvolver um sistema abrangente para controlar anomalias identificadas em um Laudo de Inspeção Predial, com funcionalidades-chave como diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Esse sistema é crucial para melhorar a gestão e a eficácia na correção de anomalias, promovendo a preservação do patrimônio e tomada de decisões informadas.
+O desafio consiste no desenvolvimento de um sistema abrangente para gerenciar anomalias identificadas em Laudos de Inspeção Predial. O sistema terá funcionalidades essenciais, como a diferenciação de segmentos específicos de um edifício, cadastro de prestadores de serviço, geração eficiente de ordens de serviço e criação de relatórios detalhados. Este sistema é fundamental para melhorar a gestão e a eficácia na correção de anomalias, promovendo a preservação do patrimônio e permitindo tomadas de decisões mais informadas.
 
-A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificará a gestão de prestadores de serviço, segmentos e ordens de serviço. Como parte deste projeto, estamos desenvolvendo uma landing page intuitiva que facilitará a solicitação de novas ordens de serviço para os nossos novos clientes por meio de um simples formulário. Para os nossos clientes existentes, disponibilizaremos uma landing page personalizada, onde poderão acessar facilmente suas ordens de serviço anteriores, baixar laudos novamente e dar feedbacks valiosos, incluindo sugestões e reclamações. Além disso, eles também terão a opção de fazer novas solicitações de ordens de serviço.
+A equipe da B1nary Devs será responsável pelo desenvolvimento de um sistema web robusto que facilitará a gestão de prestadores de serviço, segmentos e ordens de serviço. Como parte do projeto, estamos criando uma landing page intuitiva para novos clientes, permitindo que eles solicitem ordens de serviço de forma simples por meio de um formulário. Para clientes existentes, a landing page será personalizada, permitindo que acessem facilmente ordens de serviço anteriores, baixem laudos novamente e forneçam feedbacks valiosos, como sugestões e reclamações. Além disso, também terão a opção de fazer novas solicitações de ordens de serviço, garantindo uma comunicação contínua e eficiente.
 
 ### Etapas de Desenvolvimento
 
@@ -891,13 +897,13 @@ A equipe da B1nary Devs desenvolverá um sistema web abrangente que simplificar�
 
 ### Contribuições Pessoais
 
-Esse projeto foi a minha primeira API realizada no curso de Banco de Dados na turma noturna. Por ser um grupo novo, tive que me adaptar ao estilo de trabalho deles.
+Neste projeto, que foi a minha primeira experiência com API no curso de Banco de Dados, foi necessário me adaptar ao estilo de trabalho de um novo grupo. O projeto consistia em um sistema web para controle de anomalias identificadas em Laudos de Inspeção Predial, permitindo que os usuários gerenciassem prestadores de serviço, ordens de serviço e os laudos da inspeção. Como o grupo já contava com um desenvolvedor front-end que utilizava Vue.js, optei por trabalhar no back-end, um novo desafio para mim, especialmente por minha pouca experiência com Spring Boot.
 
-O projeto se trata de um desenvolvimento web para controle de anomalias identificadas em um Laudo de Inspeção Predial, onde o usuário pode gerenciar os prestadores de serviço, as ordens de serviço e o laudo da inspeção. O grupo foi dividido em front e back e como no grupo já havia um desenvolvedor front-end onde foi utilizado o Vue.js como framework, porém optei por realizar o back-end, pois teria mais demandas e seria um novo desafio para mim, que não tinha muita familiaridade com Spring Boot.
+No Sprint Zero, começamos com o planejamento do projeto e a modelagem do banco de dados. O sistema envolvia relações de "um para muitos" e "muitos para muitos", principalmente entre ordens de serviço e prestadores, o que exigiu uma modelagem cuidadosa no banco de dados. Esse foi meu primeiro contato com essas relações em banco e com o tratamento dos dados no back-end.
 
-No sprint zero foi desenvolvido o planejamento do projeto e a modelagem do banco de dados e como se tratava de ordem de serviço e prestador para várias ordens de serviço foi utilizado bastante o relacionamento de um para muitos e muitos para muitos tanto para o banco de dados quanto para o back end em spring boot, para mim, seria um dos primeiros contatos com modelagem em banco com esse relacionamento e trabalho com back end tratando os dados com relacionamentos.
+Durante a Primeira Sprint, utilizamos a arquitetura MVC (Model-View-Controller) no Spring Boot. Eu fiquei encarregado de montar o modelo MVC para o cadastro e gestão dos prestadores de serviço. O padrão MVC foi usado para separar a lógica de negócios (Model), a interface de usuário (View), e a lógica de controle das requisições (Controller). A principal dificuldade que enfrentei foi ao criar o serviço que buscava os dados do banco. Quando tentei usar métodos como "findByEmail" para retornar os prestadores, os resultados não estavam sendo os esperados. No início, tive dificuldades em compreender por que isso acontecia, mas com o apoio de vídeos e ajuda do time, consegui entender como o Spring Boot manipula esses métodos e finalmente terminei essa parte com sucesso.
 
-Na primeira sprint, foi utilizado padrão de arquitetura MVC (module view control) no Spring Boot, que é basicamente o Model (Modelo) que representa a lógica de negócios e os dados da aplicação. Inclui as classes que definem os dados e as regras de negócio. A View (Visão) sendo responsável pela apresentação dos dados e o Controller (Controlador) que atua como intermediário entre o Model e a View. Processa as requisições dos usuários, manipula os dados usando o Model e retorna a resposta adequada através da View. Nesse sprint eu fiquei encarregado de montar o MVC do prestador de serviço comecei pelas classes e entidades do prestador, porem o que tive mais dificuldades foi na hora de montar o serviço, que era onde ficavam nossas funções que retornar os dados do banco de dados, minha dificuldade foi na hora de retornar os dados, pois o método é montado por meio de ação como "findByEmail" para retornar os emails, só que algumas vezes não retornavam o que eu queria, porem após algumas ajudas e vídeos aulas consegui entender e terminar essa parte.
+Essa foi uma experiência crucial para meu aprendizado no desenvolvimento de APIs, especialmente no que diz respeito ao uso de frameworks e no entendimento da comunicação entre a camada de banco de dados e a aplicação.
 
 <details>
 <summary> Service Prestador </summary>
@@ -1004,15 +1010,17 @@ public class PrestadorService implements PrestadorInterface {
 
 <br>
 
-Após terminar o service eu finalizei o controler e minhas atividades, mas vi que um dos desenvolvedores do back end estava com dificuldades na hora de montar o relacionamento de um para muitos, pois estávamos aprendendo na aula ainda como utilizar esse método então para nos estava um pouco confuso e para ajudar peguei a task dele de montar o MVC do checkilist que é onde o prestador ou usuário valida as informações do laudo. Finalizada essa parte, quase no final do sprint, eles ainda estavam tentando solucionar esse caso dos relacionamentos, porém sem muito sucesso.
+Durante o Sprint 1 e Sprint 2, além de focar no desenvolvimento do back-end, enfrentei desafios relacionados ao entendimento e implementação dos relacionamentos entre as entidades do banco de dados, como "um para um", "um para muitos" e "muitos para muitos". Como o time estava aprendendo a lidar com esses conceitos, um dos desenvolvedores estava com dificuldades para implementar o relacionamento de "um para muitos". Para ajudar, assumi a tarefa de desenvolver o MVC do CheckList, que é a funcionalidade onde o prestador de serviço ou usuário valida as informações do laudo. Com isso, consegui avançar essa parte e, ao final do sprint, o time ainda estava tentando resolver os problemas com os relacionamentos, mas sem muito sucesso.
 
-Na segunda sprint os esforços do time do back foi em entender esses relacionamentos de um para um, um para muitos e muitos para muitos e eu como desenvolvedor comecei a estudar sobre e fazer alguns desenvolvimentos e teste com o grupo onde podemos entender como funciona e colocar em prática no desenvolvimento do projeto. Também nesse sprint, após auxiliar os desenvolvedores, eu peguei a task de montar o MVC do cliente, onde não tive muitos problemas, pois já tinha feito um igual e já sabia mais ou menos os erros conhecidos e o que poderia dar.
+No Sprint 2, o foco do time de back-end foi entender e aplicar corretamente os relacionamentos entre as entidades. Como desenvolvedor, também comecei a estudar mais sobre esses relacionamentos e fiz alguns testes com o grupo. Isso nos ajudou a colocar em prática o que estávamos aprendendo. Ao mesmo tempo, assumi a tarefa de montar o MVC do Cliente, o que foi mais tranquilo para mim, pois já tinha experiência com essa estrutura e sabia como resolver os problemas mais comuns.
 
-Na primeira e segunda sprint eu fiquei na parte do back end, porem um dos integrantes do front end não estava entregando resultados e o grupo estava optando por mandá-lo embora e como eu já havia participado com scrum master e tinha resolvido bastantes problemas decidi mostrar meu ponto de vista, pois o integrante assim como eu queria um novo desafio, porem não conseguiu dar conta então para que o problema fosse resolvido eu troquei de lugar com ele, pois tinha muito mais facilidade no front e o integrante no back. Problema resolvido, seguimos para a terceira sprint.
+Na Primeira e Segunda Sprint, eu estive totalmente focado no back-end, mas percebi que um dos integrantes do front-end estava com dificuldades em entregar resultados. Após uma discussão no time sobre sua saída, decidi intervir, pois, assim como ele, também buscava um novo desafio. Propus trocar de lugar com ele, já que tinha mais facilidade com front-end, enquanto ele tinha mais experiência no back-end. Isso resolveu o problema de alocação de tarefas e seguimos para o Sprint 3.
 
-Na terceira sprint inicialmente eu comecei a desenvolver o login tanto o layout do site quanto a parte de realizar o login na plataforma, como o back end já tinha desenvolvido a função de autenticação o que fiz foi ajustar uma rota para ele enviar os dados do login para o back autenticar e me retornar um token, onde eu armazenava no localstorage e coim isso a cada requisição realizada pelo front ele mandava esse token para ser validado pelo sistema, garantindo uma integridade de segurança dos dados.
+No Sprint 3, comecei a desenvolver a tela de login, tanto o layout quanto a parte de autenticação. O back-end já havia desenvolvido a função de autenticação, então o que fiz foi ajustar a rota para enviar os dados do login ao back-end, que retornava um token de autenticação. Esse token era armazenado no localStorage, e com ele, todas as requisições feitas pelo front enviavam o token para validação no back-end, garantindo a integridade de segurança dos dados.
 
-Após essa tela de login, decidi realizar o desenvolvimento da tela do modal onde o usuário aprova as ordens de serviço, onde o usuário teria os checklists cadastrados para aquela atividade e poderia aprovar ou reprovar caso o não passe no Checklist. Em uma tela, estão as ordens de serviço e o usuário que aprova as ordens vai clicar nelas e nisso irá abrir um modal com os checklists para ser validado. Após validado, ele fecha esse modal.
+Após concluir a tela de login, passei a desenvolver o modal de aprovação das ordens de serviço. Nessa tela, o usuário aprova ou reprova as ordens com base nos checklists cadastrados para cada atividade. Quando o usuário clica na ordem de serviço, um modal é aberto com os checklists, onde ele pode validar ou reprovar os itens. Após a validação, o modal é fechado e o status da ordem de serviço é atualizado. Essa funcionalidade foi um dos principais recursos que implementei no front-end, garantindo que a experiência do usuário fosse intuitiva e eficiente.
+
+Esses sprints foram desafiadores, mas, ao mesmo tempo, muito gratificantes. A troca de responsabilidades no time e a colaboração para resolver problemas técnicos nos permitiram avançar e entregar um produto mais sólido e funcional.
 
 <details>
 <summary>Tela de aprovação de ordem de serviço e codigo do modal</summary>
@@ -1183,11 +1191,13 @@ Após essa tela de login, decidi realizar o desenvolvimento da tela do modal ond
 
 <br>
 
-Após realizar o login e o modal, fiz a correção e estilização de algumas telas para ficar mais parecido com o layout do protótipo e desenvolvi mais um de edição de dados da ordem, onde através da requisição rest ele retorna os dados e faz o update. Acabei trabalhando bastante nesse sprint, pois o desenvolvedor que estava com problemas havia atrasado algumas features então nesse sprint, para agilizar o projeto, acabei desenvolvendo elas.
+No Sprint 3, após desenvolver o login e o modal para a aprovação das ordens de serviço, além de trabalhar na estilização das telas para torná-las mais semelhantes ao layout original do protótipo, também precisei desenvolver a funcionalidade de edição de dados das ordens de serviço. Essa funcionalidade utilizava requisições REST para retornar os dados e atualizar as informações no banco. Durante esse sprint, acabei assumindo muitas tarefas de desenvolvimento que estavam atrasadas devido a dificuldades de outro integrante da equipe, o que resultou em um maior volume de trabalho para mim. Acredito que a entrega de várias funcionalidades importantes ajudou a acelerar o andamento do projeto e minimizar os atrasos.
 
-Na quarta sprint como já havia adiantado bastante coisa na terceira e como eu já tinha desenvolvido as telas de modal eu resolvi corrigir alguns bugs dos modais das outras telas que não estavam retornando os dados corretamente, pois havia uma falta de dados para realizar as requisições rest que populavam esses modais. Realizei as correções, fiz algumas modificações nas telas de login para que toda e qualquer requisição que fizesse para o back ele solicitasse o token.
+No Sprint 4, como já havia adiantado muitas tarefas e corrigido diversos pontos do projeto no sprint anterior, me concentrei em resolver bugs nos modais das telas. Identifiquei que havia um problema na requisição REST que populava os modais, devido à falta de dados essenciais para completar essas requisições. Trabalhei nas correções, fazendo ajustes nas telas de login para garantir que qualquer requisição feita ao back-end exigisse o token de autenticação, garantindo assim a segurança do sistema. Além disso, refinei algumas funcionalidades que precisavam de ajustes, como o comportamento dos modais e a integração entre o front-end e back-end.
 
-No final, deu tudo certo, conseguimos entregar um produto de qualidade para o cliente, que adorou o sistema. Houve bastantes conflitos internos como mencionei houve desavenças por falta de entrega de resultados, mas com comunicação e paciência foi possível desenvolver o que para mim também havia sido um grande desafio tanto pelo back end em spring boot que apesar das dificuldades consegui entregar o que havia planejado, quanto para o front, pois tenho mais conhecimentos com o framework React e para esse projeto foi utilizado o framework Vue, o que para mim, foi questão mais de saber como desenvolver a função que realiza no React no Vue.
+Ao final do projeto, conseguimos entregar um sistema funcional e de qualidade para o cliente. O cliente ficou muito satisfeito com o resultado, o que foi um grande alívio e satisfação para toda a equipe. Embora tenha havido desafios, como os conflitos internos causados pela falta de entrega de resultados de alguns membros, conseguimos superar as dificuldades com comunicação clara e paciência.
+
+Esse projeto foi um grande desafio pessoal, especialmente porque envolveu o uso de Spring Boot no back-end, o que era algo novo para mim. Apesar das dificuldades iniciais, consegui entregar as funcionalidades planejadas e aprender bastante sobre o framework. No front-end, eu já tinha mais familiaridade com o React, mas tive que me adaptar ao Vue.js, que foi utilizado no projeto. A transição foi mais uma questão de entender como as mesmas funcionalidades podem ser implementadas de forma semelhante entre os dois frameworks. No fim, a experiência foi enriquecedora, e pude aprimorar tanto minhas habilidades de back-end quanto de front-end.
 
 ### Hard Skills
 
@@ -1218,9 +1228,11 @@ No final, deu tudo certo, conseguimos entregar um produto de qualidade para o cl
 
 Parceiro Acadêmico: [Tecsus](https://tecsus.com.br/)
 
-A TecSUS realiza a coleta e processamento de contas de energia, água e gás para diversas empresas dos setores do atacado e varejo. Possuem uma base de dados de unidades, contratos, contas e concessionárias desestruturada em arquivo texto, a empresa tem interesse em aplicar técnicas de ETL e utilizar ferramentas de visualização de dados do mercado.
+A TecSUS realiza a coleta e o processamento de contas de energia, água e gás para diversas empresas nos setores atacadista e varejista. A empresa possui uma base de dados desestruturada em arquivos de texto, contendo informações sobre unidades, contratos, contas e concessionárias. Diante disso, há um interesse em aplicar técnicas de ETL e utilizar ferramentas de visualização de dados do mercado.
 
-O desafio consiste em realizar uma análise abrangente e eficiente dos dados provenientes das faturas de energia, água e gás. Isso envolve lidar com uma grande quantidade de informações complexas e variadas, desde os valores de consumo até os detalhes contratuais e os padrões de utilização ao longo do tempo. A exibição desses dados também é parte essencial do desafio, pois é preciso apresentar as informações de forma clara, intuitiva e relevante para os usuários finais. Isso implica criar visualizações que permitam uma compreensão rápida e aprofundada dos padrões de consumo, tendências ao longo do tempo e comparações entre diferentes períodos, contratos e tipos de serviços (energia, água e gás). Portanto, o desafio abrange desde a coleta e processamento dos dados até a apresentação visual e análise interpretativa, visando fornecer insights valiosos para a tomada de decisões estratégicas e operacionais.
+O desafio consiste em realizar uma análise abrangente e eficiente dos dados provenientes das faturas de energia, água e gás. Isso envolve lidar com uma grande quantidade de informações complexas e variadas, desde os valores de consumo até os detalhes contratuais e os padrões de utilização ao longo do tempo. A apresentação desses dados também é um aspecto fundamental do desafio, pois é necessário exibi-los de maneira clara, intuitiva e relevante para os usuários finais. Para isso, é preciso criar visualizações que possibilitem uma compreensão rápida e aprofundada dos padrões de consumo, das tendências ao longo do tempo e das comparações entre diferentes períodos, contratos e tipos de serviços (energia, água e gás). 
+
+Em resumo, o desafio abrange desde a coleta e o processamento dos dados até sua apresentação visual e análise interpretativa, com o objetivo de fornecer insights valiosos para a tomada de decisões estratégicas e operacionais.
 
 ### Etapas de Desenvolvimento
 
@@ -1256,15 +1268,18 @@ O desafio consiste em realizar uma análise abrangente e eficiente dos dados pro
 
 ### Contribuições Pessoais
 
-Neste projeto, inicialmente atuei como desenvolvedor. Como ele exigia conhecimento em Python, decidi focar no back-end e deixar o front-end para outro colega. O projeto consistia no desenvolvimento de um aplicativo para análise de dados de contas de água e energia. O cliente nos enviaria um arquivo CSV com diversos dados, e nossa tarefa era extrair, tratar esses dados e carregá-los em uma plataforma de análise.
+Neste projeto, inicialmente atuei como desenvolvedor. Como ele exigia conhecimento em Python, decidi focar no back-end, deixando o front-end para um colega. O objetivo do projeto era o desenvolvimento de um aplicativo para análise de dados de contas de água e energia. O cliente nos enviaria um arquivo CSV contendo diversos dados, e nossa tarefa seria extrair, tratar esses dados e carregá-los em uma plataforma de análise.
 
-Para esse projeto, nosso grupo decidiu contratar um novo aluno para ajudar nas demandas, pois, além do projeto, precisaríamos cuidar de toda a parte de DevOps da aplicação.
+Para dar suporte a essa demanda, nosso grupo decidiu contratar um novo aluno, pois, além do projeto, precisaríamos cuidar de toda a parte de DevOps da aplicação.
 
-Na primeira sprint, recebemos um CSV contendo contratos e contas de água e energia. Como estava responsável pelo back-end, fiquei encarregado da limpeza dos dados do CSV. Realizamos algumas reuniões para entender o que cada campo do arquivo representava e como seriam utilizados na sprint.
+Na primeira sprint, recebemos o CSV contendo contratos e contas de água e energia. Como estava responsável pelo back-end, fiquei encarregado da limpeza dos dados do CSV. Realizamos algumas reuniões para entender o que cada campo do arquivo representava e como eles seriam utilizados na sprint.
 
-Após essas reuniões e alinhamento com o cliente, decidimos focar no tratamento dos dados das contas de água. Por se tratar de um projeto de análise de dados, optamos por inserir os dados tratados em um banco de dados MySQL e, para isso, desenvolvemos um modelo estrela que facilitaria o controle e a análise dos dados.
+Após essas reuniões e alinhamento com o cliente, decidimos focar no tratamento dos dados das contas de água. Por se tratar de um projeto de análise de dados, optamos por armazenar os dados tratados em um banco de dados MySQL. Para isso, desenvolvemos um modelo estrela, que facilitaria o controle e a análise dos dados.
 
-O tratamento de dados incluiu ajustes nos nomes das colunas para facilitar a inserção automática, remoção de campos em branco, caracteres especiais e valores nulos, além da correção de tipos de dados, como campos de data e CPF/CNPJ formatados corretamente.
+O tratamento dos dados incluiu ajustes nos nomes das colunas para facilitar a inserção automática, remoção de campos em branco, caracteres especiais e valores nulos, além da correção dos tipos de dados, como formatação correta para campos de data e CPF/CNPJ.
+
+<details>
+<summary>Tratamento dos Dados</summary>
 
 ```
 try:
@@ -1339,23 +1354,40 @@ except Exception as e:
     print(f'Erro ao salvar arquivos no banco de dados: {e}')
 ```
 
-O tratamento inicial dos dados estava adequado, mas enfrentamos problemas com o banco de dados. O aluno recém-contratado não estava cumprindo seu papel de Scrum Master de forma eficiente, o que atrasou o projeto. Eu e Marcelo, outro desenvolvedor, decidimos assumir a configuração do banco. Eventualmente, o grupo optou por dispensar o novo aluno, e eu me ofereci para ajudar na coordenação como Scrum Master.
+</details>
+<br>
 
-Essa transição ocorreu na semana de entrega da primeira sprint, e precisamos agilizar o tratamento e inserção dos dados no Power BI para uma entrega significativa. Como Scrum Master, apoiei tanto o back-end, que já havia concluído o tratamento de dados mas estava com dificuldades para inserir os dados no banco, quanto na estruturação do banco de dados.
+O tratamento inicial dos dados estava adequado, mas enfrentamos problemas com o banco de dados. O aluno recém-contratado não estava cumprindo sua função de Scrum Master de forma eficiente, o que acabou atrasando o projeto. Diante disso, eu e Marcelo, outro desenvolvedor, decidimos assumir a configuração do banco de dados. Eventualmente, o grupo optou por dispensar o novo aluno, e eu me ofereci para ajudar na coordenação, assumindo a função de Scrum Master.
+
+Essa transição ocorreu na semana de entrega da primeira sprint, e tivemos que agilizar o tratamento e a inserção dos dados no Power BI para garantir uma entrega significativa. Como Scrum Master, apoiei tanto o time de back-end, que já havia concluído o tratamento dos dados mas estava com dificuldades para inserir as informações no banco, quanto na estruturação do banco de dados.
 
 Durante a primeira sprint, a troca de funções foi intensa e exigiu que eu focasse na organização do grupo, pois havia confusão nas tarefas e no burndown.
 
+<details>
+<summary>Burndown</summary>
+
 ![alt text](./5_Semestre/burndown.png)
 
-Apesar desses desafios, conseguimos entregar um produto inicial de valor. Na segunda sprint, focamos em algumas funções que deveriam ter sido concluídas na primeira, como gráficos e correção dos dados das contas de água na modelagem estrela.
+</details>
+<br>
+
+Apesar dos desafios enfrentados, conseguimos entregar um produto inicial de valor. Na segunda sprint, nosso foco foi em algumas funções que deveriam ter sido concluídas na primeira sprint, como os gráficos e a correção dos dados das contas de água na modelagem estrela.
+
+<details>
+<summary>Backlog</summary>
 
 ![alt text](./5_Semestre/backlog2.png)
 
-Como Scrum Master, organizei as tarefas para que começássemos pelas correções, garantindo uma base sólida para a construção dos módulos de contas e contratos.
+</details>
+<br>
 
-Nosso desenvolvedor teve alguns problemas com o banco de dados devido a mudanças na estrutura, e para manter o progresso, acompanhei o desenvolvimento e fiz correções na conexão com o banco via Docker, além de ajustar o SQL para o modelo estrela das contas e contratos de água.
+Como Scrum Master, organizei as tarefas de forma que começássemos pelas correções, garantindo uma base sólida para a construção dos módulos de contas e contratos.
 
-modelo estrela agua
+Durante esse período, nosso desenvolvedor enfrentou alguns problemas com o banco de dados devido a mudanças na estrutura. Para manter o progresso, acompanhei de perto o desenvolvimento, fiz correções na conexão com o banco via Docker e ajustei o SQL para que se alinhasse ao modelo estrela das contas e contratos de água.
+
+<details>
+<summary>Modelo Estrela Agua</summary>
+
 ```
 update mysql.user set host='%' where user='root';
 FLUSH PRIVILEGES;
@@ -1439,8 +1471,12 @@ create table fato_agua_consumo (
 	foreign key (numero_medidor) references dim_agua_medidor(numero_medidor),
 	foreign key (numero_contrato) references dim_agua_contrato(numero_contrato));
 ```
+</details>
+<br>
 
-Modelo do docker compose
+<details>
+<summary>Modelo do Docker Compose</summary>
+
 ```
 version: "3.8"
 services:
@@ -1464,8 +1500,10 @@ volumes:
   mysql_data:
     driver: local
 ```
+</details>
+<br>
 
-Após esses ajustes, conseguimos avançar e entregar um produto de análise completo. Na terceira sprint, nosso foco foi no DevOps. Cada membro ficou com uma responsabilidade específica, dividindo as tarefas em:
+Após os ajustes feitos, conseguimos avançar e entregar um produto de análise completo. Na terceira sprint, o foco foi em DevOps, e as responsabilidades foram bem distribuídas entre os membros da equipe, com as tarefas divididas da seguinte maneira:
 
 - Branch e rastreabilidade
 - Testes unitarios
@@ -1473,28 +1511,43 @@ Após esses ajustes, conseguimos avançar e entregar um produto de análise comp
 - Deploy
 - CI (Integração Continua)
 
-Com as tarefas já organizadas, decidi começar pela criação da integração contínua. Ao analisar como realizar essa integração, identifiquei uma maior afinidade com a ferramenta GitHub Actions, pois já trabalhava diretamente com o GitHub, e a funcionalidade dessa integração é mais fácil de entender e utilizar.
+Com as tarefas já organizadas, decidi começar pela criação da integração contínua (CI). Ao analisar as opções disponíveis, identifiquei uma maior afinidade com a ferramenta GitHub Actions, uma vez que já estava familiarizado com o GitHub, e a funcionalidade dessa integração é mais fácil de entender e utilizar.
 
-Inicialmente, foi bem complicado desenvolver essa integração, pois a estrutura do nosso projeto estava dividida em diferentes branches: a branch feature, utilizada para inserir novos desenvolvimentos; a branch dev, nossa base sólida de desenvolvimento, onde só é possível inserir mudanças via pull requests de feature; e a branch main, destinada à produção, na qual só entram dados testados e prontos para uso.
+Inicialmente, a integração foi bastante desafiadora, pois a estrutura do nosso projeto estava dividida em diferentes branches. A branch feature era usada para adicionar novos desenvolvimentos, a branch dev servia como a base sólida de desenvolvimento, onde mudanças só poderiam ser feitas por pull requests provenientes da feature, e a branch main era destinada à produção, recebendo apenas dados testados e prontos para uso.
 
-Nesta sprint, montei a organização de como seria a ordem e execução do CI para cada branch:
+Durante essa sprint, defini como seria a organização da ordem e execução do CI para cada branch, garantindo que as mudanças seguissem o fluxo adequado de desenvolvimento e deployment:
 
-Integração continua Branch Feature
+<details>
+<summary>Integração continua Branch Feature</summary>
+
 ![alt text](./5_Semestre/ciFeature.png)
 
-Integração continua Branch Dev
+</details>
+<br>
+
+<details>
+<summary>Integração continua Branch Dev</summary>
+
 ![alt text](./5_Semestre/ciDev.png)
 
-Integração continua Branch Main
+</details>
+<br>
+
+<details>
+<summary>Integração continua Branch Main</summary>
+
 ![alt text](./5_Semestre/ciMain.png)
 
-AApós o desenvolvimento da arquitetura do CI, o professor validou a estrutura e liberou para que fosse desenvolvida na prática.
+</details>
+<br>
 
-Nesta sprint três, focamos mais na parte de DevOps. Todos conseguimos entregar e validar a arquitetura DevOps e concluímos o projeto com os updates de base, como uma entrega de valor.
+Após o desenvolvimento da arquitetura do CI, o professor validou a estrutura e autorizou a implementação prática.
 
-Para a última sprint, o cliente cancelou a entrega das contas de gás devido à falta de dados. Então, nos concentramos apenas na validação do DevOps e na criação de alertas de consumo para valores acima e abaixo da média de água e energia.
+Na terceira sprint, o foco foi mais voltado para DevOps. Todos conseguimos entregar e validar a arquitetura DevOps, o que nos permitiu concluir o projeto com os updates de base, garantindo uma entrega de valor.
 
-Após a validação da arquitetura, comecei implementando o CI para as branches feature e dev, utilizando GitHub Actions. Esse desenvolvimento foi mais básico, focado nas tratativas iniciais da documentação.
+Para a última sprint, o cliente cancelou a entrega das contas de gás devido à falta de dados. Com isso, nossa atenção foi redirecionada para a validação do DevOps e a criação de alertas de consumo para valores acima e abaixo da média de água e energia.
+
+Após a validação da arquitetura, comecei implementando o CI para as branches feature e dev, utilizando o GitHub Actions. Essa implementação foi mais básica e focada nas tratativas iniciais da documentação.
 
 As ações para o GitHub Actions na branch feature são as seguintes:
 
@@ -1504,8 +1557,13 @@ As ações para o GitHub Actions na branch feature são as seguintes:
 
 - Caso der erro nos teste ele retorna com o erro visivel na aba actions e tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
 
-Estrutura do codigo:
+<details>
+<summary>GitHub Actions na Branch Feature</summary>
+
 ![alt text](./5_Semestre/ci_feature_dev.png)
+
+</details>
+<br>
 
 Para a branch dev, a ação no GitHub Actions é configurada da seguinte maneira:
 
@@ -1520,22 +1578,33 @@ Para a branch dev, a ação no GitHub Actions é configurada da seguinte maneira
   1- O responsável pelo desenvolvimento possui mais afinidade com as regras daquela atividade, bem como a forma como foi realizado
   2- O responsável sabe que, se não fizer a primeira vez bem feito, corre o risco de voltar a atividade e ele ter que refazer novamente
 
-Estrutura do codigo:
+<details>
+<summary>GitHub Actions na Branch Dev</summary>
+
 ![alt text](./5_Semestre/ci_dev_dev.png)
+
+</details>
+<br>
 
 Por fim, para a branch main, a ação no GitHub Actions é a seguinte:
 
-Após a confirmação de que a branch dev está correta e com todas as features desejadas, é feita uma solicitação de pull request para a branch main. Os revisores analisam o código e os resultados da pipeline inicial. Com o PR aprovado, a pipeline realiza o build; se o processo for bem-sucedido, o merge é feito automaticamente na branch main.
+Após a confirmação de que a branch dev está correta e contém todas as features desejadas, é feita uma solicitação de pull request (PR) para a branch main. Os revisores analisam o código e os resultados da pipeline inicial. Com o PR aprovado, a pipeline realiza o build; caso o processo seja bem-sucedido, o merge é feito automaticamente na branch main. Esse processo garante que apenas código validado e com testes passados seja integrado à produção, mantendo a estabilidade do projeto.
 
 - Caso der erro no build ele tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
 
 - Caso der erro de build ou o pull request não for validado o Pr tem que ser retornado ao desenvolvedor as alteraçoes que devem ser feitas
 
+<details>
+<summary>GitHub Actions na Branch Main</summary>
+
 ![alt text](./5_Semestre/ci_main_dev.png)
 
-Após a validação e aprovação do desenvolvimento da arquitetura, o GitHub Actions foi implementado conforme planejado, garantindo uma entrega de qualidade para o professor e para o cliente, que pôde ver que a utilização do DevOps agilizou significativamente o projeto.
+</details>
+<br>
 
-Na entrega da última sprint, todos nós concluímos nossa parte de DevOps, entregando também os alertas de consumo, finalizando o projeto para a Tecsus. O cliente ficou muito satisfeito com o resultado, especialmente pela facilidade nas análises que agora podem ser feitas e pela agilidade proporcionada no desenvolvimento e entrega usando DevOps.
+Após a validação e aprovação do desenvolvimento da arquitetura, o GitHub Actions foi implementado conforme o planejamento, garantindo uma entrega de qualidade tanto para o professor quanto para o cliente. A utilização do DevOps agilizou significativamente o projeto, proporcionando mais eficiência e controle.
+
+Na entrega da última sprint, todos concluímos nossas responsabilidades em DevOps, além de implementar os alertas de consumo, finalizando o projeto para a TecSUS. O cliente ficou extremamente satisfeito com o resultado, destacando a facilidade nas análises que agora podem ser realizadas, bem como a agilidade proporcionada no desenvolvimento e nas entregas, graças ao uso do DevOps.
 
 
 ### Hard Skills
@@ -1646,6 +1715,9 @@ Para o usuário
 - O administrador possui informações básicas como nome, email, senha (em texto simples), CPF/CNPJ e endereço.
 - Também inclui os termos aceitos pelo administrador, com um campo para o termo atual e um log vazio para histórico.
 
+<details>
+<summary>Estrutura Termos MongoDB</summary>
+
 ```
  termo = [
             {          
@@ -1689,6 +1761,12 @@ Para o usuário
         ]
 ```
 
+</details>
+<br>
+
+<details>
+<summary>Estrutura User MongoDB</summary>
+
 ```
 user = {        
             "nome": "Administrador",            
@@ -1726,6 +1804,8 @@ user = {
             "termo_log": []
         }
 ```
+</details>
+<br>
 
 Após finalizar o desenvolvimento das rotas e banco de dados, iniciei a construção do front-end. O objetivo da primeira sprint era permitir o cadastro de usuários, exibindo um modal com os termos de uso, que deveriam ser aceitos antes de liberar o acesso à tela inicial com o menu lateral.
 
@@ -1738,6 +1818,9 @@ A segunda sprint foi desafiadora, pois nunca havia trabalhado com machine learni
 O objetivo era criar um algoritmo que previsse pontuações baseadas em registros financeiros extraídos de faturas comerciais. Comecei processando dados de arquivos CSV, como "asset_trade_bills", "asset_parts", "participants" e "asset_registers", que foram integrados em uma base de dados única.
 
 Realizei a limpeza e pré-processamento dos dados, removendo colunas irrelevantes, ajustando IDs e corrigindo formatos de data. Isso preparou os dados para a criação de uma tabela consolidada, com totais e valores somados de faturas canceladas, ativas e finalizadas, organizados por tipo de usuário.
+
+<details>
+<summary>Agrupamento Score</summary>
 
 ```
 # Agrupamento por payer_id
@@ -1767,11 +1850,17 @@ df_participant = df.groupby('document_number').agg(
 
 ![alt text](./6_Semestre/tabela_score.png)
 
+</details>
+<br>
+
 Criei um modelo inicial que associava valores monetários a pontuações específicas, mas ele mostrou limitações em precisão. Testei uma abordagem utilizando normalização Z-Score, que trouxe algumas melhorias, mas ainda apresentou desafios com dados fora da média.
 
 Em seguida, apliquei uma escala logarítmica aos valores monetários para reduzir a amplitude de valores elevados, o que ajudou a equilibrar os cálculos. A partir de ajustes contínuos nos pesos e variáveis de entrada, melhorei o desempenho do modelo, medido por Erro Quadrático Médio (MSE) e R².
 
 Refinei o modelo para equilibrar melhor os totais de faturas e seus valores, e o modelo final demonstrou desempenho robusto, embora ainda haja espaço para otimizações nos pesos e na análise dos resultados.
+
+<details>
+<summary>Modelo IA Score</summary>
 
 ```
 # Criar e treinar o modelo de Random Forest
@@ -1793,7 +1882,9 @@ Pontuação R²: 0,8668070138106397
 
 ![alt text](./6_Semestre/importancia.png)
 
-Apesar das dificuldades, conseguimos obter um bom resultado com a machine learning para o projeto, o que nos permitiu finalizar a segunda sprint. 
+</details>
+<br>
+Apesar das dificuldades, conseguimos obter um bom resultado com os algoritmos de Machine Learning para o projeto, o que nos permitiu finalizar a segunda sprint. 
 
 Após a última Sprint Review, iniciamos a terceira sprint do projeto. Essa etapa foi mais tranquila, pois consegui consolidar muitos aprendizados obtidos na sprint anterior, especialmente relacionados à inteligência artificial desenvolvida. O objetivo definido em conjunto com o cliente foi criar um sistema capaz de prever o total de duplicatas por mês, utilizando dados históricos para basear as estimativas.
 
@@ -1802,6 +1893,9 @@ O desenvolvimento foi dividido em etapas fundamentais, começando pelo processam
 Para iniciar, foi necessário organizar os dados das duplicatas, considerando todos os status possíveis (cancelado, ativo ou finalizado). O objetivo principal era somar todas as duplicatas para facilitar tanto a reconciliação quanto a comparação com os valores previstos. Para isso, os dados precisavam estar devidamente estruturados.
 
 O primeiro passo envolveu a conversão da coluna que indicava as datas de criação das duplicatas para o formato adequado, utilizando a função pd.to_datetime(). Essa etapa foi essencial para extrair informações como o mês e o ano de criação de cada duplicata. Com essas informações em mãos, os dados puderam ser agrupados de forma mais precisa. Assim, para cada combinação de mês e ano, calculei a soma do número de duplicatas registradas nesse período, criando uma visão consolidada que seria utilizada para alimentar o modelo de previsão.
+
+<details>
+<summary>Agrupamento Previsão Duplicatas</summary>
 
 ```
 df['created_at'] = pd.to_datetime(df['created_at'])
@@ -1822,7 +1916,13 @@ display(df_anual)
 ```
 ![alt text](./6_Semestre/agrupamento_predicao.png)
 
+</details>
+<br>
+
 Com os dados devidamente processados e organizados, o próximo passo foi aplicar o modelo ARIMA, que foi escolhido pela sua eficiência em lidar com séries temporais e pela capacidade de fornecer previsões mesmo em conjuntos de dados menores. Inicialmente, utilizei a função auto_arima para determinar os melhores valores para os parâmetros p, d e q, que definem o comportamento do modelo. Com os parâmetros ajustados, obtive um modelo inicial configurado como ARIMA(1,2,1).
+
+<details>
+<summary>Modelo auto_arima</summary>
 
 ```
 # Ajustando o modelo ARIMA com auto_arima
@@ -1839,11 +1939,17 @@ print(model.summary())
 ```
 ![alt text](./6_Semestre/auto_arima.png)
 
+</details>
+<br>
+
 As primeiras previsões realizadas com esse modelo apresentaram valores mais altos do que o esperado. Diante disso, realizei uma análise mais detalhada, ajustando o conjunto de dados de entrada. Excluí os 2 meses finais, para fins de testes e refiz as previsões. Apesar das melhorias, percebi que o modelo inicial ainda não estava produzindo resultados satisfatórios, o que me levou a explorar outras combinações de parâmetros.
 
 ![alt text](./6_Semestre/previsao_errada.png)
 
 Após diversas tentativas, encontrei no modelo ARIMA(1,1,0) uma solução que se mostrou muito mais adequada à realidade dos dados. Esse modelo gerou previsões mais próximas dos valores esperados e alinhadas com os padrões observados nos dados históricos. As novas previsões foram validadas, e os valores previstos para os próximos meses apresentaram uma precisão aceitável para o objetivo do projeto.
+
+<details>
+<summary>Modelo Previsão de Duplicatas</summary>
 
 ```
 modelo = ARIMA(df_anual['total_registros'], order=(1,1,0))
@@ -1857,6 +1963,10 @@ forecast_df = pd.DataFrame({'predicted': forecast})
 
 forecast_df = forecast_df.astype(int)
 ```
+
+</details>
+<br>
+
 ![alt text](./6_Semestre/modelo_certo.png)
 
 Com o modelo ajustado e validado, integrei a funcionalidade de previsão ao sistema. Isso envolveu ajustes no back-end para garantir que os dados fossem processados corretamente e que as previsões pudessem ser acessadas em tempo real. Após a finalização dessa etapa, o sistema foi apresentado ao cliente e aos professores, recebendo feedbacks muito positivos.
